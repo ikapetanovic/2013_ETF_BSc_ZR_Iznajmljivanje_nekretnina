@@ -83,6 +83,16 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crniZakupac48 {
+            get {
+                object obj = ResourceManager.GetObject("crniZakupac48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap database16 {
             get {
                 object obj = ResourceManager.GetObject("database16", resourceCulture);

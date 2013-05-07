@@ -83,7 +83,7 @@
             // 
             this.novaToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.nekretnina16;
             this.novaToolStripMenuItem.Name = "novaToolStripMenuItem";
-            this.novaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.novaToolStripMenuItem.Text = "Nova";
             this.novaToolStripMenuItem.Click += new System.EventHandler(this.novaToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             // 
             this.pregledToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.pretraga;
             this.pregledToolStripMenuItem.Name = "pregledToolStripMenuItem";
-            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.pregledToolStripMenuItem.Text = "Pregled";
             this.pregledToolStripMenuItem.Click += new System.EventHandler(this.pregledToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@
             this.zakupacToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.noviToolStripMenuItem,
             this.pregledToolStripMenuItem1});
-            this.zakupacToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.zakupac48;
+            this.zakupacToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.crniZakupac48;
             this.zakupacToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.zakupacToolStripMenuItem.Name = "zakupacToolStripMenuItem";
             this.zakupacToolStripMenuItem.Size = new System.Drawing.Size(118, 52);
@@ -137,7 +137,7 @@
             // 
             this.naplacivanjeToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.naplacivanje1;
             this.naplacivanjeToolStripMenuItem.Name = "naplacivanjeToolStripMenuItem";
-            this.naplacivanjeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.naplacivanjeToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.naplacivanjeToolStripMenuItem.Text = "Naplaćivanje";
             this.naplacivanjeToolStripMenuItem.Click += new System.EventHandler(this.naplacivanjeToolStripMenuItem_Click);
             // 
@@ -145,7 +145,7 @@
             // 
             this.vrsteRashodaToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.rashodi2;
             this.vrsteRashodaToolStripMenuItem.Name = "vrsteRashodaToolStripMenuItem";
-            this.vrsteRashodaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vrsteRashodaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.vrsteRashodaToolStripMenuItem.Text = "Vrste rashoda";
             this.vrsteRashodaToolStripMenuItem.Click += new System.EventHandler(this.vrsteRashodaToolStripMenuItem_Click);
             // 
@@ -172,7 +172,7 @@
             // 
             this.mojiPodaciToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.profile16;
             this.mojiPodaciToolStripMenuItem.Name = "mojiPodaciToolStripMenuItem";
-            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.mojiPodaciToolStripMenuItem.Text = "Moji podaci";
             this.mojiPodaciToolStripMenuItem.Click += new System.EventHandler(this.mojiPodaciToolStripMenuItem_Click);
             // 
@@ -180,7 +180,7 @@
             // 
             this.backupToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.database16;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.backupToolStripMenuItem.Text = "Backup";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
