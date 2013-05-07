@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED6D12E0-1763-49F9-AD3A-8FEEA4CF915C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IKZavrsni</RootNamespace>
+    <AssemblyName>IKZavrsni</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvidencijaDijelaNekretnine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvidencijaDijelaNekretnine.Designer.cs">
+      <DependentUpon>EvidencijaDijelaNekretnine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvidencijaNekretnine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvidencijaNekretnine.Designer.cs">
+      <DependentUpon>EvidencijaNekretnine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvidencijaZakupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvidencijaZakupca.Designer.cs">
+      <DependentUpon>EvidencijaZakupca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meni.Designer.cs">
+      <DependentUpon>Meni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OcitanjeRashoda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OcitanjeRashoda.Designer.cs">
+      <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MojiPodaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MojiPodaci.Designer.cs">
+      <DependentUpon>MojiPodaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledNekretnina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledNekretnina.Designer.cs">
+      <DependentUpon>PregledNekretnina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Naplacivanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naplacivanje.Designer.cs">
+      <DependentUpon>Naplacivanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledZakupaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledZakupaca.Designer.cs">
+      <DependentUpon>PregledZakupaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava.Designer.cs">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vrste rashoda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vrste rashoda.Designer.cs">
+      <DependentUpon>Vrste rashoda.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvidencijaDijelaNekretnine.resx">
+      <DependentUpon>EvidencijaDijelaNekretnine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvidencijaNekretnine.resx">
+      <DependentUpon>EvidencijaNekretnine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvidencijaZakupca.resx">
+      <DependentUpon>EvidencijaZakupca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meni.resx">
+      <DependentUpon>Meni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OcitanjeRashoda.resx">
+      <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MojiPodaci.resx">
+      <DependentUpon>MojiPodaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledNekretnina.resx">
+      <DependentUpon>PregledNekretnina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naplacivanje.resx">
+      <DependentUpon>Naplacivanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledZakupaca.resx">
+      <DependentUpon>PregledZakupaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava.resx">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vrste rashoda.resx">
+      <DependentUpon>Vrste rashoda.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaLogina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikonaNekretine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikonaZakupca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaLogina2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plavaPozadinaMenija.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naplacivanje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rashodi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestaj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postavke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultNekretnina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zakupac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodajZakupca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pretraga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rashodi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postavke1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestaj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestaj48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomoc48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postavke48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zakupac48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rashodi48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nekretnina48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nekretnina16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izlaz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section_pics_building.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skyscraper-4-QRNIWTZ8Z1-1400x1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_03_1---Skyscraper_web.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tampa-skyscraper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skyscraper-Architecture-Design-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section_pics_building1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildings-skyscraper_003_1024x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skyscrapers-1024x1024-ipad-wallpapers.co.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section_pics_building2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neboder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siva2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siva3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staklo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naplacivanje1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
