@@ -321,6 +321,57 @@
   <ItemGroup>
     <None Include="Resources\crniZakupac48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanje48.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanje48.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanje48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpcrni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inward_black_standby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_users-add-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_add.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
