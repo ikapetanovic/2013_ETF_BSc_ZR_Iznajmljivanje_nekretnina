@@ -21,5 +21,11 @@ namespace IKZavrsni
             OcitanjeRashoda or = new OcitanjeRashoda();
             or.Show();
         }
+
+        private void dodajDio_Click(object sender, EventArgs e)
+        {
+            EvidencijaDijelaNekretnine edn = new EvidencijaDijelaNekretnine();
+            edn.Show();
+        }
     }
 }

@@ -79,7 +79,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 397);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(269, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(265, 22);
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -108,7 +108,7 @@
             this.columnHeader2});
             this.listViewKnjiga.FullRowSelect = true;
             this.listViewKnjiga.GridLines = true;
-            this.listViewKnjiga.Location = new System.Drawing.Point(12, 93);
+            this.listViewKnjiga.Location = new System.Drawing.Point(15, 93);
             this.listViewKnjiga.MultiSelect = false;
             this.listViewKnjiga.Name = "listViewKnjiga";
             this.listViewKnjiga.Size = new System.Drawing.Size(237, 265);
@@ -134,7 +134,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(174, 364);
+            this.button1.Location = new System.Drawing.Point(178, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 419);
+            this.ClientSize = new System.Drawing.Size(265, 419);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
