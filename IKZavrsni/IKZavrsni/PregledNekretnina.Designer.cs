@@ -52,7 +52,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.dodajDio = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -253,21 +253,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // dodajDio
             // 
-            this.button4.Location = new System.Drawing.Point(190, 552);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Predračun";
-            this.button4.UseVisualStyleBackColor = true;
+            this.dodajDio.Location = new System.Drawing.Point(279, 321);
+            this.dodajDio.Name = "dodajDio";
+            this.dodajDio.Size = new System.Drawing.Size(75, 23);
+            this.dodajDio.TabIndex = 28;
+            this.dodajDio.Text = "Dodaj dio";
+            this.dodajDio.UseVisualStyleBackColor = true;
+            this.dodajDio.Click += new System.EventHandler(this.dodajDio_Click);
             // 
             // PregledNekretnina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 610);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.dodajDio);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -316,6 +317,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button dodajDio;
     }
 }

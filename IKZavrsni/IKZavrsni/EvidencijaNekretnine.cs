@@ -22,9 +22,8 @@ namespace IKZavrsni
         }
 
         private void unesi_Click(object sender, EventArgs e)
-        {
-            EvidencijaDijelaNekretnine edn = new EvidencijaDijelaNekretnine();
-            edn.Show();
+        {           
+            
         }
     }
 }
