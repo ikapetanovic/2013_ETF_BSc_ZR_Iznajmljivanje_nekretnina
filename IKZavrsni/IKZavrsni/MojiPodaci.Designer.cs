@@ -34,9 +34,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,7 +62,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(235, 465);
+            this.button1.Location = new System.Drawing.Point(235, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 22;
@@ -73,7 +71,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(154, 465);
+            this.button5.Location = new System.Drawing.Point(154, 426);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 21;
@@ -84,13 +82,11 @@
             // 
             this.groupBox4.Controls.Add(this.textBox9);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.textBox11);
             this.groupBox4.Location = new System.Drawing.Point(12, 230);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(298, 124);
+            this.groupBox4.Size = new System.Drawing.Size(298, 94);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ostali podaci";
@@ -111,13 +107,6 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Adresa:";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(115, 87);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(165, 20);
-            this.textBox10.TabIndex = 10;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -126,15 +115,6 @@
             this.label10.Size = new System.Drawing.Size(33, 13);
             this.label10.TabIndex = 3;
             this.label10.Text = "Grad:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(16, 87);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 13);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Država:";
             // 
             // textBox11
             // 
@@ -254,7 +234,7 @@
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Window;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 507);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 455);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(322, 22);
             this.statusStrip1.TabIndex = 23;
@@ -266,7 +246,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 360);
+            this.groupBox1.Location = new System.Drawing.Point(12, 330);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(298, 90);
             this.groupBox1.TabIndex = 24;
@@ -310,7 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 529);
+            this.ClientSize = new System.Drawing.Size(322, 477);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button1);
@@ -343,9 +323,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label12;
