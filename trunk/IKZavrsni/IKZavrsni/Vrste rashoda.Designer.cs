@@ -31,46 +31,26 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VrsteRashoda));
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.uneseno = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listViewKnjiga = new System.Windows.Forms.ListView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 77);
+            this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(189, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Pregled informacija o vrstama rashoda:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Unesi:";
-            // 
-            // uneseno
-            // 
-            this.uneseno.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.uneseno.Location = new System.Drawing.Point(72, 19);
-            this.uneseno.Name = "uneseno";
-            this.uneseno.Size = new System.Drawing.Size(148, 20);
-            this.uneseno.TabIndex = 3;
             // 
             // statusStrip1
             // 
@@ -108,10 +88,10 @@
             this.columnHeader2});
             this.listViewKnjiga.FullRowSelect = true;
             this.listViewKnjiga.GridLines = true;
-            this.listViewKnjiga.Location = new System.Drawing.Point(15, 93);
+            this.listViewKnjiga.Location = new System.Drawing.Point(15, 37);
             this.listViewKnjiga.MultiSelect = false;
             this.listViewKnjiga.Name = "listViewKnjiga";
-            this.listViewKnjiga.Size = new System.Drawing.Size(237, 265);
+            this.listViewKnjiga.Size = new System.Drawing.Size(237, 321);
             this.listViewKnjiga.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listViewKnjiga.TabIndex = 6;
             this.listViewKnjiga.UseCompatibleStateImageBehavior = false;
@@ -121,33 +101,31 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.uneseno);
-            this.groupBox1.Location = new System.Drawing.Point(15, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(237, 52);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pretraživanje";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(178, 364);
+            this.button1.Location = new System.Drawing.Point(97, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Unesi";
+            this.button1.Text = "Spasi";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(178, 364);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Izađi";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // VrsteRashoda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(265, 419);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.listViewKnjiga);
@@ -159,8 +137,6 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,8 +145,6 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox uneseno;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -178,6 +152,6 @@
         private System.Windows.Forms.ListView listViewKnjiga;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
