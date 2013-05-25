@@ -97,12 +97,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(12, 92);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(374, 26);
+            this.label7.Size = new System.Drawing.Size(452, 30);
             this.label7.TabIndex = 22;
-            this.label7.Text = "\"Objektno orijentisana analiza i dizajn aplikacije za praćenje prihoda i rashoda " +
-                "\r\niznajmljivanja nekretnina primjenom UML notacije\"";
+            this.label7.Text = "\"Objektno orijentisana analiza i dizajn aplikacije za praćenje \r\nprihoda i rashod" +
+                "a iznajmljivanja nekretnina primjenom UML notacije\"\r\n";
             // 
             // label4
             // 
@@ -118,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(392, 276);
+            this.ClientSize = new System.Drawing.Size(473, 276);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);

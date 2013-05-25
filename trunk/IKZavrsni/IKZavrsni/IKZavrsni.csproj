@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBConnection">
+      <HintPath>..\DBConnection\bin\Debug\DBConnection.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\MySql.Data.dll</HintPath>
@@ -63,29 +66,35 @@
     <Compile Include="Backup.Designer.cs">
       <DependentUpon>Backup.cs</DependentUpon>
     </Compile>
-    <Compile Include="EvidencijaDijelaNekretnine.cs">
+    <Compile Include="DioNekretnine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EvidencijaDijelaNekretnine.Designer.cs">
-      <DependentUpon>EvidencijaDijelaNekretnine.cs</DependentUpon>
+    <Compile Include="DioNekretnine.Designer.cs">
+      <DependentUpon>DioNekretnine.cs</DependentUpon>
     </Compile>
-    <Compile Include="EvidencijaNekretnine.cs">
+    <Compile Include="Iznajmljivanje.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EvidencijaNekretnine.Designer.cs">
-      <DependentUpon>EvidencijaNekretnine.cs</DependentUpon>
+    <Compile Include="Iznajmljivanje.Designer.cs">
+      <DependentUpon>Iznajmljivanje.cs</DependentUpon>
     </Compile>
-    <Compile Include="EvidencijaZakupca.cs">
+    <Compile Include="Nekretnina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EvidencijaZakupca.Designer.cs">
-      <DependentUpon>EvidencijaZakupca.cs</DependentUpon>
+    <Compile Include="Nekretnina.Designer.cs">
+      <DependentUpon>Nekretnina.cs</DependentUpon>
     </Compile>
-    <Compile Include="Meni.cs">
+    <Compile Include="Zakupac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Meni.Designer.cs">
-      <DependentUpon>Meni.cs</DependentUpon>
+    <Compile Include="Zakupac.Designer.cs">
+      <DependentUpon>Zakupac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izbornik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izbornik.Designer.cs">
+      <DependentUpon>Izbornik.cs</DependentUpon>
     </Compile>
     <Compile Include="OcitanjeRashoda.cs">
       <SubType>Form</SubType>
@@ -137,17 +146,20 @@
     <EmbeddedResource Include="Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EvidencijaDijelaNekretnine.resx">
-      <DependentUpon>EvidencijaDijelaNekretnine.cs</DependentUpon>
+    <EmbeddedResource Include="DioNekretnine.resx">
+      <DependentUpon>DioNekretnine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EvidencijaNekretnine.resx">
-      <DependentUpon>EvidencijaNekretnine.cs</DependentUpon>
+    <EmbeddedResource Include="Iznajmljivanje.resx">
+      <DependentUpon>Iznajmljivanje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EvidencijaZakupca.resx">
-      <DependentUpon>EvidencijaZakupca.cs</DependentUpon>
+    <EmbeddedResource Include="Nekretnina.resx">
+      <DependentUpon>Nekretnina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Meni.resx">
-      <DependentUpon>Meni.cs</DependentUpon>
+    <EmbeddedResource Include="Zakupac.resx">
+      <DependentUpon>Zakupac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izbornik.resx">
+      <DependentUpon>Izbornik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OcitanjeRashoda.resx">
       <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
@@ -375,6 +387,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

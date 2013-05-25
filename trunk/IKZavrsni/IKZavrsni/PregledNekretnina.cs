@@ -24,7 +24,7 @@ namespace IKZavrsni
 
         private void dodajDio_Click(object sender, EventArgs e)
         {
-            EvidencijaDijelaNekretnine edn = new EvidencijaDijelaNekretnine();
+            EvidencijaDijelaKojiSeIznajmljuje edn = new EvidencijaDijelaKojiSeIznajmljuje();
             edn.Show();
         }
     }
