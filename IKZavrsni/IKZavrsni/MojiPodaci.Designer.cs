@@ -29,61 +29,65 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MojiPodaci));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.izadji = new System.Windows.Forms.Button();
+            this.spasi = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.grad = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.adresa = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.mobilniTelefon = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.fiksniTelefon = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.prezime = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.ime = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lozinka = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.korisnickoIme = new System.Windows.Forms.TextBox();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // izadji
             // 
-            this.button1.Location = new System.Drawing.Point(235, 426);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Izađi";
-            this.button1.UseVisualStyleBackColor = true;
+            this.izadji.Location = new System.Drawing.Point(235, 426);
+            this.izadji.Name = "izadji";
+            this.izadji.Size = new System.Drawing.Size(75, 23);
+            this.izadji.TabIndex = 22;
+            this.izadji.Text = "Izađi";
+            this.izadji.UseVisualStyleBackColor = true;
+            this.izadji.Click += new System.EventHandler(this.izadji_Click);
             // 
-            // button5
+            // spasi
             // 
-            this.button5.Location = new System.Drawing.Point(154, 426);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Spasi";
-            this.button5.UseVisualStyleBackColor = true;
+            this.spasi.Location = new System.Drawing.Point(154, 426);
+            this.spasi.Name = "spasi";
+            this.spasi.Size = new System.Drawing.Size(75, 23);
+            this.spasi.TabIndex = 21;
+            this.spasi.Text = "Spasi";
+            this.spasi.UseVisualStyleBackColor = true;
+            this.spasi.Click += new System.EventHandler(this.spasi_Click);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox9);
+            this.groupBox4.Controls.Add(this.grad);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.textBox11);
+            this.groupBox4.Controls.Add(this.adresa);
             this.groupBox4.Location = new System.Drawing.Point(12, 230);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(298, 94);
@@ -91,12 +95,12 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ostali podaci";
             // 
-            // textBox9
+            // grad
             // 
-            this.textBox9.Location = new System.Drawing.Point(115, 61);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(165, 20);
-            this.textBox9.TabIndex = 9;
+            this.grad.Location = new System.Drawing.Point(115, 61);
+            this.grad.Name = "grad";
+            this.grad.Size = new System.Drawing.Size(165, 20);
+            this.grad.TabIndex = 9;
             // 
             // label9
             // 
@@ -116,21 +120,21 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Grad:";
             // 
-            // textBox11
+            // adresa
             // 
-            this.textBox11.Location = new System.Drawing.Point(115, 31);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(165, 20);
-            this.textBox11.TabIndex = 8;
+            this.adresa.Location = new System.Drawing.Point(115, 31);
+            this.adresa.Name = "adresa";
+            this.adresa.Size = new System.Drawing.Size(165, 20);
+            this.adresa.TabIndex = 8;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.textBox12);
+            this.groupBox5.Controls.Add(this.email);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.textBox13);
+            this.groupBox5.Controls.Add(this.mobilniTelefon);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Controls.Add(this.textBox14);
+            this.groupBox5.Controls.Add(this.fiksniTelefon);
             this.groupBox5.Location = new System.Drawing.Point(12, 108);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(298, 116);
@@ -147,12 +151,12 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Fiksni telefon:";
             // 
-            // textBox12
+            // email
             // 
-            this.textBox12.Location = new System.Drawing.Point(115, 84);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(165, 20);
-            this.textBox12.TabIndex = 13;
+            this.email.Location = new System.Drawing.Point(115, 84);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(165, 20);
+            this.email.TabIndex = 13;
             // 
             // label13
             // 
@@ -163,12 +167,12 @@
             this.label13.TabIndex = 6;
             this.label13.Text = "Mobilni telefon:";
             // 
-            // textBox13
+            // mobilniTelefon
             // 
-            this.textBox13.Location = new System.Drawing.Point(115, 58);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(165, 20);
-            this.textBox13.TabIndex = 12;
+            this.mobilniTelefon.Location = new System.Drawing.Point(115, 58);
+            this.mobilniTelefon.Name = "mobilniTelefon";
+            this.mobilniTelefon.Size = new System.Drawing.Size(165, 20);
+            this.mobilniTelefon.TabIndex = 12;
             // 
             // label14
             // 
@@ -179,19 +183,19 @@
             this.label14.TabIndex = 7;
             this.label14.Text = "Email:";
             // 
-            // textBox14
+            // fiksniTelefon
             // 
-            this.textBox14.Location = new System.Drawing.Point(115, 32);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(165, 20);
-            this.textBox14.TabIndex = 11;
+            this.fiksniTelefon.Location = new System.Drawing.Point(115, 32);
+            this.fiksniTelefon.Name = "fiksniTelefon";
+            this.fiksniTelefon.Size = new System.Drawing.Size(165, 20);
+            this.fiksniTelefon.TabIndex = 11;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox15);
+            this.groupBox6.Controls.Add(this.prezime);
             this.groupBox6.Controls.Add(this.label15);
             this.groupBox6.Controls.Add(this.label16);
-            this.groupBox6.Controls.Add(this.textBox16);
+            this.groupBox6.Controls.Add(this.ime);
             this.groupBox6.Location = new System.Drawing.Point(12, 12);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(298, 90);
@@ -199,12 +203,12 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Lični podaci";
             // 
-            // textBox15
+            // prezime
             // 
-            this.textBox15.Location = new System.Drawing.Point(115, 58);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(165, 20);
-            this.textBox15.TabIndex = 3;
+            this.prezime.Location = new System.Drawing.Point(115, 58);
+            this.prezime.Name = "prezime";
+            this.prezime.Size = new System.Drawing.Size(165, 20);
+            this.prezime.TabIndex = 3;
             // 
             // label15
             // 
@@ -224,28 +228,35 @@
             this.label16.TabIndex = 1;
             this.label16.Text = "Ime:";
             // 
-            // textBox16
+            // ime
             // 
-            this.textBox16.Location = new System.Drawing.Point(115, 32);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(165, 20);
-            this.textBox16.TabIndex = 0;
+            this.ime.Location = new System.Drawing.Point(115, 32);
+            this.ime.Name = "ime";
+            this.ime.Size = new System.Drawing.Size(165, 20);
+            this.ime.TabIndex = 0;
             // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Window;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 455);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(322, 22);
             this.statusStrip1.TabIndex = 23;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.lozinka);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.korisnickoIme);
             this.groupBox1.Location = new System.Drawing.Point(12, 330);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(298, 90);
@@ -253,13 +264,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pristupni podaci";
             // 
-            // textBox1
+            // lozinka
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 3;
+            this.lozinka.Location = new System.Drawing.Point(115, 58);
+            this.lozinka.Name = "lozinka";
+            this.lozinka.PasswordChar = '*';
+            this.lozinka.Size = new System.Drawing.Size(165, 20);
+            this.lozinka.TabIndex = 3;
             // 
             // label1
             // 
@@ -279,12 +290,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Korisničko ime:";
             // 
-            // textBox2
+            // korisnickoIme
             // 
-            this.textBox2.Location = new System.Drawing.Point(115, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 0;
+            this.korisnickoIme.Location = new System.Drawing.Point(115, 32);
+            this.korisnickoIme.Name = "korisnickoIme";
+            this.korisnickoIme.Size = new System.Drawing.Size(165, 20);
+            this.korisnickoIme.TabIndex = 0;
             // 
             // MojiPodaci
             // 
@@ -293,8 +304,8 @@
             this.ClientSize = new System.Drawing.Size(322, 477);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.izadji);
+            this.Controls.Add(this.spasi);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
@@ -303,12 +314,15 @@
             this.Name = "MojiPodaci";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Moji podaci";
+            this.Load += new System.EventHandler(this.MojiPodaci_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -318,31 +332,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button izadji;
+        private System.Windows.Forms.Button spasi;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox grad;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox adresa;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox mobilniTelefon;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox fiksniTelefon;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox prezime;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox ime;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lozinka;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox korisnickoIme;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
 
     }
 }

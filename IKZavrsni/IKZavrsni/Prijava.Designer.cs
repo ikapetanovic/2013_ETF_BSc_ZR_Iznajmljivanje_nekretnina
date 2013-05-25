@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lozinka = new System.Windows.Forms.TextBox();
             this.korisnickoIme = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.izadji = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,14 +102,15 @@
             this.korisnickoIme.Size = new System.Drawing.Size(183, 20);
             this.korisnickoIme.TabIndex = 7;
             // 
-            // button1
+            // izadji
             // 
-            this.button1.Location = new System.Drawing.Point(127, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Izađi";
-            this.button1.UseVisualStyleBackColor = true;
+            this.izadji.Location = new System.Drawing.Point(127, 313);
+            this.izadji.Name = "izadji";
+            this.izadji.Size = new System.Drawing.Size(82, 23);
+            this.izadji.TabIndex = 13;
+            this.izadji.Text = "Izađi";
+            this.izadji.UseVisualStyleBackColor = true;
+            this.izadji.Click += new System.EventHandler(this.izadji_Click);
             // 
             // Prijava
             // 
@@ -118,7 +119,7 @@
             this.BackgroundImage = global::IKZavrsni.Properties.Resources.pozadinaLogina;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(240, 361);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.izadji);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.uredu);
             this.Controls.Add(this.label2);
@@ -146,7 +147,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox lozinka;
         private System.Windows.Forms.TextBox korisnickoIme;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button izadji;
     }
 }
 
