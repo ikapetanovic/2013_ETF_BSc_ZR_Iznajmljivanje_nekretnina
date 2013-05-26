@@ -12,6 +12,8 @@ using DBConnection;
 
 namespace DBConnection
 {
+    // DAO - Data Access Object
+
     public class DAO
     {
 
@@ -29,9 +31,11 @@ namespace DBConnection
             dataConnection.Close();
         }
 
+// KORISNIK
+        
         /* IZBRISATI? */
 
-        public int VratiUserID(string korisnicko_ime, string sifra)
+        public int VratiKorisnikID(string korisnicko_ime, string sifra)
         {
             try
             {
@@ -40,8 +44,11 @@ namespace DBConnection
                 dataCommand.CommandText = "SELECT korisnikID FROM korisnici WHERE korisnickoIme = '" + korisnicko_ime + "' AND lozinka = '" + sifra + "';";
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
                 dataReader.Read();
+
                 int id = dataReader.GetInt32(0);
+
                 dataReader.Close();
+
                 return id;
             }
             catch (MySqlException izuzetak)
@@ -50,21 +57,16 @@ namespace DBConnection
             }
 
         }
-        /**/
 
 
-
-
-// KORISNIK
-
-        public bool ProvjeriPristup(string korisnicko_ime, string sifra)
+        public bool ProvjeriPristup(string korisnickoIme1, string lozinka1)
         {
             try
             {
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
 
-                dataCommand.CommandText = "SELECT korisnikID FROM korisnici WHERE korisnickoIme = '" + korisnicko_ime + "' AND lozinka = '" + sifra + "';";
+                dataCommand.CommandText = "SELECT korisnikID FROM korisnici WHERE korisnickoIme = '" + korisnickoIme1 + "' AND lozinka = '" + lozinka1 + "';";
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
                 dataReader.Read();
 
@@ -272,6 +274,49 @@ namespace DBConnection
                 throw new Exception(izuzetak.Message);
             }
         }
+
+        public bool IzbrisiNekretninu(int nekretninaID)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                dataCommand.CommandText = "DELETE FROM nekretnine WHERE nekretninaID = " + nekretninaID + ";";
+                return dataCommand.ExecuteNonQuery() > 0;
+
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+
+        }
+
+        /*
+
+        public Nekretnina VratiNekretninu(string isbn)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM knjige WHERE ISBN = '" + isbn + "';";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                dataReader.Read();
+                Knjiga k = new Knjiga(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetInt32(5), dataReader.GetInt32(6), dataReader.GetInt32(7));
+                dataReader.Close();
+                return k;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+
+        }
+         * */
 
 // VRSTA RASHODA
 

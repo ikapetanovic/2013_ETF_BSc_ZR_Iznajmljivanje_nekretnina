@@ -11,17 +11,17 @@ namespace DBConnection
         
         public Korisnik() { }
 
-        public Korisnik(string i, string p, string ft, string mt, string e, string a, string g, string ki, string l)
+        public Korisnik(string ime, string prezime, string fiksniTelefon, string mobilniTelefon, string email, string adresa, string grad, string korisnickoIme, string lozinka)
         {
-            ime = i;
-            prezime = p;
-            fiksniTelefon = ft;
-            mobilniTelefon = mt;
-            email = e;
-            adresa = a;
-            grad = g; 
-            korisnickoIme = ki;
-            lozinka = l;
+            this.ime = ime;
+            this.prezime = prezime;
+            this.fiksniTelefon = fiksniTelefon;
+            this.mobilniTelefon = mobilniTelefon;
+            this.email = email;
+            this.adresa = adresa;
+            this.grad = grad;
+            this.korisnickoIme = korisnickoIme;
+            this.lozinka = lozinka;
         }
         
         public string Ime
