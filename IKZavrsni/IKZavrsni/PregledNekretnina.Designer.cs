@@ -44,15 +44,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.uneseno = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dodajDio = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.azuriraj1 = new System.Windows.Forms.Button();
+            this.dodajDioZaIznajmljivanje = new System.Windows.Forms.Button();
+            this.brisi1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.brisi2 = new System.Windows.Forms.Button();
+            this.azuriraj2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -183,33 +183,33 @@
             this.uneseno.Size = new System.Drawing.Size(171, 20);
             this.uneseno.TabIndex = 3;
             // 
-            // button2
+            // azuriraj1
             // 
-            this.button2.Location = new System.Drawing.Point(15, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Izmijeni";
-            this.button2.UseVisualStyleBackColor = true;
+            this.azuriraj1.Location = new System.Drawing.Point(15, 278);
+            this.azuriraj1.Name = "azuriraj1";
+            this.azuriraj1.Size = new System.Drawing.Size(75, 23);
+            this.azuriraj1.TabIndex = 15;
+            this.azuriraj1.Text = "Ažuriraj";
+            this.azuriraj1.UseVisualStyleBackColor = true;
             // 
-            // dodajDio
+            // dodajDioZaIznajmljivanje
             // 
-            this.dodajDio.Location = new System.Drawing.Point(425, 278);
-            this.dodajDio.Name = "dodajDio";
-            this.dodajDio.Size = new System.Drawing.Size(139, 23);
-            this.dodajDio.TabIndex = 28;
-            this.dodajDio.Text = "Dodaj dio za iznajmljivanje";
-            this.dodajDio.UseVisualStyleBackColor = true;
-            this.dodajDio.Click += new System.EventHandler(this.dodajDio_Click);
+            this.dodajDioZaIznajmljivanje.Location = new System.Drawing.Point(425, 278);
+            this.dodajDioZaIznajmljivanje.Name = "dodajDioZaIznajmljivanje";
+            this.dodajDioZaIznajmljivanje.Size = new System.Drawing.Size(139, 23);
+            this.dodajDioZaIznajmljivanje.TabIndex = 28;
+            this.dodajDioZaIznajmljivanje.Text = "Dodaj dio za iznajmljivanje";
+            this.dodajDioZaIznajmljivanje.UseVisualStyleBackColor = true;
+            this.dodajDioZaIznajmljivanje.Click += new System.EventHandler(this.dodajDio_Click);
             // 
-            // button4
+            // brisi1
             // 
-            this.button4.Location = new System.Drawing.Point(97, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Briši";
-            this.button4.UseVisualStyleBackColor = true;
+            this.brisi1.Location = new System.Drawing.Point(97, 278);
+            this.brisi1.Name = "brisi1";
+            this.brisi1.Size = new System.Drawing.Size(75, 23);
+            this.brisi1.TabIndex = 29;
+            this.brisi1.Text = "Briši";
+            this.brisi1.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
@@ -245,23 +245,23 @@
             this.columnHeader7.Text = "Iznos najma";
             this.columnHeader7.Width = 159;
             // 
-            // button1
+            // brisi2
             // 
-            this.button1.Location = new System.Drawing.Point(97, 509);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Briši";
-            this.button1.UseVisualStyleBackColor = true;
+            this.brisi2.Location = new System.Drawing.Point(97, 509);
+            this.brisi2.Name = "brisi2";
+            this.brisi2.Size = new System.Drawing.Size(75, 23);
+            this.brisi2.TabIndex = 32;
+            this.brisi2.Text = "Briši";
+            this.brisi2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // azuriraj2
             // 
-            this.button3.Location = new System.Drawing.Point(15, 509);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Izmijeni";
-            this.button3.UseVisualStyleBackColor = true;
+            this.azuriraj2.Location = new System.Drawing.Point(15, 509);
+            this.azuriraj2.Name = "azuriraj2";
+            this.azuriraj2.Size = new System.Drawing.Size(75, 23);
+            this.azuriraj2.TabIndex = 31;
+            this.azuriraj2.Text = "Ažuriraj";
+            this.azuriraj2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -278,12 +278,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 568);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.brisi2);
+            this.Controls.Add(this.azuriraj2);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.dodajDio);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.brisi1);
+            this.Controls.Add(this.dodajDioZaIznajmljivanje);
+            this.Controls.Add(this.azuriraj1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.statusStrip1);
@@ -319,12 +319,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox uneseno;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button dodajDio;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button azuriraj1;
+        private System.Windows.Forms.Button dodajDioZaIznajmljivanje;
+        private System.Windows.Forms.Button brisi1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button brisi2;
+        private System.Windows.Forms.Button azuriraj2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
