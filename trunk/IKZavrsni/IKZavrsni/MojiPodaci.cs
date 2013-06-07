@@ -42,12 +42,10 @@ namespace IKZavrsni
                 {
                     Korisnik k = new Korisnik(ime.Text, prezime.Text, fiksniTelefon.Text, mobilniTelefon.Text, email.Text, adresa.Text, grad.Text, korisnickoIme.Text, lozinka.Text);
 
-                    // provjeri podatke!
                     DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
-                                       
-                    //int id = dao.VratiUserID(korisnickoIme.Text, lozinka.Text);
                     dao.AzurirajKorisnika(k, 1);
 
+                    toolStripStatusLabel1.ForeColor = Color.Green;
                     toolStripStatusLabel1.Text = "Podaci su spašeni.";
                 }               
 
@@ -65,23 +63,31 @@ namespace IKZavrsni
         }
 
         private void MojiPodaci_Load(object sender, EventArgs e)
-        {
-
-            /*
-            MessageBox.Show("Dot Net Perls is awesome.1");           
+        {    
             DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
 
-            MessageBox.Show(korisnickoIme3);
-            
-            Korisnik k = dao.VratiKorisnika(korisnickoIme3);
-            MessageBox.Show("Dot Net Perls is awesome.3");
-            ime.Text = k.Ime;
-            MessageBox.Show("Dot Net Perls is awesome.4");
-            toolStripStatusLabel1.Text = k.Ime.ToString();
-             */
-            
+            try
+            {
+                Korisnik k = dao.VratiKorisnika(korisnickoIme3);
+                
+                ime.Text = k.Ime;
+                prezime.Text = k.Prezime;
+                fiksniTelefon.Text = k.FiksniTelefon;
+                mobilniTelefon.Text = k.MobilniTelefon;
+                email.Text = k.Email;
+                adresa.Text = k.Adresa;
+                grad.Text = k.Grad;
+                korisnickoIme.Text = k.KorisnickoIme;
+                lozinka.Text = k.Lozinka;
+            }
+            catch (Exception izuzetak)
+            {
+                MessageBox.Show(izuzetak.Message);
+            } 
             
         }
+
+
         
     }
 }
