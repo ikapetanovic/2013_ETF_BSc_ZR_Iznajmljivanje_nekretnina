@@ -8,6 +8,7 @@ namespace DBConnection
     public class VrstaRashoda
     {
 
+        private int id;
         private string naziv;
         private double cijena;
         
@@ -19,6 +20,12 @@ namespace DBConnection
             this.cijena = cijena;
         }
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        
         public string Naziv
         {
             get { return naziv; }

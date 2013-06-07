@@ -57,6 +57,10 @@ namespace IKZavrsni
             this.Close();
         }
 
+        private void lozinka_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
 
     }
 }

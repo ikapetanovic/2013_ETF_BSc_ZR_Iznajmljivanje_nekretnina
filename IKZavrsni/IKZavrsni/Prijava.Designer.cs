@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lozinka = new System.Windows.Forms.TextBox();
             this.korisnickoIme = new System.Windows.Forms.TextBox();
-            this.izadji = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,11 +58,11 @@
             // 
             // uredu
             // 
-            this.uredu.Location = new System.Drawing.Point(26, 313);
+            this.uredu.Location = new System.Drawing.Point(127, 313);
             this.uredu.Name = "uredu";
             this.uredu.Size = new System.Drawing.Size(82, 23);
             this.uredu.TabIndex = 11;
-            this.uredu.Text = "Uredu";
+            this.uredu.Text = "Prijavi se";
             this.uredu.UseVisualStyleBackColor = true;
             this.uredu.Click += new System.EventHandler(this.uredu_Click);
             // 
@@ -94,6 +93,7 @@
             this.lozinka.PasswordChar = '*';
             this.lozinka.Size = new System.Drawing.Size(183, 20);
             this.lozinka.TabIndex = 8;
+            this.lozinka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lozinka_KeyPress);
             // 
             // korisnickoIme
             // 
@@ -102,16 +102,6 @@
             this.korisnickoIme.Size = new System.Drawing.Size(183, 20);
             this.korisnickoIme.TabIndex = 7;
             // 
-            // izadji
-            // 
-            this.izadji.Location = new System.Drawing.Point(127, 313);
-            this.izadji.Name = "izadji";
-            this.izadji.Size = new System.Drawing.Size(82, 23);
-            this.izadji.TabIndex = 13;
-            this.izadji.Text = "Izađi";
-            this.izadji.UseVisualStyleBackColor = true;
-            this.izadji.Click += new System.EventHandler(this.izadji_Click);
-            // 
             // Prijava
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,7 +109,6 @@
             this.BackgroundImage = global::IKZavrsni.Properties.Resources.pozadinaLogina;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(240, 361);
-            this.Controls.Add(this.izadji);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.uredu);
             this.Controls.Add(this.label2);
@@ -147,7 +136,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox lozinka;
         private System.Windows.Forms.TextBox korisnickoIme;
-        private System.Windows.Forms.Button izadji;
     }
 }
 

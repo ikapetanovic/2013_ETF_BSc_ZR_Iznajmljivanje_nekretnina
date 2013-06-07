@@ -40,9 +40,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.mobilniTelefon = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.fiksniTelefon = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.prezime = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -55,6 +53,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.korisnickoIme = new System.Windows.Forms.TextBox();
+            this.fiksniTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.mobilniTelefon = new System.Windows.Forms.MaskedTextBox();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -129,12 +129,12 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.mobilniTelefon);
+            this.groupBox5.Controls.Add(this.fiksniTelefon);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.email);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Controls.Add(this.mobilniTelefon);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Controls.Add(this.fiksniTelefon);
             this.groupBox5.Location = new System.Drawing.Point(12, 108);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(298, 116);
@@ -167,13 +167,6 @@
             this.label13.TabIndex = 6;
             this.label13.Text = "Mobilni telefon:";
             // 
-            // mobilniTelefon
-            // 
-            this.mobilniTelefon.Location = new System.Drawing.Point(115, 58);
-            this.mobilniTelefon.Name = "mobilniTelefon";
-            this.mobilniTelefon.Size = new System.Drawing.Size(165, 20);
-            this.mobilniTelefon.TabIndex = 12;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -182,13 +175,6 @@
             this.label14.Size = new System.Drawing.Size(35, 13);
             this.label14.TabIndex = 7;
             this.label14.Text = "Email:";
-            // 
-            // fiksniTelefon
-            // 
-            this.fiksniTelefon.Location = new System.Drawing.Point(115, 32);
-            this.fiksniTelefon.Name = "fiksniTelefon";
-            this.fiksniTelefon.Size = new System.Drawing.Size(165, 20);
-            this.fiksniTelefon.TabIndex = 11;
             // 
             // groupBox6
             // 
@@ -297,6 +283,24 @@
             this.korisnickoIme.Size = new System.Drawing.Size(165, 20);
             this.korisnickoIme.TabIndex = 0;
             // 
+            // fiksniTelefon
+            // 
+            this.fiksniTelefon.Location = new System.Drawing.Point(115, 29);
+            this.fiksniTelefon.Mask = "(999) 000-000";
+            this.fiksniTelefon.Name = "fiksniTelefon";
+            this.fiksniTelefon.Size = new System.Drawing.Size(73, 20);
+            this.fiksniTelefon.TabIndex = 14;
+            this.fiksniTelefon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // mobilniTelefon
+            // 
+            this.mobilniTelefon.Location = new System.Drawing.Point(115, 55);
+            this.mobilniTelefon.Mask = "(999) 000-000";
+            this.mobilniTelefon.Name = "mobilniTelefon";
+            this.mobilniTelefon.Size = new System.Drawing.Size(73, 20);
+            this.mobilniTelefon.TabIndex = 15;
+            this.mobilniTelefon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MojiPodaci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,9 +347,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox mobilniTelefon;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox fiksniTelefon;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox prezime;
         private System.Windows.Forms.Label label15;
@@ -358,6 +360,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox korisnickoIme;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.MaskedTextBox mobilniTelefon;
+        private System.Windows.Forms.MaskedTextBox fiksniTelefon;
 
     }
 }

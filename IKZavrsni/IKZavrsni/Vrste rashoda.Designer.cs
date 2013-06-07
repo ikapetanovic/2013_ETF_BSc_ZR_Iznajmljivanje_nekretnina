@@ -35,7 +35,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listViewKnjiga = new System.Windows.Forms.ListView();
+            this.listViewVrsteRashoda = new System.Windows.Forms.ListView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dodaj = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -94,23 +94,24 @@
             this.columnHeader2.Text = "Cijena";
             this.columnHeader2.Width = 85;
             // 
-            // listViewKnjiga
+            // listViewVrsteRashoda
             // 
-            this.listViewKnjiga.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listViewKnjiga.AllowColumnReorder = true;
-            this.listViewKnjiga.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewVrsteRashoda.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listViewVrsteRashoda.AllowColumnReorder = true;
+            this.listViewVrsteRashoda.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listViewKnjiga.FullRowSelect = true;
-            this.listViewKnjiga.GridLines = true;
-            this.listViewKnjiga.Location = new System.Drawing.Point(15, 37);
-            this.listViewKnjiga.MultiSelect = false;
-            this.listViewKnjiga.Name = "listViewKnjiga";
-            this.listViewKnjiga.Size = new System.Drawing.Size(237, 283);
-            this.listViewKnjiga.Sorting = System.Windows.Forms.SortOrder.Descending;
-            this.listViewKnjiga.TabIndex = 6;
-            this.listViewKnjiga.UseCompatibleStateImageBehavior = false;
-            this.listViewKnjiga.View = System.Windows.Forms.View.Details;
+            this.listViewVrsteRashoda.FullRowSelect = true;
+            this.listViewVrsteRashoda.GridLines = true;
+            this.listViewVrsteRashoda.Location = new System.Drawing.Point(15, 37);
+            this.listViewVrsteRashoda.MultiSelect = false;
+            this.listViewVrsteRashoda.Name = "listViewVrsteRashoda";
+            this.listViewVrsteRashoda.Size = new System.Drawing.Size(237, 283);
+            this.listViewVrsteRashoda.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.listViewVrsteRashoda.TabIndex = 6;
+            this.listViewVrsteRashoda.UseCompatibleStateImageBehavior = false;
+            this.listViewVrsteRashoda.View = System.Windows.Forms.View.Details;
+            this.listViewVrsteRashoda.ItemActivate += new System.EventHandler(this.listViewVrsteRashoda_ItemActivate);
             // 
             // errorProvider1
             // 
@@ -248,6 +249,7 @@
             this.izmijeni.TabIndex = 18;
             this.izmijeni.Text = "Izmijeni";
             this.izmijeni.UseVisualStyleBackColor = true;
+            this.izmijeni.Click += new System.EventHandler(this.izmijeni_Click);
             // 
             // obrisi
             // 
@@ -257,6 +259,7 @@
             this.obrisi.TabIndex = 19;
             this.obrisi.Text = "Obriši";
             this.obrisi.UseVisualStyleBackColor = true;
+            this.obrisi.Click += new System.EventHandler(this.obrisi_Click);
             // 
             // VrsteRashoda
             // 
@@ -270,12 +273,13 @@
             this.Controls.Add(this.dodaj);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.listViewKnjiga);
+            this.Controls.Add(this.listViewVrsteRashoda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VrsteRashoda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vrste rashoda";
+            this.Load += new System.EventHandler(this.VrsteRashoda_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -297,7 +301,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ListView listViewKnjiga;
+        private System.Windows.Forms.ListView listViewVrsteRashoda;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button dodaj;
         private System.Windows.Forms.GroupBox groupBox1;

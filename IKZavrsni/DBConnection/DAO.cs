@@ -92,19 +92,25 @@ namespace DBConnection
                 dataCommand.CommandText = "SELECT ime, prezime, fiksniTelefon, mobilniTelefon, email, adresa, grad, korisnickoIme, lozinka FROM korisnici WHERE korisnickoIme = '" + korisnickoIme3 + "';";
                 
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
-                dataReader.Read();               
-                
-                string ime = dataReader.GetString(1);
-                string prezime = dataReader.GetString(2);
-                string fiksniTelefon = dataReader.GetString(3);
-                string mobilniTelefon = dataReader.GetString(4);
-                string email = dataReader.GetString(5);
-                string adresa = dataReader.GetString(6);
-                string grad = dataReader.GetString(7);
-                string kIme = dataReader.GetString(8);
-                string lozinka = dataReader.GetString(9);
 
-                Korisnik k = new Korisnik(ime, prezime, fiksniTelefon, mobilniTelefon, email, adresa, grad, kIme, lozinka);
+                Korisnik k = null;
+
+                if (dataReader.HasRows)
+                {
+                    dataReader.Read();
+
+                    string ime = dataReader.GetString(0);
+                    string prezime = dataReader.GetString(1);
+                    string fiksniTelefon = dataReader.GetString(2);
+                    string mobilniTelefon = dataReader.GetString(3);
+                    string email = dataReader.GetString(4);
+                    string adresa = dataReader.GetString(5);
+                    string grad = dataReader.GetString(6);
+                    string kIme = dataReader.GetString(7);
+                    string lozinka = dataReader.GetString(8);
+
+                    k = new Korisnik(ime, prezime, fiksniTelefon, mobilniTelefon, email, adresa, grad, kIme, lozinka);
+                }                
                                 
                 dataReader.Close();
 
@@ -117,45 +123,6 @@ namespace DBConnection
 
         }
 
-       
-
-        /* možda izbrisati?
-
-        public bool DodajKorisnika(Korisnik k)
-        {
-            try
-            {
-                MySqlCommand dataCommand = new MySqlCommand();
-                dataCommand.Connection = dataConnection;
-                
-                
-                MySqlCommand korisnici =
-                new MySqlCommand("Insert into Korisnici(ime, prezime, fiksniTelefon, mobilniTelefon, email, adresa, grad, korisnickoIme, lozinka) "
-                   + "values(@ime,@prezime,@fiksniTelefon,@mobilniTelefon,@email,@adresa,@grad,@krisnickoIme, @lozinka);", dataConnection);
-
-                korisnici.Parameters.AddWithValue("@ime", (Object)k.Ime);
-                korisnici.Parameters.AddWithValue("@prezime", (Object)k.Prezime);
-                korisnici.Parameters.AddWithValue("@fiksniTelefon", (Object)k.FiksniTelefon);
-                korisnici.Parameters.AddWithValue("@mobilniTelefon", (Object)k.MobilniTelefon);
-                korisnici.Parameters.AddWithValue("@email", (Object)k.Email);
-                korisnici.Parameters.AddWithValue("@adresa", (Object)k.Adresa);
-                korisnici.Parameters.AddWithValue("@grad", (Object)k.Grad);
-                korisnici.Parameters.AddWithValue("@korisnickoIme", (Object)k.KorisnickoIme);
-                korisnici.Parameters.AddWithValue("@lozinka", (Object)k.Lozinka);   
-                
-                
-                korisnici.ExecuteNonQuery();
-                
-                return true;
-            }
-            catch (MySqlException)
-            {
-                throw new Exception("Nije moguće dodati korisnika u bazu.");
-            }
-
-        } 
-   
-        */
 
 
         public bool AzurirajKorisnika(Korisnik k, int id)
@@ -328,25 +295,76 @@ namespace DBConnection
                 dataCommand.Connection = dataConnection;                
 
                 MySqlCommand vrsteRashoda =
-                new MySqlCommand("Insert into vrsterashoda(naziv, cijena) "
-                   + "values(@naziv, @cijena);", dataConnection);
+                new MySqlCommand("INSERT INTO vrsterashoda(naziv, cijena) " + "VALUES(@naziv, @cijena);", dataConnection);
 
-                vrsteRashoda.Parameters.AddWithValue("@naziv", vr.Naziv);
-                vrsteRashoda.Parameters.AddWithValue("@adresa", vr.Cijena);
+                vrsteRashoda.Parameters.AddWithValue("@naziv", (Object)vr.Naziv);
+                vrsteRashoda.Parameters.AddWithValue("@cijena", (Object)vr.Cijena);
 
                 vrsteRashoda.ExecuteNonQuery();
 
                 return true;
             }
-            catch (MySqlException)
+            catch (MySqlException izuzetak)
             {
-                throw new Exception("Nije moguće dodati vrstu rashoda u bazu.");
+                throw new Exception(izuzetak.Message);
+            }
+
+        }
+
+        public List<VrstaRashoda> VratiVrsteRashoda()
+        {
+            try
+            {
+                List<VrstaRashoda> vrsteRashoda = new List<VrstaRashoda>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM vrsterashoda;";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    VrstaRashoda vr = new VrstaRashoda(dataReader.GetString(1), dataReader.GetDouble(2));
+                    vr.Id = dataReader.GetInt16(0);
+                    vrsteRashoda.Add(vr);
+                }
+
+                dataReader.Close();
+                
+                return vrsteRashoda;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+
+        }
+
+        public int VratiIdVrsteRashoda(string naziv)
+        {
+            try
+            {               
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT vrstaRashodaID FROM vrsterashoda WHERE naziv = '" + naziv + "';";
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+                
+                dataReader.Read();
+                int id = dataReader.GetInt16(0);
+                dataReader.Close();
+
+                return id;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
             }
 
         }
 
 
-        public bool AzurirajVrstuRashoda(VrstaRashoda vr, int id)
+        public bool AzurirajVrstuRashoda(VrstaRashoda vr)
         {
             try
             {
@@ -355,11 +373,11 @@ namespace DBConnection
                 dataCommand.Connection = dataConnection;
                 
                 MySqlCommand vrsteRashoda =
-                new MySqlCommand("Update vrsterashoda set naziv = @naziv, cijena = @cijena WHERE vrstaRashodaID= '" + id + "'", dataConnection);
+                new MySqlCommand("UPDATE vrsterashoda SET naziv = @naziv, cijena = @cijena WHERE vrstaRashodaID= '" + vr.Id + "';", dataConnection);
 
 
                 vrsteRashoda.Parameters.AddWithValue("@naziv", vr.Naziv);
-                vrsteRashoda.Parameters.AddWithValue("@adresa", vr.Cijena);
+                vrsteRashoda.Parameters.AddWithValue("@cijena", vr.Cijena);
 
                 vrsteRashoda.ExecuteNonQuery();
 
@@ -370,6 +388,26 @@ namespace DBConnection
             {
                 throw new Exception(izuzetak.Message);
             }
+        }
+
+
+        public bool IzbrisiVrstuRashoda(String naziv)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                dataCommand.CommandText = "DELETE FROM vrsterashoda WHERE naziv = " + naziv + ";";
+                
+                return dataCommand.ExecuteNonQuery() > 0;
+
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+
         }
 
 
