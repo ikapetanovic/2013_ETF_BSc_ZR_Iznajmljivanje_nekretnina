@@ -27,7 +27,7 @@ namespace IKZavrsni
             try
             {
 
-                DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
                 VrstaRashoda vr = new VrstaRashoda(nazivDodaj.Text, Convert.ToDouble(cijenaDodaj.Value));
                 dao.DodajVrstuRashoda(vr);
@@ -48,7 +48,7 @@ namespace IKZavrsni
             try
             {
 
-                DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
                 VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text, Convert.ToDouble(cijenaPromjena.Value));
                 dao.IzbrisiVrstuRashoda(nazivPromjena.Text);
@@ -68,7 +68,7 @@ namespace IKZavrsni
         {
             try
             {
-                DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
                 VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text, Convert.ToDouble(cijenaPromjena.Value));
                 vr.Id = dao.VratiIdVrsteRashoda(nazivPromjena.Text);
@@ -91,7 +91,7 @@ namespace IKZavrsni
             listViewVrsteRashoda.Items.Clear();
             ListViewItem temp = new ListViewItem();
 
-            DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+            DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
             vrsteRashoda = dao.VratiVrsteRashoda();
             
