@@ -28,7 +28,7 @@ namespace IKZavrsni
             try
             {
                 // Provjeriti podatke! Fino ovo poslije srediti.
-                DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
                 
 
                 if (dao.ProvjeriPristup(korisnik, sifra))

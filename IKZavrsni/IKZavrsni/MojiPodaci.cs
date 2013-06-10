@@ -42,7 +42,7 @@ namespace IKZavrsni
                 {
                     Korisnik k = new Korisnik(ime.Text, prezime.Text, fiksniTelefon.Text, mobilniTelefon.Text, email.Text, adresa.Text, grad.Text, korisnickoIme.Text, lozinka.Text);
 
-                    DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+                    DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
                     dao.AzurirajKorisnika(k, 1);
 
                     toolStripStatusLabel1.ForeColor = Color.Green;
@@ -63,8 +63,8 @@ namespace IKZavrsni
         }
 
         private void MojiPodaci_Load(object sender, EventArgs e)
-        {    
-            DAO dao = new DAO("localhost", "ikzavrsni", "root", "");
+        {
+            DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
             try
             {

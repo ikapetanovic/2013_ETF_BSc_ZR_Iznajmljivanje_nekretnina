@@ -71,7 +71,7 @@ namespace IKZavrsni
 
         private void backupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Backup b = new Backup();
+            BackupRestore b = new BackupRestore();
             b.Show();
         }
 
