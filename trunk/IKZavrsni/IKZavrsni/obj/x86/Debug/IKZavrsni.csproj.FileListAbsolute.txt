@@ -34,9 +34,6 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Pro
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.VrsteRashoda.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.csproj.GenerateResource.Cache
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.EvidencijaDijelaKojiSeIznajmljuje.resources
-C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Nekretnina.resources
-C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Zakupac.resources
-C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Izbornik.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Iznajmljivanje.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\DBConnection.dll
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\DBConnection.pdb
@@ -68,3 +65,9 @@ C:\Users\batoshi\Desktop\TMP sve\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZav
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\nunit.framework.dll
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\nunit.framework.xml
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.BackupRestore.resources
+C:\Users\batoshi\Desktop\Juni 2013\RI3\Zavrsni\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.exe
+C:\Users\batoshi\Desktop\Juni 2013\RI3\Zavrsni\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.pdb
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.UnosNekretnine.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.UnosZakupca.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.IzmjenaNekretnine.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Meni.resources

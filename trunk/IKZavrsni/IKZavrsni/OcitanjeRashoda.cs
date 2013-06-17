@@ -15,5 +15,10 @@ namespace IKZavrsni
         {
             InitializeComponent();
         }
+
+        private void OcitanjeRashoda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

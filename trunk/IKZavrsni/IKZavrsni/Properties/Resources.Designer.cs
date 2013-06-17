@@ -73,6 +73,16 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _944312_10151535006099792_320977561_n {
+            get {
+                object obj = ResourceManager.GetObject("944312_10151535006099792_320977561_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backup {
             get {
                 object obj = ResourceManager.GetObject("backup", resourceCulture);
@@ -156,6 +166,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Folder_Home_Alternate_White_icon {
+            get {
+                object obj = ResourceManager.GetObject("Folder-Home-Alternate-White-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +423,16 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Places_user_home_icon {
+            get {
+                object obj = ResourceManager.GetObject("Places-user-home-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plavaPozadinaMenija {
             get {
                 object obj = ResourceManager.GetObject("plavaPozadinaMenija", resourceCulture);
@@ -476,6 +506,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap pozadinaLogina2 {
             get {
                 object obj = ResourceManager.GetObject("pozadinaLogina2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PozadinaSiva {
+            get {
+                object obj = ResourceManager.GetObject("PozadinaSiva", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -606,6 +646,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap section_pics_building2 {
             get {
                 object obj = ResourceManager.GetObject("section_pics_building2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap siva {
+            get {
+                object obj = ResourceManager.GetObject("siva", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

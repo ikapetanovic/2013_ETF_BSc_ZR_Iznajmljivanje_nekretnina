@@ -70,11 +70,17 @@
     <Compile Include="BackupRestore.Designer.cs">
       <DependentUpon>BackupRestore.cs</DependentUpon>
     </Compile>
-    <Compile Include="DioNekretnine.cs">
+    <Compile Include="UnosDijelaNekretnine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DioNekretnine.Designer.cs">
-      <DependentUpon>DioNekretnine.cs</DependentUpon>
+    <Compile Include="UnosDijelaNekretnine.Designer.cs">
+      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmjenaNekretnine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmjenaNekretnine.Designer.cs">
+      <DependentUpon>IzmjenaNekretnine.cs</DependentUpon>
     </Compile>
     <Compile Include="Iznajmljivanje.cs">
       <SubType>Form</SubType>
@@ -82,23 +88,23 @@
     <Compile Include="Iznajmljivanje.Designer.cs">
       <DependentUpon>Iznajmljivanje.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nekretnina.cs">
+    <Compile Include="UnosNekretnine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nekretnina.Designer.cs">
-      <DependentUpon>Nekretnina.cs</DependentUpon>
+    <Compile Include="UnosNekretnine.Designer.cs">
+      <DependentUpon>UnosNekretnine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Zakupac.cs">
+    <Compile Include="UnosZakupca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Zakupac.Designer.cs">
-      <DependentUpon>Zakupac.cs</DependentUpon>
+    <Compile Include="UnosZakupca.Designer.cs">
+      <DependentUpon>UnosZakupca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Izbornik.cs">
+    <Compile Include="Meni.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Izbornik.Designer.cs">
-      <DependentUpon>Izbornik.cs</DependentUpon>
+    <Compile Include="Meni.Designer.cs">
+      <DependentUpon>Meni.cs</DependentUpon>
     </Compile>
     <Compile Include="OcitanjeRashoda.cs">
       <SubType>Form</SubType>
@@ -150,20 +156,23 @@
     <EmbeddedResource Include="BackupRestore.resx">
       <DependentUpon>BackupRestore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DioNekretnine.resx">
-      <DependentUpon>DioNekretnine.cs</DependentUpon>
+    <EmbeddedResource Include="UnosDijelaNekretnine.resx">
+      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmjenaNekretnine.resx">
+      <DependentUpon>IzmjenaNekretnine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Iznajmljivanje.resx">
       <DependentUpon>Iznajmljivanje.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nekretnina.resx">
-      <DependentUpon>Nekretnina.cs</DependentUpon>
+    <EmbeddedResource Include="UnosNekretnine.resx">
+      <DependentUpon>UnosNekretnine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Zakupac.resx">
-      <DependentUpon>Zakupac.cs</DependentUpon>
+    <EmbeddedResource Include="UnosZakupca.resx">
+      <DependentUpon>UnosZakupca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Izbornik.resx">
-      <DependentUpon>Izbornik.cs</DependentUpon>
+    <EmbeddedResource Include="Meni.resx">
+      <DependentUpon>Meni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OcitanjeRashoda.resx">
       <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
@@ -400,6 +409,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PozadinaSiva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\944312_10151535006099792_320977561_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Home-Alternate-White-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Places-user-home-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

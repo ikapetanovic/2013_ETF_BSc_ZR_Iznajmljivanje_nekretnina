@@ -10,16 +10,14 @@ namespace DBConnection
     public class Nekretnina
     {
         private string vrstaNekretnine, naziv, adresa, lokacija, grad, biljeske;
-        private int brojKvadrata, godinaIzgradnje;
-        private float nabavnaCijena;
+        private int id, brojKvadrata, godinaIzgradnje;
+        private double nabavnaCijena;
         private Bitmap slika;
 
-        
         public Nekretnina() { }
 
-        public Nekretnina(string vrstaNekretnine, string naziv, string adresa, string lokacija, string grad, int brojKvadrata, int godinaIzgradnje, float nabavnaCijena, Bitmap slika, string biljeske)
+        public Nekretnina(string vrstaNekretnine, string naziv, string adresa, string lokacija, string grad, int brojKvadrata, int godinaIzgradnje, double nabavnaCijena, string biljeske)
         {
-
             this.vrstaNekretnine = vrstaNekretnine;
             this.naziv = naziv;
             this.adresa = adresa;
@@ -28,8 +26,13 @@ namespace DBConnection
             this.brojKvadrata = brojKvadrata;
             this.godinaIzgradnje = godinaIzgradnje;
             this.nabavnaCijena = nabavnaCijena;
-            this.slika = slika;
-            this.biljeske = biljeske;           
+            this.biljeske = biljeske;
+        }
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
         }
 
         public string VrstaNekretnine
@@ -74,17 +77,11 @@ namespace DBConnection
             set { godinaIzgradnje = value; }
         }
 
-        public float NabavnaCijena
+        public double NabavnaCijena
         {
             get { return nabavnaCijena; }
             set { nabavnaCijena = value; }
-        }
-
-        public Bitmap Slika
-        {
-            get { return slika; }
-            set { slika = value; }
-        }
+        }        
 
         public string Biljeske
         {
@@ -92,6 +89,11 @@ namespace DBConnection
             set { biljeske = value; }
         }
 
-
+        public Bitmap Slika
+        {
+            get { return slika; }
+            set { slika = value; }
+        }
     }
 }
+

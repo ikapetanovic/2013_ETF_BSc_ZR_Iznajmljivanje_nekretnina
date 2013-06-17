@@ -61,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Location = new System.Drawing.Point(12, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(189, 13);
             this.label3.TabIndex = 5;
@@ -167,6 +167,12 @@
             // 
             // cijenaDodaj
             // 
+            this.cijenaDodaj.DecimalPlaces = 2;
+            this.cijenaDodaj.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
             this.cijenaDodaj.Location = new System.Drawing.Point(138, 60);
             this.cijenaDodaj.Maximum = new decimal(new int[] {
             20,
@@ -177,11 +183,6 @@
             this.cijenaDodaj.Size = new System.Drawing.Size(83, 20);
             this.cijenaDodaj.TabIndex = 16;
             this.cijenaDodaj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cijenaDodaj.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // groupBox2
             // 
@@ -198,6 +199,12 @@
             // 
             // cijenaPromjena
             // 
+            this.cijenaPromjena.DecimalPlaces = 2;
+            this.cijenaPromjena.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
             this.cijenaPromjena.Location = new System.Drawing.Point(138, 60);
             this.cijenaPromjena.Maximum = new decimal(new int[] {
             20,
@@ -205,21 +212,14 @@
             0,
             0});
             this.cijenaPromjena.Name = "cijenaPromjena";
-            this.cijenaPromjena.ReadOnly = true;
             this.cijenaPromjena.Size = new System.Drawing.Size(83, 20);
             this.cijenaPromjena.TabIndex = 16;
             this.cijenaPromjena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cijenaPromjena.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // nazivPromjena
             // 
             this.nazivPromjena.Location = new System.Drawing.Point(59, 34);
             this.nazivPromjena.Name = "nazivPromjena";
-            this.nazivPromjena.ReadOnly = true;
             this.nazivPromjena.Size = new System.Drawing.Size(162, 20);
             this.nazivPromjena.TabIndex = 14;
             // 
@@ -277,6 +277,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "VrsteRashoda";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vrste rashoda";
             this.Load += new System.EventHandler(this.VrsteRashoda_Load);
