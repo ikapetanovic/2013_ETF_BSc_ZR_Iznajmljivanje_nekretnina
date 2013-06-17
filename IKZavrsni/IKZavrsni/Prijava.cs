@@ -33,7 +33,7 @@ namespace IKZavrsni
 
                 if (dao.ProvjeriPristup(korisnik, sifra))
                 {
-                    Izbornik meni = new Izbornik(korisnik);
+                    Meni meni = new Meni(korisnik);
                     meni.Show();
                     //this.Hide();
                 }

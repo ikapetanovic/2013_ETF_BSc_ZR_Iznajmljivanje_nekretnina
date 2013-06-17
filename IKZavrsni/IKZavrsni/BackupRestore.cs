@@ -60,19 +60,17 @@ namespace IKZavrsni
         {
             try
             {
-                string doMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin"; // TODO
-
+                string PutanjaDoMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin"; // TODO
                 string dbUserName = "root";
                 string dbPassword = "root";
                 string dbName = "ikzavrsni";
                 string path = @backupTextBox.Text;
 
-                Process myProcess = new Process();                
-                myProcess.StartInfo.FileName = @doMySqla + @"\mysqldump.exe";
-
+                Process myProcess = new Process();
+                myProcess.StartInfo.FileName = @PutanjaDoMySqla + @"\mysqldump.exe";
                 myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden; // dodala
                 myProcess.StartInfo.UseShellExecute = true; // bilo je false
-                myProcess.StartInfo.WorkingDirectory = @doMySqla + @"\";
+                myProcess.StartInfo.WorkingDirectory = @PutanjaDoMySqla + @"\";
                 myProcess.StartInfo.Arguments = "-u " + dbUserName + " -p" + dbPassword + " --add-drop-database -B " + dbName + " -r " + path;
 
                 myProcess.StartInfo.RedirectStandardInput = false; 
@@ -83,8 +81,7 @@ namespace IKZavrsni
                 
 
                 toolStripStatusLabel1.Text = "Uspješno spašeni podaci.";
-                toolStripStatusLabel1.ForeColor = Color.Green;
-                
+                toolStripStatusLabel1.ForeColor = Color.Green;               
 
             }
             catch (Exception izuzetak)
@@ -97,27 +94,31 @@ namespace IKZavrsni
         private void restore_Click(object sender, EventArgs e)
         {
             try
-            {     
-            
-
-                string doMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin"; // TODO
-
+            {
+                
+                string PutanjaDoMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin"; // TODO
                 string dbUserName = "root";
                 string dbPassword = "root";
                 string dbName = "ikzavrsni";
                 string path = @restoreTextBox.Text;
 
-
                 //Process.Start(@"C:\wamp\bin\mysql\mysql5.5.24\bin\mysql.exe", ("-u root -proot < \"" + path + "\""));
 
-
                 Process myProcess = new Process();
-                myProcess.StartInfo.FileName = @doMySqla + @"\mysql.exe";
-                myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden; // dodala
-                myProcess.StartInfo.UseShellExecute = true; // bilo je false
-                myProcess.StartInfo.WorkingDirectory = @doMySqla + @"\";
-                myProcess.StartInfo.Arguments = "-u " + dbUserName + " -p" + dbPassword + " < " + path;
-                //myProcess.StartInfo.Arguments = "-u " + dbUserName + " -p" + dbPassword + " " + dbName + " < " + path;
+                myProcess.StartInfo.FileName = @PutanjaDoMySqla + @"\mysql.exe";
+                myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                myProcess.StartInfo.UseShellExecute = true;
+                myProcess.StartInfo.WorkingDirectory = @PutanjaDoMySqla + @"\";
+
+                myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " < " + path;
+
+                //myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " < " + path;
+                //C:\wamp\bin\mysql\mysql5.5.24\bin\mysql --user=root --password=root < C:\Users\batoshi\Desktop\baza.sql // radi iz command prompta
+
+                //myProcess.StartInfo.Arguments =  "--user=" + dbUserName + " --password=" + dbPassword + " -e source " + path;               
+                //C:\wamp\bin\mysql\mysql5.5.24\bin\mysql --user=root --password=root -e source C:\Users\batoshi\Desktop\baza.sql; //unknown database C:\Users\batoshi\Desktop\baza.sql
+
+                //myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " -r " + path;                
 
                 myProcess.StartInfo.RedirectStandardInput = false;
                 myProcess.StartInfo.RedirectStandardOutput = false;
@@ -125,9 +126,8 @@ namespace IKZavrsni
                 myProcess.WaitForExit();
                 myProcess.Close();
 
-
                 toolStripStatusLabel1.Text = "Uspješno vraćeni podaci.";
-                toolStripStatusLabel1.ForeColor = Color.Green;
+                toolStripStatusLabel1.ForeColor = Color.Green;                
 
             }
             catch (Exception izuzetak)
