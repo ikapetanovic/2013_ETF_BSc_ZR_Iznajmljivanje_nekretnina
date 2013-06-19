@@ -93,6 +93,16 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backupDB {
+            get {
+                object obj = ResourceManager.GetObject("backupDB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buildings_skyscraper_003_1024x768 {
             get {
                 object obj = ResourceManager.GetObject("buildings-skyscraper_003_1024x768", resourceCulture);
@@ -586,6 +596,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap restore {
             get {
                 object obj = ResourceManager.GetObject("restore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restoreDB {
+            get {
+                object obj = ResourceManager.GetObject("restoreDB", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
