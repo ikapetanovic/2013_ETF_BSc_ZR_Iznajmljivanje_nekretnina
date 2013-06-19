@@ -39,6 +39,7 @@
             this.rashodiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.naplacivanjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vrsteRashodaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ocitanjeRashodaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvjestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postavkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mojiPodaciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@
             this.dokumentacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oAplikacijiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izlazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ocitanjeRashodaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,6 +151,13 @@
             this.vrsteRashodaToolStripMenuItem.Text = "Vrste rashoda";
             this.vrsteRashodaToolStripMenuItem.Click += new System.EventHandler(this.vrsteRashodaToolStripMenuItem_Click);
             // 
+            // ocitanjeRashodaToolStripMenuItem
+            // 
+            this.ocitanjeRashodaToolStripMenuItem.Name = "ocitanjeRashodaToolStripMenuItem";
+            this.ocitanjeRashodaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.ocitanjeRashodaToolStripMenuItem.Text = "Očitanje rashoda";
+            this.ocitanjeRashodaToolStripMenuItem.Click += new System.EventHandler(this.ocitanjeRashodaToolStripMenuItem_Click);
+            // 
             // izvjestajiToolStripMenuItem
             // 
             this.izvjestajiToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.chart2;
@@ -172,9 +179,9 @@
             // 
             // mojiPodaciToolStripMenuItem
             // 
-            this.mojiPodaciToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.profile16;
+            this.mojiPodaciToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.user;
             this.mojiPodaciToolStripMenuItem.Name = "mojiPodaciToolStripMenuItem";
-            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mojiPodaciToolStripMenuItem.Text = "Moji podaci";
             this.mojiPodaciToolStripMenuItem.Click += new System.EventHandler(this.mojiPodaciToolStripMenuItem_Click);
             // 
@@ -182,7 +189,7 @@
             // 
             this.backupToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.database16;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.backupToolStripMenuItem.Text = "Backup";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
@@ -221,14 +228,7 @@
             this.izlazToolStripMenuItem.Text = "Izlaz";
             this.izlazToolStripMenuItem.Click += new System.EventHandler(this.izlazToolStripMenuItem_Click);
             // 
-            // ocitanjeRashodaToolStripMenuItem
-            // 
-            this.ocitanjeRashodaToolStripMenuItem.Name = "ocitanjeRashodaToolStripMenuItem";
-            this.ocitanjeRashodaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.ocitanjeRashodaToolStripMenuItem.Text = "Očitanje rashoda";
-            this.ocitanjeRashodaToolStripMenuItem.Click += new System.EventHandler(this.ocitanjeRashodaToolStripMenuItem_Click);
-            // 
-            // Izbornik
+            // Meni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,7 +239,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "Izbornik";
+            this.Name = "Meni";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";
             this.menuStrip1.ResumeLayout(false);

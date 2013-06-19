@@ -78,10 +78,11 @@ namespace IKZavrsni
                 myProcess.Start(); 
                 myProcess.WaitForExit();
                 myProcess.Close();
-                
 
+                statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.Text = "Uspješno spašeni podaci.";
-                toolStripStatusLabel1.ForeColor = Color.Green;               
+                toolStripStatusLabel1.ForeColor = Color.Green;
+                backupTextBox.Text = "";
 
             }
             catch (Exception izuzetak)
@@ -163,9 +164,11 @@ namespace IKZavrsni
                 process.Close();
 
                 // Izvor: http://stackoverflow.com/questions/4883654/c-sharp-restoring-an-online-db
-                
+
+                statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.Text = "Uspješno vraćeni podaci.";
                 toolStripStatusLabel1.ForeColor = Color.Green;
+                restoreTextBox.Text = "";
 
             }                       
             catch (Exception izuzetak)
