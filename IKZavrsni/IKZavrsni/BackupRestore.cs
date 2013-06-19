@@ -71,7 +71,11 @@ namespace IKZavrsni
                 myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden; // dodala
                 myProcess.StartInfo.UseShellExecute = true; // bilo je false
                 myProcess.StartInfo.WorkingDirectory = @PutanjaDoMySqla + @"\";
-                myProcess.StartInfo.Arguments = "-u " + dbUserName + " -p" + dbPassword + " --add-drop-database -B " + dbName + " -r " + path;
+                //myProcess.StartInfo.Arguments = "-u " + dbUserName + " -p" + dbPassword + " --add-drop-database -B " + dbName + " -r " + path;
+
+                myProcess.StartInfo.Arguments = "--hex-blob -u " + dbUserName + " -p" + dbPassword + " --add-drop-database -B " + dbName + " -r " + path;
+
+                // C:\wamp\bin\mysql\mysql5.5.24\bin\mysqldump.exe --hex-blob -u root -proot --add-drop-database -B ikzavrsni -r C:\Users\batoshi\Desktop\images.sql
 
                 myProcess.StartInfo.RedirectStandardInput = false; 
                 myProcess.StartInfo.RedirectStandardOutput = false;
