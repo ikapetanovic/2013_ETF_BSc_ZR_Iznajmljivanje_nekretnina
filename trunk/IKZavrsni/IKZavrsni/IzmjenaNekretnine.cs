@@ -62,6 +62,21 @@ namespace IKZavrsni
             } 
         }
 
+        private void slikaPictureBox_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog open = new OpenFileDialog();
+                open.Filter = "Image Files |*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                if (open.ShowDialog() == DialogResult.OK)
+                    slikaPictureBox.Image = new Bitmap(open.FileName);
+            }
+            catch (Exception)
+            {
+                throw new ApplicationException("Failed loading image");
+            }
+        }
+
 
 
     }

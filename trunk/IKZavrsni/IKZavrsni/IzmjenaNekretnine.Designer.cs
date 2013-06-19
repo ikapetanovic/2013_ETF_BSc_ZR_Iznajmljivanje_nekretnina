@@ -52,16 +52,14 @@
             this.lokacijaTextBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.slikaPictureTabPage = new System.Windows.Forms.TabPage();
-            this.slikaPictureBox = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.dodajSlikuTabPage = new System.Windows.Forms.TabPage();
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.adresaTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.slikaPictureBox = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.godinaIzgradnjeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
@@ -69,12 +67,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
-            this.slikaPictureTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.slikaPictureBox)).BeginInit();
-            this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slikaPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -82,9 +79,9 @@
             this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 444);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 485);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(757, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(930, 22);
             this.statusStrip1.TabIndex = 32;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -231,13 +228,13 @@
             // 
             this.biljeskeRichTextBox.Location = new System.Drawing.Point(12, 306);
             this.biljeskeRichTextBox.Name = "biljeskeRichTextBox";
-            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 99);
+            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 147);
             this.biljeskeRichTextBox.TabIndex = 37;
             this.biljeskeRichTextBox.Text = "";
             // 
             // spasiNekretninuButton
             // 
-            this.spasiNekretninuButton.Location = new System.Drawing.Point(568, 411);
+            this.spasiNekretninuButton.Location = new System.Drawing.Point(762, 459);
             this.spasiNekretninuButton.Name = "spasiNekretninuButton";
             this.spasiNekretninuButton.Size = new System.Drawing.Size(74, 23);
             this.spasiNekretninuButton.TabIndex = 34;
@@ -272,7 +269,7 @@
             // 
             // izadjiButton
             // 
-            this.izadjiButton.Location = new System.Drawing.Point(645, 411);
+            this.izadjiButton.Location = new System.Drawing.Point(839, 459);
             this.izadjiButton.Name = "izadjiButton";
             this.izadjiButton.Size = new System.Drawing.Size(79, 23);
             this.izadjiButton.TabIndex = 35;
@@ -293,53 +290,6 @@
             // errorProvider2
             // 
             this.errorProvider2.ContainerControl = this;
-            // 
-            // slikaPictureTabPage
-            // 
-            this.slikaPictureTabPage.Controls.Add(this.slikaPictureBox);
-            this.slikaPictureTabPage.Location = new System.Drawing.Point(4, 4);
-            this.slikaPictureTabPage.Name = "slikaPictureTabPage";
-            this.slikaPictureTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.slikaPictureTabPage.Size = new System.Drawing.Size(452, 391);
-            this.slikaPictureTabPage.TabIndex = 0;
-            this.slikaPictureTabPage.Text = "Slika";
-            this.slikaPictureTabPage.UseVisualStyleBackColor = true;
-            // 
-            // slikaPictureBox
-            // 
-            this.slikaPictureBox.BackColor = System.Drawing.Color.White;
-            this.slikaPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.slikaPictureBox.Image = global::IKZavrsni.Properties.Resources.Folder_Home_Alternate_White_icon;
-            this.slikaPictureBox.Location = new System.Drawing.Point(6, 6);
-            this.slikaPictureBox.Name = "slikaPictureBox";
-            this.slikaPictureBox.Size = new System.Drawing.Size(440, 379);
-            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.slikaPictureBox.TabIndex = 17;
-            this.slikaPictureBox.TabStop = false;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Right;
-            this.tabControl1.Controls.Add(this.slikaPictureTabPage);
-            this.tabControl1.Controls.Add(this.dodajSlikuTabPage);
-            this.tabControl1.Location = new System.Drawing.Point(268, 6);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.ShowToolTips = true;
-            this.tabControl1.Size = new System.Drawing.Size(479, 399);
-            this.tabControl1.TabIndex = 36;
-            // 
-            // dodajSlikuTabPage
-            // 
-            this.dodajSlikuTabPage.Location = new System.Drawing.Point(4, 4);
-            this.dodajSlikuTabPage.Name = "dodajSlikuTabPage";
-            this.dodajSlikuTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.dodajSlikuTabPage.Size = new System.Drawing.Size(452, 391);
-            this.dodajSlikuTabPage.TabIndex = 1;
-            this.dodajSlikuTabPage.Text = "Dodaj sliku";
-            this.dodajSlikuTabPage.ToolTipText = "Dodaj sliku sa računara";
-            this.dodajSlikuTabPage.UseVisualStyleBackColor = true;
             // 
             // errorProvider3
             // 
@@ -404,17 +354,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detaljniji podaci";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.slikaPictureBox);
+            this.groupBox3.Location = new System.Drawing.Point(269, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(649, 447);
+            this.groupBox3.TabIndex = 40;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Slika";
+            // 
+            // slikaPictureBox
+            // 
+            this.slikaPictureBox.BackColor = System.Drawing.Color.White;
+            this.slikaPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.slikaPictureBox.Location = new System.Drawing.Point(6, 19);
+            this.slikaPictureBox.Name = "slikaPictureBox";
+            this.slikaPictureBox.Size = new System.Drawing.Size(637, 422);
+            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slikaPictureBox.TabIndex = 17;
+            this.slikaPictureBox.TabStop = false;
+            this.slikaPictureBox.Click += new System.EventHandler(this.slikaPictureBox_Click);
+            // 
             // IzmjenaNekretnine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 466);
+            this.ClientSize = new System.Drawing.Size(930, 507);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.biljeskeRichTextBox);
             this.Controls.Add(this.spasiNekretninuButton);
             this.Controls.Add(this.izadjiButton);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -431,14 +403,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
-            this.slikaPictureTabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.slikaPictureBox)).EndInit();
-            this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.slikaPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,10 +428,6 @@
         private System.Windows.Forms.RichTextBox biljeskeRichTextBox;
         private System.Windows.Forms.Button spasiNekretninuButton;
         private System.Windows.Forms.Button izadjiButton;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage slikaPictureTabPage;
-        private System.Windows.Forms.PictureBox slikaPictureBox;
-        private System.Windows.Forms.TabPage dodajSlikuTabPage;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
@@ -478,6 +445,8 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox slikaPictureBox;
 
     }
 }

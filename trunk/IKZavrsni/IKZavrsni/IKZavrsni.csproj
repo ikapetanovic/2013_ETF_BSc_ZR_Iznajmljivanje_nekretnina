@@ -431,6 +431,39 @@
   <ItemGroup>
     <None Include="Resources\restoreDB.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures-Nikon-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-blue-pictures-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noir Home folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decorative-frame-Download-Royalty-free-Vector-File-EPS-9272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\professional-grey-frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vict-Vign_frame-006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sidebar-Pictures-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Places-folder-image-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

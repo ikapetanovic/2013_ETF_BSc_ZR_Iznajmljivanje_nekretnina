@@ -57,11 +57,20 @@ namespace IKZavrsni
 
         private void dodajSlikuTabPage_Enter(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            
+        }
+
+        private void izadjiButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void slikaPictureBox_Click(object sender, EventArgs e)
+        {
             try
             {
                 OpenFileDialog open = new OpenFileDialog();
-                open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+                open.Filter = "Image Files |*.jpg; *.jpeg; *.png; *.gif; *.bmp";
                 if (open.ShowDialog() == DialogResult.OK)
                     slikaPictureBox.Image = new Bitmap(open.FileName);
             }
@@ -69,11 +78,6 @@ namespace IKZavrsni
             {
                 throw new ApplicationException("Failed loading image");
             }
-        }
-
-        private void izadjiButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
