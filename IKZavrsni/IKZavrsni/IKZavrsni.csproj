@@ -425,6 +425,12 @@
   <ItemGroup>
     <None Include="Resources\Places-user-home-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupDB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restoreDB.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -95,11 +95,13 @@ namespace IKZavrsni
         {
             try
             {
+                /*
                 
                 string PutanjaDoMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin"; // TODO
                 string dbUserName = "root";
                 string dbPassword = "root";
                 string dbName = "ikzavrsni";
+                string Ip = "localhost";
                 string path = @restoreTextBox.Text;
 
                 //Process.Start(@"C:\wamp\bin\mysql\mysql5.5.24\bin\mysql.exe", ("-u root -proot < \"" + path + "\""));
@@ -110,7 +112,9 @@ namespace IKZavrsni
                 myProcess.StartInfo.UseShellExecute = true;
                 myProcess.StartInfo.WorkingDirectory = @PutanjaDoMySqla + @"\";
 
-                myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " < " + path;
+                myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " < " + path;               
+
+                //myProcess.StartInfo.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}", dbUserName, dbPassword, Ip, dbName);
 
                 //myProcess.StartInfo.Arguments = "--user=" + dbUserName + " --password=" + dbPassword + " < " + path;
                 //C:\wamp\bin\mysql\mysql5.5.24\bin\mysql --user=root --password=root < C:\Users\batoshi\Desktop\baza.sql // radi iz command prompta
@@ -125,11 +129,45 @@ namespace IKZavrsni
                 myProcess.Start();
                 myProcess.WaitForExit();
                 myProcess.Close();
+                 
 
+               */
+
+                 
+                string PutanjaDoMySqla = @"C:\wamp\bin\mysql\mysql5.5.24\bin\mysql.exe";                
+                string dbUserName = "root";
+                string dbPassword = "root";
+                string dbName = "ikzavrsni";
+                string ip = "localhost";
+                string path = @restoreTextBox.Text;
+                                    
+                StreamReader file = new StreamReader(path);
+                string input = file.ReadToEnd();
+                file.Close();
+
+                ProcessStartInfo psi = new ProcessStartInfo();
+                psi.FileName = PutanjaDoMySqla;
+                psi.WindowStyle = ProcessWindowStyle.Hidden;
+
+                psi.RedirectStandardInput = true;
+                psi.RedirectStandardOutput = false;
+                psi.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}", dbUserName, dbPassword, ip, dbName);
+                psi.UseShellExecute = false;                
+
+                //Console.WriteLine(psi);
+
+                Process process = Process.Start(psi);
+                process.StandardInput.WriteLine(input);
+                process.StandardInput.Close();
+                process.WaitForExit();
+                process.Close();
+
+                // Izvor: http://stackoverflow.com/questions/4883654/c-sharp-restoring-an-online-db
+                
                 toolStripStatusLabel1.Text = "Uspješno vraćeni podaci.";
-                toolStripStatusLabel1.ForeColor = Color.Green;                
+                toolStripStatusLabel1.ForeColor = Color.Green;
 
-            }
+            }                       
             catch (Exception izuzetak)
             {
                 MessageBox.Show(izuzetak.Message);
