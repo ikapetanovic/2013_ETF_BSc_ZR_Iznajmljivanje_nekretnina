@@ -23,7 +23,7 @@ namespace DBConnection
         public DAO(string server, string dbname, string username, string password)
         {
             dataConnection = new MySqlConnection();
-            dataConnection.ConnectionString = "Server=" + server + ";Database=" + dbname + ";Uid=" + username + ";Pwd=" + password + ";";
+            dataConnection.ConnectionString = "Server=" + server + ";Database=" + dbname + ";Uid=" + username + ";Pwd=" + password + ";Charset=utf8;";
             dataConnection.Open();
         }
 

@@ -83,6 +83,16 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abstract_blue_tree_white_444_1680x1050 {
+            get {
+                object obj = ResourceManager.GetObject("abstract_blue_tree_white_444_1680x1050", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backup {
             get {
                 object obj = ResourceManager.GetObject("backup", resourceCulture);
@@ -406,6 +416,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap izvjestaj48 {
             get {
                 object obj = ResourceManager.GetObject("izvjestaj48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap L545421971 {
+            get {
+                object obj = ResourceManager.GetObject("L545421971", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -896,6 +916,16 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap Vict_Vign_frame_006 {
             get {
                 object obj = ResourceManager.GetObject("Vict-Vign_frame-006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper_128859 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper-128859", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

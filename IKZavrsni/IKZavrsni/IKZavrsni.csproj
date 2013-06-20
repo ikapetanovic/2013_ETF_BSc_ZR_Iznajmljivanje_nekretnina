@@ -464,6 +464,15 @@
   <ItemGroup>
     <None Include="Resources\Places-folder-image-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L545421971.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-128859.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract_blue_tree_white_444_1680x1050.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
