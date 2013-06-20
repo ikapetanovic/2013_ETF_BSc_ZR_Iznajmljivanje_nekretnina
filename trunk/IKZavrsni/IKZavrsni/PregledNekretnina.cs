@@ -134,9 +134,8 @@ namespace IKZavrsni
                             }
                     }
             }
-            catch (Exception izuzetak)
-            {
-                //toolStripStatusLabel1.Text = izuzetak.Message;
+            catch (Exception)
+            {                
                 statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.ForeColor = Color.Red;
                 toolStripStatusLabel1.Text = "Podaci nisu obrisani!";

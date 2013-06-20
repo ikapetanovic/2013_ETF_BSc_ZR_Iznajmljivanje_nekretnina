@@ -275,6 +275,7 @@
             this.izadjiButton.TabIndex = 35;
             this.izadjiButton.Text = "Izađi";
             this.izadjiButton.UseVisualStyleBackColor = true;
+            this.izadjiButton.Click += new System.EventHandler(this.izadjiButton_Click);
             // 
             // lokacijaTextBox
             // 
