@@ -1,6 +1,6 @@
 ﻿namespace IKZavrsni
 {
-    partial class EvidencijaDijelaKojiSeIznajmljuje
+    partial class UnosDijelaKojiSeIznajmljuje
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvidencijaDijelaKojiSeIznajmljuje));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnosDijelaKojiSeIznajmljuje));
             this.ponisti = new System.Windows.Forms.Button();
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -327,7 +327,7 @@
             this.tabPage4.ToolTipText = "Dodaj sliku sa računara";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // EvidencijaDijelaKojiSeIznajmljuje
+            // UnosDijelaKojiSeIznajmljuje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -342,7 +342,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "EvidencijaDijelaKojiSeIznajmljuje";
+            this.Name = "UnosDijelaKojiSeIznajmljuje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evidencija dijela koji se iznajmljuje";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();

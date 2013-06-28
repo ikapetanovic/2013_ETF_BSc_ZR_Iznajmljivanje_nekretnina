@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace IKZavrsni
 {
-    public partial class About : Form
+    public partial class OAplikaciji : Form
     {
-        public About()
+        public OAplikaciji()
         {
             InitializeComponent();
         }

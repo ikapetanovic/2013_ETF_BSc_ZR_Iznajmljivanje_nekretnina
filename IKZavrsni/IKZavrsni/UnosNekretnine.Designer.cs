@@ -79,9 +79,9 @@
             this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 485);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 471);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(930, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(782, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -210,7 +210,7 @@
             // 
             // izadjiButton
             // 
-            this.izadjiButton.Location = new System.Drawing.Point(839, 459);
+            this.izadjiButton.Location = new System.Drawing.Point(694, 438);
             this.izadjiButton.Name = "izadjiButton";
             this.izadjiButton.Size = new System.Drawing.Size(79, 23);
             this.izadjiButton.TabIndex = 26;
@@ -293,7 +293,7 @@
             // 
             // spasiNekretninu
             // 
-            this.spasiNekretninu.Location = new System.Drawing.Point(762, 459);
+            this.spasiNekretninu.Location = new System.Drawing.Point(617, 438);
             this.spasiNekretninu.Name = "spasiNekretninu";
             this.spasiNekretninu.Size = new System.Drawing.Size(74, 23);
             this.spasiNekretninu.TabIndex = 25;
@@ -328,7 +328,7 @@
             // 
             this.biljeskeRichTextBox.Location = new System.Drawing.Point(12, 312);
             this.biljeskeRichTextBox.Name = "biljeskeRichTextBox";
-            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 147);
+            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 120);
             this.biljeskeRichTextBox.TabIndex = 29;
             this.biljeskeRichTextBox.Text = "";
             // 
@@ -361,7 +361,7 @@
             this.groupBox3.Controls.Add(this.slikaPictureBox);
             this.groupBox3.Location = new System.Drawing.Point(269, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(649, 447);
+            this.groupBox3.Size = new System.Drawing.Size(504, 420);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Slika";
@@ -370,10 +370,10 @@
             // 
             this.slikaPictureBox.BackColor = System.Drawing.Color.White;
             this.slikaPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.slikaPictureBox.Location = new System.Drawing.Point(6, 19);
+            this.slikaPictureBox.Location = new System.Drawing.Point(8, 19);
             this.slikaPictureBox.Name = "slikaPictureBox";
-            this.slikaPictureBox.Size = new System.Drawing.Size(637, 422);
-            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slikaPictureBox.Size = new System.Drawing.Size(490, 392);
+            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.slikaPictureBox.TabIndex = 17;
             this.slikaPictureBox.TabStop = false;
             this.slikaPictureBox.Click += new System.EventHandler(this.slikaPictureBox_Click);
@@ -382,7 +382,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 507);
+            this.ClientSize = new System.Drawing.Size(782, 493);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
@@ -445,9 +445,9 @@
         private System.Windows.Forms.TextBox adresaTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown brojKvadrataNumericUpDown;
-        private System.Windows.Forms.PictureBox slikaPictureBox;
         private System.Windows.Forms.TextBox gradTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox slikaPictureBox;
     }
 }

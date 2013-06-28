@@ -53,14 +53,12 @@ namespace IKZavrsni
 
         private void mojiPodaciToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MojiPodaci mp = new MojiPodaci(korisnickoIme1);
-            mp.Show();
+            
         }
 
         private void oAplikacijiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            About a = new About();
-            a.Show();
+            
         }
 
         private void vrsteRashodaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,8 +69,7 @@ namespace IKZavrsni
 
         private void backupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BackupRestore b = new BackupRestore();
-            b.Show();
+            
         }
 
         private void naplacivanjeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +88,24 @@ namespace IKZavrsni
         {
             OcitanjeRashoda or = new OcitanjeRashoda();
             or.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MojProfil mp = new MojProfil(korisnickoIme1);
+            mp.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            BazaPodataka b = new BazaPodataka();
+            b.Show();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OAplikaciji a = new OAplikaciji();
+            a.Show();
         }
     }
 }

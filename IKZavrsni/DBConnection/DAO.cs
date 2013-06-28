@@ -213,7 +213,7 @@ namespace DBConnection
                 n.Slika.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
                 byte[] bajtovi = m.ToArray();
 
-                MySqlCommand nekretnine = new MySqlCommand("UPDATE nekretnine SET vrstaNekretnine = @vrstaNekretnine, naziv = @naziv, adresa = @adresa, lokacija = @lokacija, grad = @grad, brojKvadrata = @brojKvadrata, godinaIzgradnje = @godinaIzgradnje, nabavnaCijena = @nabavnaCijena, slika = @slika, biljeske = @biljeske WHERE nekretninaID = '" + n.Id + "'", dataConnection);
+                MySqlCommand nekretnine = new MySqlCommand("UPDATE nekretnine SET vrstaNekretnine = @vrstaNekretnine, naziv = @naziv, adresa = @adresa, lokacija = @lokacija, grad = @grad, brojKvadrata = @brojKvadrata, godinaIzgradnje = @godinaIzgradnje, nabavnaCijena = @nabavnaCijena, biljeske = @biljeske, slika = @slika WHERE nekretninaID = '" + n.Id + "'", dataConnection);
 
                 nekretnine.Parameters.AddWithValue("@vrstaNekretnine", n.VrstaNekretnine);
                 nekretnine.Parameters.AddWithValue("@naziv", n.Naziv);

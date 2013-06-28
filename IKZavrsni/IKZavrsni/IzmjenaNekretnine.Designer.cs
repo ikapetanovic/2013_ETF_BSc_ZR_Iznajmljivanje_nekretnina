@@ -79,9 +79,9 @@
             this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 485);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 469);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(930, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(783, 22);
             this.statusStrip1.TabIndex = 32;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -228,13 +228,13 @@
             // 
             this.biljeskeRichTextBox.Location = new System.Drawing.Point(12, 306);
             this.biljeskeRichTextBox.Name = "biljeskeRichTextBox";
-            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 147);
+            this.biljeskeRichTextBox.Size = new System.Drawing.Size(250, 120);
             this.biljeskeRichTextBox.TabIndex = 37;
             this.biljeskeRichTextBox.Text = "";
             // 
             // spasiNekretninuButton
             // 
-            this.spasiNekretninuButton.Location = new System.Drawing.Point(762, 459);
+            this.spasiNekretninuButton.Location = new System.Drawing.Point(617, 432);
             this.spasiNekretninuButton.Name = "spasiNekretninuButton";
             this.spasiNekretninuButton.Size = new System.Drawing.Size(74, 23);
             this.spasiNekretninuButton.TabIndex = 34;
@@ -269,7 +269,7 @@
             // 
             // izadjiButton
             // 
-            this.izadjiButton.Location = new System.Drawing.Point(839, 459);
+            this.izadjiButton.Location = new System.Drawing.Point(694, 432);
             this.izadjiButton.Name = "izadjiButton";
             this.izadjiButton.Size = new System.Drawing.Size(79, 23);
             this.izadjiButton.TabIndex = 35;
@@ -360,7 +360,7 @@
             this.groupBox3.Controls.Add(this.slikaPictureBox);
             this.groupBox3.Location = new System.Drawing.Point(269, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(649, 447);
+            this.groupBox3.Size = new System.Drawing.Size(504, 420);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Slika";
@@ -371,8 +371,8 @@
             this.slikaPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.slikaPictureBox.Location = new System.Drawing.Point(6, 19);
             this.slikaPictureBox.Name = "slikaPictureBox";
-            this.slikaPictureBox.Size = new System.Drawing.Size(637, 422);
-            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slikaPictureBox.Size = new System.Drawing.Size(490, 392);
+            this.slikaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.slikaPictureBox.TabIndex = 17;
             this.slikaPictureBox.TabStop = false;
             this.slikaPictureBox.Click += new System.EventHandler(this.slikaPictureBox_Click);
@@ -381,7 +381,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 507);
+            this.ClientSize = new System.Drawing.Size(783, 491);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label3);

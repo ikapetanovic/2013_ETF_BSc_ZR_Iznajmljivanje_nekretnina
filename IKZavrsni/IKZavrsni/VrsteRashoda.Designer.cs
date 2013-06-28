@@ -257,7 +257,7 @@
             this.obrisi.Name = "obrisi";
             this.obrisi.Size = new System.Drawing.Size(75, 23);
             this.obrisi.TabIndex = 19;
-            this.obrisi.Text = "Obriši";
+            this.obrisi.Text = "Izbriši";
             this.obrisi.UseVisualStyleBackColor = true;
             this.obrisi.Click += new System.EventHandler(this.obrisi_Click);
             // 
