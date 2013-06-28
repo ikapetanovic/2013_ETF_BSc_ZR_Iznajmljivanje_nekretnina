@@ -84,7 +84,7 @@
             // 
             this.noviToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.user_add_icon;
             this.noviToolStripMenuItem.Name = "noviToolStripMenuItem";
-            this.noviToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.noviToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.noviToolStripMenuItem.Text = "Zakupac";
             this.noviToolStripMenuItem.Click += new System.EventHandler(this.noviToolStripMenuItem_Click);
             // 
@@ -92,7 +92,7 @@
             // 
             this.pregledToolStripMenuItem1.Image = global::IKZavrsni.Properties.Resources.pretraga;
             this.pregledToolStripMenuItem1.Name = "pregledToolStripMenuItem1";
-            this.pregledToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.pregledToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.pregledToolStripMenuItem1.Text = "Pregled";
             this.pregledToolStripMenuItem1.Click += new System.EventHandler(this.pregledToolStripMenuItem1_Click);
             // 
@@ -155,7 +155,7 @@
             // 
             this.novaToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.blue_home_icon;
             this.novaToolStripMenuItem.Name = "novaToolStripMenuItem";
-            this.novaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.novaToolStripMenuItem.Text = "Nova";
             this.novaToolStripMenuItem.Click += new System.EventHandler(this.novaToolStripMenuItem_Click);
             // 
@@ -163,7 +163,7 @@
             // 
             this.pregledToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.pretraga;
             this.pregledToolStripMenuItem.Name = "pregledToolStripMenuItem";
-            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.pregledToolStripMenuItem.Text = "Pregled";
             this.pregledToolStripMenuItem.Click += new System.EventHandler(this.pregledToolStripMenuItem_Click);
             // 
@@ -176,7 +176,7 @@
             this.pomoćToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(163, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(255, 24);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -186,7 +186,7 @@
             this.mojiPodaciToolStripMenuItem,
             this.sigurnosneKopijeToolStripMenuItem});
             this.postavkeToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.postavkeToolStripMenuItem1.Image = global::IKZavrsni.Properties.Resources._1372360730_wrench;
+            this.postavkeToolStripMenuItem1.Image = global::IKZavrsni.Properties.Resources.settings_icon;
             this.postavkeToolStripMenuItem1.Name = "postavkeToolStripMenuItem1";
             this.postavkeToolStripMenuItem1.Size = new System.Drawing.Size(82, 20);
             this.postavkeToolStripMenuItem1.Text = "Postavke";
@@ -201,7 +201,7 @@
             // 
             // sigurnosneKopijeToolStripMenuItem
             // 
-            this.sigurnosneKopijeToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.database16;
+            this.sigurnosneKopijeToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.database_icon;
             this.sigurnosneKopijeToolStripMenuItem.Name = "sigurnosneKopijeToolStripMenuItem";
             this.sigurnosneKopijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sigurnosneKopijeToolStripMenuItem.Text = "Baza podataka";
