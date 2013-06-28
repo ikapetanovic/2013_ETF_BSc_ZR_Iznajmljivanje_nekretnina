@@ -353,6 +353,26 @@ namespace IKZavrsni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap database_gear_icon {
+            get {
+                object obj = ResourceManager.GetObject("database-gear-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap database_icon {
+            get {
+                object obj = ResourceManager.GetObject("database-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap database16 {
             get {
                 object obj = ResourceManager.GetObject("database16", resourceCulture);
@@ -1056,6 +1076,26 @@ namespace IKZavrsni.Properties {
         internal static System.Drawing.Bitmap section_pics_building2 {
             get {
                 object obj = ResourceManager.GetObject("section_pics_building2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_2_icon {
+            get {
+                object obj = ResourceManager.GetObject("settings-2-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_icon {
+            get {
+                object obj = ResourceManager.GetObject("settings-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

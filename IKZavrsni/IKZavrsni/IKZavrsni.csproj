@@ -572,6 +572,18 @@
   <ItemGroup>
     <None Include="Resources\isjecena2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-gear-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
