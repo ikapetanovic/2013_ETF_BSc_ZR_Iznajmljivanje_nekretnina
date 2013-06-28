@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace IKZavrsni
 {
-    public partial class EvidencijaDijelaKojiSeIznajmljuje : Form
+    public partial class UnosDijelaKojiSeIznajmljuje : Form
     {
-        public EvidencijaDijelaKojiSeIznajmljuje()
+        public UnosDijelaKojiSeIznajmljuje()
         {
             InitializeComponent();
         }

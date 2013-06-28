@@ -13,10 +13,10 @@ using System.IO; // stream
 
 namespace IKZavrsni
 {
-    public partial class BackupRestore : Form
+    public partial class BazaPodataka : Form
     {
         
-        public BackupRestore()
+        public BazaPodataka()
         {
             InitializeComponent();
         }

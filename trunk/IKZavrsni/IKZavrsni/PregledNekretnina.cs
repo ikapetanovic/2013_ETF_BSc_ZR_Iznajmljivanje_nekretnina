@@ -29,7 +29,7 @@ namespace IKZavrsni
 
         private void dodajDio_Click(object sender, EventArgs e)
         {
-            EvidencijaDijelaKojiSeIznajmljuje edn = new EvidencijaDijelaKojiSeIznajmljuje();
+            UnosDijelaKojiSeIznajmljuje edn = new UnosDijelaKojiSeIznajmljuje();
             edn.Show();
         }
 
@@ -90,10 +90,7 @@ namespace IKZavrsni
                     foreach (Nekretnina n in nekretnine)
                         if (n.Naziv == nekretnineListView.Items[i].Text)
                         {
-                            IzmjenaNekretnine izmjenaNek = new IzmjenaNekretnine(n);
-                            nekretnineListView.Items.Clear();
-                            atributPretrazivanjaComboBox.SelectedIndex = -1;
-                            unesenoTextBox.Clear();
+                            IzmjenaNekretnine izmjenaNek = new IzmjenaNekretnine(n);                           
                             izmjenaNek.ShowDialog();
                             return;
                         }
@@ -140,6 +137,11 @@ namespace IKZavrsni
                 toolStripStatusLabel1.ForeColor = Color.Red;
                 toolStripStatusLabel1.Text = "Podaci nisu obrisani!";
             }
+        }
+
+        private void PregledNekretnina_Load(object sender, EventArgs e)
+        {
+            atributPretrazivanjaComboBox.SelectedIndex = 0;
         }
     }
 }

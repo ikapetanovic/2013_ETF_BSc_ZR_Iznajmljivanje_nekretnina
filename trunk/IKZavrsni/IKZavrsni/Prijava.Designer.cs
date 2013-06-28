@@ -58,7 +58,7 @@
             // 
             // uredu
             // 
-            this.uredu.Location = new System.Drawing.Point(117, 326);
+            this.uredu.Location = new System.Drawing.Point(119, 334);
             this.uredu.Name = "uredu";
             this.uredu.Size = new System.Drawing.Size(87, 23);
             this.uredu.TabIndex = 11;
@@ -70,7 +70,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(21, 262);
+            this.label2.Location = new System.Drawing.Point(23, 272);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 10;
@@ -80,7 +80,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(21, 214);
+            this.label1.Location = new System.Drawing.Point(23, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 9;
@@ -88,7 +88,7 @@
             // 
             // lozinka
             // 
-            this.lozinka.Location = new System.Drawing.Point(24, 278);
+            this.lozinka.Location = new System.Drawing.Point(26, 288);
             this.lozinka.Name = "lozinka";
             this.lozinka.PasswordChar = '*';
             this.lozinka.Size = new System.Drawing.Size(183, 20);
@@ -97,7 +97,7 @@
             // 
             // korisnickoIme
             // 
-            this.korisnickoIme.Location = new System.Drawing.Point(24, 230);
+            this.korisnickoIme.Location = new System.Drawing.Point(26, 240);
             this.korisnickoIme.Name = "korisnickoIme";
             this.korisnickoIme.Size = new System.Drawing.Size(183, 20);
             this.korisnickoIme.TabIndex = 7;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IKZavrsni.Properties.Resources.pozadinaLogina;
+            this.BackgroundImage = global::IKZavrsni.Properties.Resources.sivaLogin2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(234, 384);
             this.Controls.Add(this.statusStrip1);

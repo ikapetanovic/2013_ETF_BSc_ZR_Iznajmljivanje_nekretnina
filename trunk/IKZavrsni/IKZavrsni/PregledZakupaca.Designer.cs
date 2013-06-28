@@ -55,6 +55,9 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pretraziButton = new System.Windows.Forms.Button();
+            this.iznajmiButton1 = new System.Windows.Forms.Button();
+            this.iznajmiButton2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -70,14 +73,14 @@
             "Prezimenu",
             "Nazivu firme",
             "Fakultetu"});
-            this.atribut.Location = new System.Drawing.Point(124, 21);
+            this.atribut.Location = new System.Drawing.Point(106, 26);
             this.atribut.Name = "atribut";
-            this.atribut.Size = new System.Drawing.Size(193, 21);
+            this.atribut.Size = new System.Drawing.Size(164, 21);
             this.atribut.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(195, 531);
+            this.button1.Location = new System.Drawing.Point(12, 495);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 25;
@@ -86,7 +89,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(195, 311);
+            this.button2.Location = new System.Drawing.Point(12, 275);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 24;
@@ -96,15 +99,15 @@
             // uneseno
             // 
             this.uneseno.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.uneseno.Location = new System.Drawing.Point(124, 63);
+            this.uneseno.Location = new System.Drawing.Point(336, 27);
             this.uneseno.Name = "uneseno";
-            this.uneseno.Size = new System.Drawing.Size(193, 20);
+            this.uneseno.Size = new System.Drawing.Size(136, 20);
             this.uneseno.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 348);
+            this.label4.Location = new System.Drawing.Point(12, 312);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(177, 13);
             this.label4.TabIndex = 22;
@@ -113,7 +116,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 70);
+            this.label2.Location = new System.Drawing.Point(293, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 9;
@@ -121,13 +124,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pretraziButton);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.atribut);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.uneseno);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(339, 98);
+            this.groupBox1.Size = new System.Drawing.Size(600, 68);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pretraživanje";
@@ -150,9 +154,9 @@
             this.statusStrip1.BackColor = System.Drawing.Color.White;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 571);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 527);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(365, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(624, 22);
             this.statusStrip1.TabIndex = 20;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -165,12 +169,12 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Naziv firme";
-            this.columnHeader6.Width = 69;
+            this.columnHeader6.Width = 120;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 128);
+            this.label3.Location = new System.Drawing.Point(12, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 13);
             this.label3.TabIndex = 18;
@@ -179,22 +183,22 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ime";
-            this.columnHeader1.Width = 56;
+            this.columnHeader1.Width = 108;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Fakultet";
-            this.columnHeader5.Width = 84;
+            this.columnHeader5.Width = 137;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Prezime";
-            this.columnHeader2.Width = 61;
+            this.columnHeader2.Width = 108;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Grad";
-            this.columnHeader3.Width = 64;
+            this.columnHeader3.Width = 122;
             // 
             // listViewKnjiga
             // 
@@ -208,10 +212,10 @@
             this.columnHeader6});
             this.listViewKnjiga.FullRowSelect = true;
             this.listViewKnjiga.GridLines = true;
-            this.listViewKnjiga.Location = new System.Drawing.Point(12, 144);
+            this.listViewKnjiga.Location = new System.Drawing.Point(12, 108);
             this.listViewKnjiga.MultiSelect = false;
             this.listViewKnjiga.Name = "listViewKnjiga";
-            this.listViewKnjiga.Size = new System.Drawing.Size(339, 161);
+            this.listViewKnjiga.Size = new System.Drawing.Size(600, 161);
             this.listViewKnjiga.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listViewKnjiga.TabIndex = 19;
             this.listViewKnjiga.UseCompatibleStateImageBehavior = false;
@@ -220,12 +224,12 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Naziv firme";
-            this.columnHeader4.Width = 72;
+            this.columnHeader4.Width = 200;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "Adresa";
-            this.columnHeader7.Width = 103;
+            this.columnHeader7.Width = 135;
             // 
             // listView1
             // 
@@ -238,10 +242,10 @@
             this.columnHeader9});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(15, 364);
+            this.listView1.Location = new System.Drawing.Point(12, 328);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(339, 161);
+            this.listView1.Size = new System.Drawing.Size(600, 161);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -250,15 +254,16 @@
             // columnHeader8
             // 
             this.columnHeader8.Text = "Ovlaštena osoba";
-            this.columnHeader8.Width = 97;
+            this.columnHeader8.Width = 150;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "Telefon";
+            this.columnHeader9.Width = 111;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(276, 311);
+            this.button4.Location = new System.Drawing.Point(93, 275);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 30;
@@ -267,18 +272,47 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(276, 531);
+            this.button3.Location = new System.Drawing.Point(93, 495);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 31;
             this.button3.Text = "Briši";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // pretraziButton
+            // 
+            this.pretraziButton.Location = new System.Drawing.Point(501, 27);
+            this.pretraziButton.Name = "pretraziButton";
+            this.pretraziButton.Size = new System.Drawing.Size(75, 23);
+            this.pretraziButton.TabIndex = 10;
+            this.pretraziButton.Text = "Pretraži";
+            this.pretraziButton.UseVisualStyleBackColor = true;
+            // 
+            // iznajmiButton1
+            // 
+            this.iznajmiButton1.Location = new System.Drawing.Point(537, 275);
+            this.iznajmiButton1.Name = "iznajmiButton1";
+            this.iznajmiButton1.Size = new System.Drawing.Size(75, 23);
+            this.iznajmiButton1.TabIndex = 32;
+            this.iznajmiButton1.Text = "Iznajmi";
+            this.iznajmiButton1.UseVisualStyleBackColor = true;
+            // 
+            // iznajmiButton2
+            // 
+            this.iznajmiButton2.Location = new System.Drawing.Point(537, 495);
+            this.iznajmiButton2.Name = "iznajmiButton2";
+            this.iznajmiButton2.Size = new System.Drawing.Size(75, 23);
+            this.iznajmiButton2.TabIndex = 33;
+            this.iznajmiButton2.Text = "Iznajmi";
+            this.iznajmiButton2.UseVisualStyleBackColor = true;
+            // 
             // PregledZakupaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 593);
+            this.ClientSize = new System.Drawing.Size(624, 549);
+            this.Controls.Add(this.iznajmiButton2);
+            this.Controls.Add(this.iznajmiButton1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
@@ -331,5 +365,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button pretraziButton;
+        private System.Windows.Forms.Button iznajmiButton2;
+        private System.Windows.Forms.Button iznajmiButton1;
     }
 }

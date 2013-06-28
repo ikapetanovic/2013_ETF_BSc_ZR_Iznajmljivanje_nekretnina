@@ -58,17 +58,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
+    <Compile Include="OAplikaciji.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
+    <Compile Include="OAplikaciji.Designer.cs">
+      <DependentUpon>OAplikaciji.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackupRestore.cs">
+    <Compile Include="BazaPodataka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackupRestore.Designer.cs">
-      <DependentUpon>BackupRestore.cs</DependentUpon>
+    <Compile Include="BazaPodataka.Designer.cs">
+      <DependentUpon>BazaPodataka.cs</DependentUpon>
     </Compile>
     <Compile Include="UnosDijelaNekretnine.cs">
       <SubType>Form</SubType>
@@ -112,11 +112,11 @@
     <Compile Include="OcitanjeRashoda.Designer.cs">
       <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
     </Compile>
-    <Compile Include="MojiPodaci.cs">
+    <Compile Include="MojProfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MojiPodaci.Designer.cs">
-      <DependentUpon>MojiPodaci.cs</DependentUpon>
+    <Compile Include="MojProfil.Designer.cs">
+      <DependentUpon>MojProfil.cs</DependentUpon>
     </Compile>
     <Compile Include="PregledNekretnina.cs">
       <SubType>Form</SubType>
@@ -144,17 +144,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vrste rashoda.cs">
+    <Compile Include="VrsteRashoda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vrste rashoda.Designer.cs">
-      <DependentUpon>Vrste rashoda.cs</DependentUpon>
+    <Compile Include="VrsteRashoda.Designer.cs">
+      <DependentUpon>VrsteRashoda.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
+    <EmbeddedResource Include="OAplikaciji.resx">
+      <DependentUpon>OAplikaciji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BackupRestore.resx">
-      <DependentUpon>BackupRestore.cs</DependentUpon>
+    <EmbeddedResource Include="BazaPodataka.resx">
+      <DependentUpon>BazaPodataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnosDijelaNekretnine.resx">
       <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
@@ -177,8 +177,8 @@
     <EmbeddedResource Include="OcitanjeRashoda.resx">
       <DependentUpon>OcitanjeRashoda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MojiPodaci.resx">
-      <DependentUpon>MojiPodaci.cs</DependentUpon>
+    <EmbeddedResource Include="MojProfil.resx">
+      <DependentUpon>MojProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PregledNekretnina.resx">
       <DependentUpon>PregledNekretnina.cs</DependentUpon>
@@ -202,8 +202,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vrste rashoda.resx">
-      <DependentUpon>Vrste rashoda.cs</DependentUpon>
+    <EmbeddedResource Include="VrsteRashoda.resx">
+      <DependentUpon>VrsteRashoda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -472,6 +472,105 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\abstract_blue_tree_white_444_1680x1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1309926573_abstract-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutSiva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opera-Background-Blue-Bubbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372360329_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372360338_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372360427_chart_bar_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372360481_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372360730_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361197_kfm_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361295_x-office-spreadsheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361421_onebit_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361426_text_list_bullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361718_text_list_bullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1372361847_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System-Help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company_zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Column-Chart-icon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginSiva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sivaLogin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bijelaisjecena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bijelaisjecena2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isjecena2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿namespace IKZavrsni
 {
-    partial class BackupRestore
+    partial class BazaPodataka
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackupRestore));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BazaPodataka));
             this.label1 = new System.Windows.Forms.Label();
             this.backupTextBox = new System.Windows.Forms.TextBox();
             this.browse1 = new System.Windows.Forms.Button();
@@ -40,14 +40,14 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,13 +55,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(94, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(113, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Export baze u:";
+            this.label1.Text = "Spasi bazu podatka u:";
             // 
             // backupTextBox
             // 
-            this.backupTextBox.Location = new System.Drawing.Point(94, 35);
+            this.backupTextBox.Location = new System.Drawing.Point(93, 35);
             this.backupTextBox.Name = "backupTextBox";
             this.backupTextBox.Size = new System.Drawing.Size(351, 20);
             this.backupTextBox.TabIndex = 1;
@@ -82,7 +82,7 @@
             this.backup.Name = "backup";
             this.backup.Size = new System.Drawing.Size(75, 23);
             this.backup.TabIndex = 3;
-            this.backup.Text = "Export";
+            this.backup.Text = "Spasi";
             this.backup.UseVisualStyleBackColor = true;
             this.backup.Click += new System.EventHandler(this.backup_Click);
             // 
@@ -92,7 +92,7 @@
             this.restore.Name = "restore";
             this.restore.Size = new System.Drawing.Size(75, 23);
             this.restore.TabIndex = 7;
-            this.restore.Text = "Import";
+            this.restore.Text = "Vrati";
             this.restore.UseVisualStyleBackColor = true;
             this.restore.Click += new System.EventHandler(this.restore_Click);
             // 
@@ -108,7 +108,7 @@
             // 
             // restoreTextBox
             // 
-            this.restoreTextBox.Location = new System.Drawing.Point(93, 35);
+            this.restoreTextBox.Location = new System.Drawing.Point(94, 35);
             this.restoreTextBox.Name = "restoreTextBox";
             this.restoreTextBox.Size = new System.Drawing.Size(352, 20);
             this.restoreTextBox.TabIndex = 5;
@@ -118,9 +118,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(90, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Import baze iz:";
+            this.label2.Text = "Vrati bazu podatka iz:";
             // 
             // statusStrip1
             // 
@@ -152,6 +152,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Backup";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::IKZavrsni.Properties.Resources.backupDB;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 87);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pictureBox2);
@@ -176,17 +186,7 @@
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::IKZavrsni.Properties.Resources.backupDB;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 87);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BackupRestore
+            // SigurnosneKopije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,17 +196,17 @@
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "BackupRestore";
+            this.Name = "SigurnosneKopije";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Backup i restore";
+            this.Text = "Sigurnosne kopije";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

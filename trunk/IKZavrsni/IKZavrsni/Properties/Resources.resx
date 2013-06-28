@@ -124,17 +124,35 @@
   <data name="plavaPozadinaMenija" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plavaPozadinaMenija.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="helpcrni" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\helpcrni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="izvjestaj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izvjestaj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="House-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\House-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372360338_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372360338_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ikonaZakupca1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ikonaZakupca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ikonaNekretine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ikonaNekretine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372361295_x-office-spreadsheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361295_x-office-spreadsheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bijelaisjecena2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bijelaisjecena2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restoreDB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restoreDB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="database16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,17 +166,26 @@
   <data name="user-add-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-add-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zakupac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zakupac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aboutSiva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aboutSiva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dodajZakupca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dodajZakupca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="help-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PozadinaSiva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PozadinaSiva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blueHouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blueHouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System-Help-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System-Help-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Skyscrapers-1024x1024-ipad-wallpapers.co" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Skyscrapers-1024x1024-ipad-wallpapers.co.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +193,14 @@
   <data name="L545421971" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\L545421971.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="blue-home-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sidebar-Pictures-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sidebar-Pictures-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallpaper-128859" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper-128859.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1309926573_abstract-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1309926573_abstract-5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="siva3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siva3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,9 +214,6 @@
   <data name="stanje48.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stanje48.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stanje48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stanje48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Noir Home folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Noir Home folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,17 +223,29 @@
   <data name="chart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bijelaisjecena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bijelaisjecena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home_w" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_w.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372360329_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372360329_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="section_pics_building" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\section_pics_building.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="company_zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\company_zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="company" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\company.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="944312_10151535006099792_320977561_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\944312_10151535006099792_320977561_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,14 +256,17 @@
   <data name="backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="postavke1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postavke1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="siva2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siva2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sd2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sd2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="decorative-frame-Download-Royalty-free-Vector-File-EPS-9272" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\decorative-frame-Download-Royalty-free-Vector-File-EPS-9272.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="izvjestaj2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izvjestaj1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,14 +274,17 @@
   <data name="Skyscraper-4-QRNIWTZ8Z1-1400x1050" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Skyscraper-4-QRNIWTZ8Z1-1400x1050.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nekretnina16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nekretnina16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="crniZakupac48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crniZakupac48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stanje48.2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stanje48.2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="help3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="naplacivanje1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\naplacivanje1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,11 +292,17 @@
   <data name="Pictures-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pictures-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zakupac48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zakupac48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sivaLogin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sivaLogin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folder-blue-pictures-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder-blue-pictures-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372360730_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372360730_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372360427_chart_bar_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372360427_chart_bar_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="profile16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,14 +316,17 @@
   <data name="izlaz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izlaz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PozadinaSiva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PozadinaSiva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stanje48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stanje48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pomoc48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pomoc48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="11_03_1---Skyscraper_web" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\11_03_1---Skyscraper_web.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_add_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_add_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -285,6 +336,9 @@
   </data>
   <data name="izvjestaj1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izvjestaj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Column-Chart-icon64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Column-Chart-icon64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="postavke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postavke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,35 +352,59 @@
   <data name="home_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="helpp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helpp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372361421_onebit_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361421_onebit_39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Skyscraper-Architecture-Design-Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Skyscraper-Architecture-Design-Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rashodi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rashodi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstract_blue_tree_white_444_1680x1050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract_blue_tree_white_444_1680x1050.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="postavke48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\postavke48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rsz_users-add-user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_users-add-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rashodi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rashodi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nekretnina48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nekretnina48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1372360481_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372360481_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Places-folder-image-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Places-folder-image-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pomoc48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pomoc48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="help16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restoreDB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restoreDB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wallpaper-128859" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper-128859.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1372361847_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361847_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Opera-Background-Blue-Bubbles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Opera-Background-Blue-Bubbles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="siva" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372361426_text_list_bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361426_text_list_bullets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pozadinaLogina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pozadinaLogina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -337,11 +415,26 @@
   <data name="Vict-Vign_frame-006" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vict-Vign_frame-006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1372361197_kfm_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361197_kfm_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1372361718_text_list_bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1372361718_text_list_bullets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginSiva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginSiva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pomoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pomoc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="decorative-frame-Download-Royalty-free-Vector-File-EPS-9272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decorative-frame-Download-Royalty-free-Vector-File-EPS-9272.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pictures-Nikon-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pictures-Nikon-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,31 +451,37 @@
   <data name="Places-user-home-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Places-user-home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rashodi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rashodi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pretraga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pretraga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rsz_users-add-user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_users-add-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="naplacivanje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\naplacivanje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="postavke1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postavke1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zakupac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zakupac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="izvjestaj48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izvjestaj48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nekretnina16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nekretnina16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="help4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="professional-grey-frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\professional-grey-frame.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zakupac48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zakupac48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abstract_blue_tree_white_444_1680x1050" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract_blue_tree_white_444_1680x1050.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="isjecena2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isjecena2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

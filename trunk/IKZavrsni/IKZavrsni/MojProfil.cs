@@ -11,16 +11,16 @@ using DBConnection;
 
 namespace IKZavrsni
 {
-    public partial class MojiPodaci : Form
+    public partial class MojProfil : Form
     {
         string korisnickoIme3;
 
-        public MojiPodaci()
+        public MojProfil()
         {
             InitializeComponent();
         }
 
-        public MojiPodaci(string korisnickoIme4)
+        public MojProfil(string korisnickoIme4)
         {
             InitializeComponent();
             korisnickoIme3 = korisnickoIme4;
@@ -36,7 +36,6 @@ namespace IKZavrsni
                 if (ime.Text.Length < 1 || prezime.Text.Length < 1 || fiksniTelefon.Text.Length < 1 || adresa.Text.Length < 1 || grad.Text.Length < 1 || korisnickoIme.Text.Length < 1 || lozinka.Text.Length < 1)
                 {
                     toolStripStatusLabel1.Text = "Popunite polja.";
-
                 }
                 else
                 {

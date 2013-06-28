@@ -66,8 +66,8 @@
             this.atributPretrazivanjaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.atributPretrazivanjaComboBox.FormattingEnabled = true;
             this.atributPretrazivanjaComboBox.Items.AddRange(new object[] {
-            "Nazivu",
             "Adresi",
+            "Nazivu",
             "Lokaciji",
             "Vrsti"});
             this.atributPretrazivanjaComboBox.Location = new System.Drawing.Point(106, 22);
@@ -308,6 +308,7 @@
             this.Name = "PregledNekretnina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pregled nekretnina";
+            this.Load += new System.EventHandler(this.PregledNekretnina_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

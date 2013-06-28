@@ -48,7 +48,20 @@ namespace IKZavrsni
         {
             try
             {
+                n.VrstaNekretnine = vrstaNekretnineComboBox.SelectedItem.ToString();
+                n.Naziv = nazivTextBox.Text;
+                n.Adresa = adresaTextBox.Text;
+                n.Lokacija = lokacijaTextBox.Text;
+                n.Grad = gradTextBox.Text;
+                n.BrojKvadrata = Convert.ToInt16(brojKvadrataNumericUpDown.Value);
+                n.GodinaIzgradnje = Convert.ToInt16(godinaIzgradnjeNumericUpDown.Value);
+                n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaNumericUpDown.Value);
+                n.Biljeske = biljeskeRichTextBox.Text;
+                Bitmap slika = (Bitmap)slikaPictureBox.Image;
+                n.Slika = slika;
+
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+
                 dao.AzurirajNekretninu(n);
                 
                 
@@ -58,7 +71,7 @@ namespace IKZavrsni
             }
             catch (Exception izuzetak)
             {
-                toolStripStatusLabel1.Text = izuzetak.Message;
+                toolStripStatusLabel1.Text = izuzetak.Message + n.Id.ToString();
             } 
         }
 
