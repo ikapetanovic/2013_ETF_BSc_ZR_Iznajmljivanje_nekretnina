@@ -155,7 +155,7 @@
             this.groupBox1.Size = new System.Drawing.Size(627, 62);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Prikaz naplaćivanja";
+            this.groupBox1.Text = "Period";
             // 
             // button3
             // 
