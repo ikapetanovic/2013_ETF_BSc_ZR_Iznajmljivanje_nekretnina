@@ -29,8 +29,7 @@ namespace IKZavrsni
 
         private void dodajDio_Click(object sender, EventArgs e)
         {
-            UnosDijelaKojiSeIznajmljuje edn = new UnosDijelaKojiSeIznajmljuje();
-            edn.Show();
+           
         }
 
         private void pretraziButton_Click(object sender, EventArgs e)

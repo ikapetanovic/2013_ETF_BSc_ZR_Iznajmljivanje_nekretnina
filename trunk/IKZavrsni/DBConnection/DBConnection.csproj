@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO.cs" />
+    <Compile Include="DioNekretnine.cs" />
     <Compile Include="FizickoLice.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="KorisnikTest.cs" />

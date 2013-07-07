@@ -70,12 +70,6 @@
     <Compile Include="BazaPodataka.Designer.cs">
       <DependentUpon>BazaPodataka.cs</DependentUpon>
     </Compile>
-    <Compile Include="UnosDijelaNekretnine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UnosDijelaNekretnine.Designer.cs">
-      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
-    </Compile>
     <Compile Include="IzmjenaNekretnine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,11 +94,11 @@
     <Compile Include="UnosZakupca.Designer.cs">
       <DependentUpon>UnosZakupca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Meni.cs">
+    <Compile Include="Izbornik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Meni.Designer.cs">
-      <DependentUpon>Meni.cs</DependentUpon>
+    <Compile Include="Izbornik.Designer.cs">
+      <DependentUpon>Izbornik.cs</DependentUpon>
     </Compile>
     <Compile Include="OcitanjeRashoda.cs">
       <SubType>Form</SubType>
@@ -156,9 +150,6 @@
     <EmbeddedResource Include="BazaPodataka.resx">
       <DependentUpon>BazaPodataka.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UnosDijelaNekretnine.resx">
-      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IzmjenaNekretnine.resx">
       <DependentUpon>IzmjenaNekretnine.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +162,8 @@
     <EmbeddedResource Include="UnosZakupca.resx">
       <DependentUpon>UnosZakupca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Meni.resx">
-      <DependentUpon>Meni.cs</DependentUpon>
+    <EmbeddedResource Include="Izbornik.resx">
+      <DependentUpon>Izbornik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OcitanjeRashoda.resx">
       <DependentUpon>OcitanjeRashoda.cs</DependentUpon>

@@ -31,7 +31,7 @@ namespace IKZavrsni
 
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
                 Nekretnina n = new Nekretnina(vrstaNekretnineComboBox.SelectedItem.ToString(), nazivTextBox.Text, adresaTextBox.Text, lokacijaTextBox.Text, gradTextBox.Text, Convert.ToInt16(brojKvadrataNumericUpDown.Value), Convert.ToInt16(godinaIzgradnjeNumericUpDown.Value), Convert.ToDouble(nabavnaCijenaNumericUpDown.Value), biljeskeRichTextBox.Text);
-                Bitmap slika = (Bitmap)slikaPictureBox.Image;
+                Bitmap slika = (Bitmap)slikaNekretninePictureBox.Image;
                 n.Slika = slika;
 
                 dao.DodajNekretninu(n);
@@ -72,7 +72,7 @@ namespace IKZavrsni
                 OpenFileDialog open = new OpenFileDialog();
                 open.Filter = "Image Files |*.jpg; *.jpeg; *.png; *.gif; *.bmp";
                 if (open.ShowDialog() == DialogResult.OK)
-                    slikaPictureBox.Image = new Bitmap(open.FileName);
+                    slikaNekretninePictureBox.Image = new Bitmap(open.FileName);
             }
             catch (Exception)
             {
