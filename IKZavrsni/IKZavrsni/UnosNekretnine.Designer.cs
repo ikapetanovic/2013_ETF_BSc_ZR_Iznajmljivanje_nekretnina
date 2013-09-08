@@ -48,6 +48,9 @@
             this.biljeskeRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.nabavnaCijenaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.godinaIzgradnjeMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.brojKvadrataMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.slikaNekretninePictureBox = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -67,6 +70,7 @@
             this.biljeskeDijelaRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.brojKvadrataDijelaTextBox = new System.Windows.Forms.TextBox();
             this.vrstaNekretnineComboBox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -76,10 +80,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.izadjiButton1 = new System.Windows.Forms.Button();
             this.spasiDioNekretnineButton = new System.Windows.Forms.Button();
-            this.brojKvadrataMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.godinaIzgradnjeMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.nabavnaCijenaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.brojKvadrataDijelaTextBox = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -257,6 +257,28 @@
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detaljniji podaci";
+            // 
+            // nabavnaCijenaMaskedTextBox
+            // 
+            this.nabavnaCijenaMaskedTextBox.Location = new System.Drawing.Point(107, 71);
+            this.nabavnaCijenaMaskedTextBox.Name = "nabavnaCijenaMaskedTextBox";
+            this.nabavnaCijenaMaskedTextBox.Size = new System.Drawing.Size(127, 20);
+            this.nabavnaCijenaMaskedTextBox.TabIndex = 20;
+            // 
+            // godinaIzgradnjeMaskedTextBox
+            // 
+            this.godinaIzgradnjeMaskedTextBox.Location = new System.Drawing.Point(107, 45);
+            this.godinaIzgradnjeMaskedTextBox.Name = "godinaIzgradnjeMaskedTextBox";
+            this.godinaIzgradnjeMaskedTextBox.Size = new System.Drawing.Size(127, 20);
+            this.godinaIzgradnjeMaskedTextBox.TabIndex = 19;
+            // 
+            // brojKvadrataMaskedTextBox
+            // 
+            this.brojKvadrataMaskedTextBox.Location = new System.Drawing.Point(108, 19);
+            this.brojKvadrataMaskedTextBox.Name = "brojKvadrataMaskedTextBox";
+            this.brojKvadrataMaskedTextBox.Size = new System.Drawing.Size(127, 20);
+            this.brojKvadrataMaskedTextBox.TabIndex = 18;
+            this.brojKvadrataMaskedTextBox.ValidatingType = typeof(int);
             // 
             // groupBox3
             // 
@@ -490,6 +512,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Osnovni podaci";
             // 
+            // brojKvadrataDijelaTextBox
+            // 
+            this.brojKvadrataDijelaTextBox.Location = new System.Drawing.Point(91, 75);
+            this.brojKvadrataDijelaTextBox.Name = "brojKvadrataDijelaTextBox";
+            this.brojKvadrataDijelaTextBox.Size = new System.Drawing.Size(147, 20);
+            this.brojKvadrataDijelaTextBox.TabIndex = 61;
+            // 
             // vrstaNekretnineComboBox
             // 
             this.vrstaNekretnineComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -583,35 +612,6 @@
             this.spasiDioNekretnineButton.UseVisualStyleBackColor = true;
             this.spasiDioNekretnineButton.Click += new System.EventHandler(this.spasiDioNekretnineButton_Click);
             // 
-            // brojKvadrataMaskedTextBox
-            // 
-            this.brojKvadrataMaskedTextBox.Location = new System.Drawing.Point(108, 19);
-            this.brojKvadrataMaskedTextBox.Name = "brojKvadrataMaskedTextBox";
-            this.brojKvadrataMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.brojKvadrataMaskedTextBox.TabIndex = 18;
-            this.brojKvadrataMaskedTextBox.ValidatingType = typeof(int);
-            // 
-            // godinaIzgradnjeMaskedTextBox
-            // 
-            this.godinaIzgradnjeMaskedTextBox.Location = new System.Drawing.Point(107, 45);
-            this.godinaIzgradnjeMaskedTextBox.Name = "godinaIzgradnjeMaskedTextBox";
-            this.godinaIzgradnjeMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.godinaIzgradnjeMaskedTextBox.TabIndex = 19;
-            // 
-            // nabavnaCijenaMaskedTextBox
-            // 
-            this.nabavnaCijenaMaskedTextBox.Location = new System.Drawing.Point(107, 71);
-            this.nabavnaCijenaMaskedTextBox.Name = "nabavnaCijenaMaskedTextBox";
-            this.nabavnaCijenaMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.nabavnaCijenaMaskedTextBox.TabIndex = 20;
-            // 
-            // brojKvadrataDijelaTextBox
-            // 
-            this.brojKvadrataDijelaTextBox.Location = new System.Drawing.Point(91, 75);
-            this.brojKvadrataDijelaTextBox.Name = "brojKvadrataDijelaTextBox";
-            this.brojKvadrataDijelaTextBox.Size = new System.Drawing.Size(147, 20);
-            this.brojKvadrataDijelaTextBox.TabIndex = 61;
-            // 
             // UnosNekretnine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -623,7 +623,7 @@
             this.MaximizeBox = false;
             this.Name = "UnosNekretnine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Evidencija nekretnine";
+            this.Text = "Unos nekretnine";
             this.Load += new System.EventHandler(this.Nekretnina_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

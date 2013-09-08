@@ -32,14 +32,14 @@ namespace IKZavrsni
             adresaTextBox.Text = n.Adresa;
             lokacijaTextBox.Text = n.Lokacija;
             gradTextBox.Text = n.Grad;
-            brojKvadrataNumericUpDown.Value = n.BrojKvadrata;
-            godinaIzgradnjeNumericUpDown.Value = n.GodinaIzgradnje;
-            nabavnaCijenaNumericUpDown.Value = Convert.ToDecimal(n.NabavnaCijena);
+            brojKvadrataMaskedTextBox.Text = n.BrojKvadrata.ToString();
+            godinaIzgradnjeMaskedTextBox.Text = n.GodinaIzgradnje.ToString();
+            nabavnaCijenaMaskedTextBox.Text = n.NabavnaCijena.ToString();
             biljeskeRichTextBox.Text = n.Biljeske;
 
             DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
-            slikaPictureBox.Image = dao.VratiSlikuNekretnine(n.Id);
+            slikaNekretninePictureBox.Image = dao.VratiSlikuNekretnine(n.Id);
             toolStripStatusLabel1.Text = "";            
         }
 
@@ -51,11 +51,11 @@ namespace IKZavrsni
                 n.Adresa = adresaTextBox.Text;
                 n.Lokacija = lokacijaTextBox.Text;
                 n.Grad = gradTextBox.Text;
-                n.BrojKvadrata = Convert.ToInt16(brojKvadrataNumericUpDown.Value);
-                n.GodinaIzgradnje = Convert.ToInt16(godinaIzgradnjeNumericUpDown.Value);
-                n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaNumericUpDown.Value);
+                n.BrojKvadrata = Convert.ToInt16(brojKvadrataMaskedTextBox.Text);
+                n.GodinaIzgradnje = Convert.ToInt16(godinaIzgradnjeMaskedTextBox.Text);
+                n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaMaskedTextBox.Text);
                 n.Biljeske = biljeskeRichTextBox.Text;
-                Bitmap slika = (Bitmap)slikaPictureBox.Image;
+                Bitmap slika = (Bitmap)slikaNekretninePictureBox.Image;
                 n.Slika = slika;
 
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
@@ -74,23 +74,27 @@ namespace IKZavrsni
         }
 
         private void slikaPictureBox_Click(object sender, EventArgs e)
+        {            
+        }
+
+        private void izadjiButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void slikaNekretninePictureBox_Click(object sender, EventArgs e)
         {
             try
             {
                 OpenFileDialog open = new OpenFileDialog();
                 open.Filter = "Image Files |*.jpg; *.jpeg; *.png; *.gif; *.bmp";
                 if (open.ShowDialog() == DialogResult.OK)
-                    slikaPictureBox.Image = new Bitmap(open.FileName);
+                    slikaNekretninePictureBox.Image = new Bitmap(open.FileName);
             }
             catch (Exception)
             {
                 throw new ApplicationException("Failed loading image");
             }
-        }
-
-        private void izadjiButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
 

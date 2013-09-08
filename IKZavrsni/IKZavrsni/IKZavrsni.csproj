@@ -58,11 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IzmjenaIznajmljeneNekretnine.cs">
+    <Compile Include="IzmjenaDijelaNekretnine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IzmjenaIznajmljeneNekretnine.Designer.cs">
-      <DependentUpon>IzmjenaIznajmljeneNekretnine.cs</DependentUpon>
+    <Compile Include="IzmjenaDijelaNekretnine.Designer.cs">
+      <DependentUpon>IzmjenaDijelaNekretnine.cs</DependentUpon>
     </Compile>
     <Compile Include="OAplikaciji.cs">
       <SubType>Form</SubType>
@@ -87,6 +87,12 @@
     </Compile>
     <Compile Include="Iznajmljivanje.Designer.cs">
       <DependentUpon>Iznajmljivanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosDijelaNekretnine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosDijelaNekretnine.Designer.cs">
+      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
     </Compile>
     <Compile Include="UnosNekretnine.cs">
       <SubType>Form</SubType>
@@ -150,6 +156,9 @@
     <Compile Include="VrsteRashoda.Designer.cs">
       <DependentUpon>VrsteRashoda.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="IzmjenaDijelaNekretnine.resx">
+      <DependentUpon>IzmjenaDijelaNekretnine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OAplikaciji.resx">
       <DependentUpon>OAplikaciji.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Iznajmljivanje.resx">
       <DependentUpon>Iznajmljivanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosDijelaNekretnine.resx">
+      <DependentUpon>UnosDijelaNekretnine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnosNekretnine.resx">
       <DependentUpon>UnosNekretnine.cs</DependentUpon>
