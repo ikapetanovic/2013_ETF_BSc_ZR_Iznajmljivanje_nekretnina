@@ -33,6 +33,7 @@
             this.atributPretrazivanjaComboBox = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dodajDioButton = new System.Windows.Forms.Button();
             this.brisiNekretninuButton = new System.Windows.Forms.Button();
             this.izmijeniButton1 = new System.Windows.Forms.Button();
             this.nekretnineListView = new System.Windows.Forms.ListView();
@@ -52,8 +53,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.prikaziDijeloveButton = new System.Windows.Forms.Button();
-            this.dodajDioButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -82,7 +81,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dodajDioButton);
-            this.groupBox1.Controls.Add(this.prikaziDijeloveButton);
             this.groupBox1.Controls.Add(this.brisiNekretninuButton);
             this.groupBox1.Controls.Add(this.izmijeniButton1);
             this.groupBox1.Controls.Add(this.nekretnineListView);
@@ -92,6 +90,16 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nekretnine";
+            // 
+            // dodajDioButton
+            // 
+            this.dodajDioButton.Location = new System.Drawing.Point(9, 227);
+            this.dodajDioButton.Name = "dodajDioButton";
+            this.dodajDioButton.Size = new System.Drawing.Size(174, 23);
+            this.dodajDioButton.TabIndex = 35;
+            this.dodajDioButton.Text = "Dodaj dio za iznajmljivanje";
+            this.dodajDioButton.UseVisualStyleBackColor = true;
+            this.dodajDioButton.Click += new System.EventHandler(this.dodajDioButton_Click);
             // 
             // brisiNekretninuButton
             // 
@@ -131,6 +139,7 @@
             this.nekretnineListView.TabIndex = 31;
             this.nekretnineListView.UseCompatibleStateImageBehavior = false;
             this.nekretnineListView.View = System.Windows.Forms.View.Details;
+            this.nekretnineListView.ItemActivate += new System.EventHandler(this.nekretnineListView_ItemActivate_1);
             // 
             // columnHeader1
             // 
@@ -194,6 +203,7 @@
             this.brisiDioNekretnineButton.TabIndex = 42;
             this.brisiDioNekretnineButton.Text = "Briši";
             this.brisiDioNekretnineButton.UseVisualStyleBackColor = true;
+            this.brisiDioNekretnineButton.Click += new System.EventHandler(this.brisiDioNekretnineButton_Click);
             // 
             // izmijeniButton2
             // 
@@ -203,6 +213,7 @@
             this.izmijeniButton2.TabIndex = 41;
             this.izmijeniButton2.Text = "Izmijeni";
             this.izmijeniButton2.UseVisualStyleBackColor = true;
+            this.izmijeniButton2.Click += new System.EventHandler(this.izmijeniButton2_Click);
             // 
             // dijeloviNekretnineListView
             // 
@@ -268,25 +279,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pretraživanje";
             // 
-            // prikaziDijeloveButton
-            // 
-            this.prikaziDijeloveButton.Location = new System.Drawing.Point(118, 227);
-            this.prikaziDijeloveButton.Name = "prikaziDijeloveButton";
-            this.prikaziDijeloveButton.Size = new System.Drawing.Size(103, 23);
-            this.prikaziDijeloveButton.TabIndex = 34;
-            this.prikaziDijeloveButton.Text = "Prikaži dijelove";
-            this.prikaziDijeloveButton.UseVisualStyleBackColor = true;
-            this.prikaziDijeloveButton.Click += new System.EventHandler(this.prikaziDijeloveButton_Click);
-            // 
-            // dodajDioButton
-            // 
-            this.dodajDioButton.Location = new System.Drawing.Point(9, 227);
-            this.dodajDioButton.Name = "dodajDioButton";
-            this.dodajDioButton.Size = new System.Drawing.Size(103, 23);
-            this.dodajDioButton.TabIndex = 35;
-            this.dodajDioButton.Text = "Dodaj dio";
-            this.dodajDioButton.UseVisualStyleBackColor = true;
-            // 
             // PregledNekretnina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,7 +330,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button prikaziDijeloveButton;
         private System.Windows.Forms.Button dodajDioButton;
     }
 }

@@ -179,9 +179,7 @@ namespace IKZavrsni
                 statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.ForeColor = Color.Red;
                 toolStripStatusLabel1.Text = izuzetak.Message;
-            }
-
-            
+            }      
                         
         }
 

@@ -70,3 +70,5 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Moj
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.OAplikaciji.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.BazaPodataka.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Izbornik.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.UnosDijelaNekretnine.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.IzmjenaDijelaNekretnine.resources

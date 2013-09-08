@@ -14,11 +14,14 @@ namespace IKZavrsni
     public partial class PregledNekretnina : Form
     {
         private List<Nekretnina> nekretnine;
+        private List<DioNekretnine> dijeloviNekretnina;
+        private Nekretnina odabranaNekretnina;
 
         public PregledNekretnina()
         {
             InitializeComponent();
             nekretnine = new List<Nekretnina>();
+            dijeloviNekretnina = new List<DioNekretnine>();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -34,7 +37,8 @@ namespace IKZavrsni
 
         private void pretraziButton_Click(object sender, EventArgs e)
         {
-            //nekretnineListView.Items.Clear();
+            nekretnineListView.Items.Clear();
+            dijeloviNekretnineListView.Items.Clear();
             
             if (unesenoTextBox.Text.Length == 0)
             {
@@ -143,6 +147,27 @@ namespace IKZavrsni
 
         private void prikaziDijeloveButton_Click(object sender, EventArgs e)
         {
+        }
+
+        private void dodajDioButton_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < nekretnineListView.Items.Count; i++)
+                if (nekretnineListView.Items[i].Selected == true)
+                {
+                    foreach (Nekretnina n in nekretnine)
+                        if (n.Naziv == nekretnineListView.Items[i].Text)
+                        {
+                            UnosDijelaNekretnine udn = new UnosDijelaNekretnine(n);
+                            udn.Show();
+                            return;
+                        }
+                }
+        }
+
+        private void nekretnineListView_ItemActivate_1(object sender, EventArgs e)
+        {
+            dijeloviNekretnineListView.Items.Clear();
+
             for (int i = 0; i < nekretnineListView.Items.Count; i++)
                 if (nekretnineListView.Items[i].Selected == true)
                 {
@@ -151,11 +176,13 @@ namespace IKZavrsni
                         {
                             try
                             {
+                                odabranaNekretnina = n;
+
                                 ListViewItem temp = new ListViewItem();
-                                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");                            
-                                
+                                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+
                                 int idNekretnine = dao.VratiIdNekretnine(n.Naziv, n.Adresa, n.Grad);
-                                List<DioNekretnine> dijeloviNekretnina = dao.PretraziDioNekretnine(idNekretnine);
+                                dijeloviNekretnina = dao.PretraziDioNekretnine(idNekretnine);
 
                                 foreach (DioNekretnine dn in dijeloviNekretnina)
                                 {
@@ -165,13 +192,66 @@ namespace IKZavrsni
                                 }
                                 return;
                             }
-                            catch(Exception izuzetak)
+                            catch (Exception izuzetak)
                             {
                                 toolStripStatusLabel1.Text = izuzetak.Message;
                             }
-                            
+
                         }
                 }
         }
+
+        private void izmijeniButton2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dijeloviNekretnineListView.Items.Count; i++)
+                if (dijeloviNekretnineListView.Items[i].Selected == true)
+                {
+                    foreach (DioNekretnine dn in dijeloviNekretnina)
+                        if (dn.Naziv == dijeloviNekretnineListView.Items[i].Text)
+                        {
+                            IzmjenaDijelaNekretnine idn = new IzmjenaDijelaNekretnine(dn, odabranaNekretnina);
+                            idn.ShowDialog();
+                            dijeloviNekretnineListView.Items.Clear();
+                            return;
+                        }
+                }            
+        }
+
+        private void brisiDioNekretnineButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+
+                for (int i = 0; i < dijeloviNekretnineListView.Items.Count; i++)
+                    if (dijeloviNekretnineListView.Items[i].Selected == true)
+                    {
+                        foreach (DioNekretnine dn in dijeloviNekretnina)
+                            if (dn.Naziv == dijeloviNekretnineListView.Items[i].Text)
+                            {
+                                DialogResult dr = new DialogResult();
+                                dr = MessageBox.Show("Da li ste sigurni da želite izbrisati odabrani dio nekretnine iz baze podataka?", "Upozorenje", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                                if (dr == System.Windows.Forms.DialogResult.Yes)
+                                {
+                                    dao.IzbrisiDioNekretnine(dn.Sifra);
+                                    dijeloviNekretnineListView.Items.Clear();
+                                    statusStrip1.BackColor = Color.White;
+                                    toolStripStatusLabel1.ForeColor = Color.Green;
+                                    toolStripStatusLabel1.Text = "Uspješno izbrisani podaci.";
+                                    return;
+                                }
+                            }
+                    }
+            }
+            catch (Exception)
+            {
+                statusStrip1.BackColor = Color.White;
+                toolStripStatusLabel1.ForeColor = Color.Red;
+                toolStripStatusLabel1.Text = "Podaci nisu obrisani!";
+            }
+        }
+
+
     }
 }
