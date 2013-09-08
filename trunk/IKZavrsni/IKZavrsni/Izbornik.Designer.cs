@@ -195,7 +195,7 @@
             // 
             this.mojiPodaciToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.user;
             this.mojiPodaciToolStripMenuItem.Name = "mojiPodaciToolStripMenuItem";
-            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mojiPodaciToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.mojiPodaciToolStripMenuItem.Text = "Moj profil";
             this.mojiPodaciToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -203,7 +203,7 @@
             // 
             this.sigurnosneKopijeToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.database_icon;
             this.sigurnosneKopijeToolStripMenuItem.Name = "sigurnosneKopijeToolStripMenuItem";
-            this.sigurnosneKopijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sigurnosneKopijeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.sigurnosneKopijeToolStripMenuItem.Text = "Baza podataka";
             this.sigurnosneKopijeToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -221,18 +221,19 @@
             // 
             this.dokumentacijaToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.help16;
             this.dokumentacijaToolStripMenuItem.Name = "dokumentacijaToolStripMenuItem";
-            this.dokumentacijaToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.dokumentacijaToolStripMenuItem.Text = "Dokumentacija";
+            this.dokumentacijaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dokumentacijaToolStripMenuItem.Text = "Uputstvo";
+            this.dokumentacijaToolStripMenuItem.Click += new System.EventHandler(this.dokumentacijaToolStripMenuItem_Click);
             // 
             // oAplikacijiToolStripMenuItem
             // 
             this.oAplikacijiToolStripMenuItem.Image = global::IKZavrsni.Properties.Resources.info;
             this.oAplikacijiToolStripMenuItem.Name = "oAplikacijiToolStripMenuItem";
-            this.oAplikacijiToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.oAplikacijiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oAplikacijiToolStripMenuItem.Text = "O aplikaciji";
             this.oAplikacijiToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
-            // Meni
+            // Izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,7 +246,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "Meni";
+            this.Name = "Izbornik";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";
             this.menuStrip1.ResumeLayout(false);

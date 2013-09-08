@@ -35,12 +35,10 @@
             this.godinaIzgradnjeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.gradTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.vrstaNekretnineComboBox = new System.Windows.Forms.ComboBox();
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.nabavnaCijenaNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.brojKvadrataNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.biljeskeRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -130,18 +128,6 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Broj kvadrata:";
             // 
-            // vrstaNekretnineComboBox
-            // 
-            this.vrstaNekretnineComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.vrstaNekretnineComboBox.FormattingEnabled = true;
-            this.vrstaNekretnineComboBox.Items.AddRange(new object[] {
-            "Stambena",
-            "Poslovna"});
-            this.vrstaNekretnineComboBox.Location = new System.Drawing.Point(108, 26);
-            this.vrstaNekretnineComboBox.Name = "vrstaNekretnineComboBox";
-            this.vrstaNekretnineComboBox.Size = new System.Drawing.Size(130, 21);
-            this.vrstaNekretnineComboBox.TabIndex = 13;
-            // 
             // errorProvider4
             // 
             this.errorProvider4.ContainerControl = this;
@@ -182,15 +168,6 @@
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 38;
             this.label3.Text = "Bilješke:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 29);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Vrsta nekretnine:";
             // 
             // label8
             // 
@@ -308,9 +285,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.gradTextBox);
-            this.groupBox2.Controls.Add(this.vrstaNekretnineComboBox);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.lokacijaTextBox);
             this.groupBox2.Controls.Add(this.nazivTextBox);
@@ -423,7 +398,6 @@
         private System.Windows.Forms.NumericUpDown godinaIzgradnjeNumericUpDown;
         private System.Windows.Forms.TextBox gradTextBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox vrstaNekretnineComboBox;
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox biljeskeRichTextBox;
@@ -431,7 +405,6 @@
         private System.Windows.Forms.Button izadjiButton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox lokacijaTextBox;
         private System.Windows.Forms.TextBox nazivTextBox;

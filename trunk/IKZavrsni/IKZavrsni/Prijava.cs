@@ -40,15 +40,14 @@ namespace IKZavrsni
                 else
                 {
                     statusStrip1.BackColor = Color.White;
-                    toolStripStatusLabel1.Text = "Neovlašten pristup.";
-                }
-                              
+                    toolStripStatusLabel1.Text = "Greška.";
+                }                              
                 
             }
             catch (Exception)
             {
                 statusStrip1.BackColor = Color.White;
-                toolStripStatusLabel1.Text = "Neovlašten pristup.";
+                toolStripStatusLabel1.Text = "Greška.";
             }                      
         }
 

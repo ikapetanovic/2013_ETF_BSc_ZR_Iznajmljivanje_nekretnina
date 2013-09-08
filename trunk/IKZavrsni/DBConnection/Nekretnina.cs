@@ -9,23 +9,19 @@ namespace DBConnection
 {
     public class Nekretnina
     {
-        private string vrstaNekretnine, naziv, adresa, lokacija, grad, biljeske;
+        private string naziv, adresa, lokacija, grad, biljeske;
         private int id, brojKvadrata, godinaIzgradnje;
         private double nabavnaCijena;
         private Bitmap slika;
 
         public Nekretnina() { }
 
-        public Nekretnina(string vrstaNekretnine, string naziv, string adresa, string lokacija, string grad, int brojKvadrata, int godinaIzgradnje, double nabavnaCijena, string biljeske)
-        {
-            this.vrstaNekretnine = vrstaNekretnine;
+        public Nekretnina(string naziv, string adresa, string lokacija, string grad, string biljeske)
+        {            
             this.naziv = naziv;
             this.adresa = adresa;
             this.lokacija = lokacija;
             this.grad = grad;
-            this.brojKvadrata = brojKvadrata;
-            this.godinaIzgradnje = godinaIzgradnje;
-            this.nabavnaCijena = nabavnaCijena;
             this.biljeske = biljeske;
         }
 
@@ -33,12 +29,6 @@ namespace DBConnection
         {
             get { return id; }
             set { id = value; }
-        }
-
-        public string VrstaNekretnine
-        {
-            get { return vrstaNekretnine; }
-            set { vrstaNekretnine = value; }
         }
 
         public string Naziv

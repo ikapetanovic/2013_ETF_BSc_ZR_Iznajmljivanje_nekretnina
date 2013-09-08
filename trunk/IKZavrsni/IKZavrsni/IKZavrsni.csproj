@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IzmjenaIznajmljeneNekretnine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmjenaIznajmljeneNekretnine.Designer.cs">
+      <DependentUpon>IzmjenaIznajmljeneNekretnine.cs</DependentUpon>
+    </Compile>
     <Compile Include="OAplikaciji.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -574,6 +580,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\database-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginSPlavom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -58,7 +58,7 @@
             // 
             // uredu
             // 
-            this.uredu.Location = new System.Drawing.Point(119, 334);
+            this.uredu.Location = new System.Drawing.Point(122, 333);
             this.uredu.Name = "uredu";
             this.uredu.Size = new System.Drawing.Size(87, 23);
             this.uredu.TabIndex = 11;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IKZavrsni.Properties.Resources.sivaLogin2;
+            this.BackgroundImage = global::IKZavrsni.Properties.Resources.loginSPlavom;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(234, 384);
             this.Controls.Add(this.statusStrip1);

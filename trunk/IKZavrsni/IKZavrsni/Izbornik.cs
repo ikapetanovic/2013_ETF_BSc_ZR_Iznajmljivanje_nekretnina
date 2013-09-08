@@ -107,5 +107,10 @@ namespace IKZavrsni
             OAplikaciji a = new OAplikaciji();
             a.Show();
         }
+
+        private void dokumentacijaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\Resources\Uputstvo.pdf");            
+        }
     }
 }

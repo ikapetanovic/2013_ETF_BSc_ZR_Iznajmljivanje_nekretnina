@@ -27,8 +27,7 @@ namespace IKZavrsni
         }
 
         private void IzmjenaNekretnine_Load(object sender, EventArgs e)
-        {
-            vrstaNekretnineComboBox.SelectedItem = n.VrstaNekretnine;
+        {            
             nazivTextBox.Text = n.Naziv;
             adresaTextBox.Text = n.Adresa;
             lokacijaTextBox.Text = n.Lokacija;
@@ -47,8 +46,7 @@ namespace IKZavrsni
         private void spasiNekretninuButton_Click(object sender, EventArgs e)
         {
             try
-            {
-                n.VrstaNekretnine = vrstaNekretnineComboBox.SelectedItem.ToString();
+            {               
                 n.Naziv = nazivTextBox.Text;
                 n.Adresa = adresaTextBox.Text;
                 n.Lokacija = lokacijaTextBox.Text;
