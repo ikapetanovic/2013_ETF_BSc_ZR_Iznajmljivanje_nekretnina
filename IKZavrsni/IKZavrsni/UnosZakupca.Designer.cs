@@ -249,7 +249,7 @@
             this.groupBox4.Size = new System.Drawing.Size(245, 131);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Kontakt podaci";
+            this.groupBox4.Text = "Kontaktni podaci";
             // 
             // label12
             // 
@@ -827,7 +827,7 @@
             this.label8.TabIndex = 29;
             this.label8.Text = "Bilješke:";
             // 
-            // Zakupac
+            // UnosZakupca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -841,7 +841,7 @@
             this.Controls.Add(this.unesi);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Zakupac";
+            this.Name = "UnosZakupca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evidencija zakupca";
             this.statusStrip1.ResumeLayout(false);

@@ -27,6 +27,11 @@ namespace DBConnection
             dataConnection.Open();
         }
 
+        public void ZatvoriKonekciju()
+        {
+            dataConnection.Close();
+        }
+
         ~DAO()
         {
             dataConnection.Close();
@@ -163,7 +168,7 @@ namespace DBConnection
 
 // NEKRETNINA
 
-        public bool DodajNekretninu(Nekretnina n)
+        public bool UnesiNekretninu(Nekretnina n)
         {
             try
             {
@@ -175,10 +180,9 @@ namespace DBConnection
                 byte[] bajtovi = m.ToArray();
 
                 MySqlCommand nekretnine =
-                new MySqlCommand("INSERT INTO nekretnine(vrstaNekretnine, naziv, adresa, lokacija, grad, brojKvadrata, godinaIzgradnje, nabavnaCijena, slika, biljeske) "
-                   + "VALUES(@vrstaNekretnine, @naziv, @adresa, @lokacija, @grad, @brojKvadrata, @godinaIzgradnje, @nabavnaCijena, @slika, @biljeske);", dataConnection);
+                new MySqlCommand("INSERT INTO nekretnine(naziv, adresa, lokacija, grad, brojKvadrata, godinaIzgradnje, nabavnaCijena, slika, biljeske) "
+                   + "VALUES(@naziv, @adresa, @lokacija, @grad, @brojKvadrata, @godinaIzgradnje, @nabavnaCijena, @slika, @biljeske);", dataConnection);
 
-                nekretnine.Parameters.AddWithValue("@vrstaNekretnine", (Object)n.VrstaNekretnine);
                 nekretnine.Parameters.AddWithValue("@naziv", (Object)n.Naziv);
                 nekretnine.Parameters.AddWithValue("@adresa", (Object)n.Adresa);
                 nekretnine.Parameters.AddWithValue("@lokacija", (Object)n.Lokacija);
@@ -213,9 +217,8 @@ namespace DBConnection
                 n.Slika.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
                 byte[] bajtovi = m.ToArray();
 
-                MySqlCommand nekretnine = new MySqlCommand("UPDATE nekretnine SET vrstaNekretnine = @vrstaNekretnine, naziv = @naziv, adresa = @adresa, lokacija = @lokacija, grad = @grad, brojKvadrata = @brojKvadrata, godinaIzgradnje = @godinaIzgradnje, nabavnaCijena = @nabavnaCijena, biljeske = @biljeske, slika = @slika WHERE nekretninaID = '" + n.Id + "'", dataConnection);
+                MySqlCommand nekretnine = new MySqlCommand("UPDATE nekretnine SET naziv = @naziv, adresa = @adresa, lokacija = @lokacija, grad = @grad, brojKvadrata = @brojKvadrata, godinaIzgradnje = @godinaIzgradnje, nabavnaCijena = @nabavnaCijena, biljeske = @biljeske, slika = @slika WHERE nekretninaID = '" + n.Id + "'", dataConnection);
 
-                nekretnine.Parameters.AddWithValue("@vrstaNekretnine", n.VrstaNekretnine);
                 nekretnine.Parameters.AddWithValue("@naziv", n.Naziv);
                 nekretnine.Parameters.AddWithValue("@adresa", n.Adresa);
                 nekretnine.Parameters.AddWithValue("@lokacija", n.Lokacija);
@@ -264,13 +267,12 @@ namespace DBConnection
                 List<Nekretnina> nekretnine = new List<Nekretnina>();
                 
                 string pretraga;
-                if (atribut == "Nazivu")
+                if (atribut == "Naziv")
                     pretraga = "naziv";
-                else if (atribut == "Adresi")
+                else if (atribut == "Adresa")
                     pretraga = "adresa";
-                else if (atribut == "Lokaciji")
+                else
                     pretraga = "lokacija";
-                else pretraga = "vrstaNekretnine";
 
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
@@ -280,7 +282,7 @@ namespace DBConnection
 
                 while (dataReader.Read())
                 {
-                    Nekretnina n = new Nekretnina(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetInt16(6), dataReader.GetInt16(7), dataReader.GetDouble(8), dataReader.GetString(9));
+                    Nekretnina n = new Nekretnina(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(8));
                     n.Id = dataReader.GetInt16(0);
                     nekretnine.Add(n);
                 }
@@ -317,11 +319,36 @@ namespace DBConnection
                 throw new Exception(izuzetak.Message);
             }
         }
+
+        
+        public int VratiIdNekretnine(String naziv, String adresa, String grad)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT nekretninaID FROM nekretnine WHERE naziv = '" + naziv + "' AND adresa = '" + adresa + "' AND grad = '" + grad + "';";
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                int id = -1;
+                if (dataReader.Read())
+                {
+                    id = dataReader.GetInt16(0);
+                    dataReader.Close();
+                }
+                return id;
+
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
         
 
 // DIO NEKRETNINE
 
-        public bool DodajDioNekretnine(DioNekretnine dn, int nekretninaID)
+        public bool UnesiDioNekretnine(DioNekretnine dn, int nekretninaID)
         {
             try
             {
@@ -333,12 +360,14 @@ namespace DBConnection
                 byte[] bajtovi = m.ToArray();
 
                 MySqlCommand dijeloviNekretnina =
-                new MySqlCommand("INSERT INTO dijelovinekretnina(sifra, Nekretnine_nekretninaID, naziv, iznosNajma, status, biljeske, slika) "
-                   + "VALUES(@sifra, @Nekretnine_nekretninaID, @naziv, @iznosNajma, @status, @biljeske, @slika);", dataConnection);
+                new MySqlCommand("INSERT INTO dijelovinekretnina(sifra, Nekretnine_nekretninaID, naziv, vrstaNekretnine, brojKvadrata, iznosNajma, status, biljeske, slika) "
+                   + "VALUES(@sifra, @Nekretnine_nekretninaID, @naziv, @vrstaNekretnine, @brojKvadrata, @iznosNajma, @status, @biljeske, @slika);", dataConnection);
 
                 dijeloviNekretnina.Parameters.AddWithValue("@sifra", (Object)dn.Sifra);
                 dijeloviNekretnina.Parameters.AddWithValue("@Nekretnine_nekretninaID", (Object)nekretninaID);
                 dijeloviNekretnina.Parameters.AddWithValue("@naziv", (Object)dn.Naziv);
+                dijeloviNekretnina.Parameters.AddWithValue("@vrstaNekretnine", (Object)dn.VrstaNekretnine);
+                dijeloviNekretnina.Parameters.AddWithValue("@brojKvadrata", (Object)dn.BrojKvadrata);
                 dijeloviNekretnina.Parameters.AddWithValue("@iznosNajma", (Object)dn.IznosNajma);
                 dijeloviNekretnina.Parameters.AddWithValue("@status", (Object)dn.Status);
                 dijeloviNekretnina.Parameters.AddWithValue("@biljeske", (Object)dn.Biljeske);
@@ -412,37 +441,32 @@ namespace DBConnection
             }
 
         }
+        
+        */
 
-        public List<Nekretnina> PretraziDioNekretnine(string atribut, string uneseno)
+        public List<DioNekretnine> PretraziDioNekretnine(int idNekretnine)
         {
 
             try
             {
-                List<Nekretnina> nekretnine = new List<Nekretnina>();
-
-                string pretraga;
-                if (atribut == "Nazivu")
-                    pretraga = "naziv";
-                else if (atribut == "Adresi")
-                    pretraga = "adresa";
-                else if (atribut == "Lokaciji")
-                    pretraga = "lokacija";
-                else pretraga = "vrstaNekretnine";
+                List<DioNekretnine> dijeloviNekretnine = new List<DioNekretnine>();
 
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
-                dataCommand.CommandText = "SELECT * FROM nekretnine WHERE " + pretraga + " LIKE '%" + uneseno + "%';";
+                dataCommand.CommandText = "SELECT * FROM dijelovinekretnina WHERE Nekretnine_nekretninaID = " + idNekretnine + ";";
 
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
 
                 while (dataReader.Read())
                 {
-                    Nekretnina n = new Nekretnina(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetInt16(6), dataReader.GetInt16(7), dataReader.GetDouble(8), dataReader.GetString(9));
-                    n.Id = dataReader.GetInt16(0);
-                    nekretnine.Add(n);
+                    DioNekretnine dn = new DioNekretnine(dataReader.GetString(0), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(6), dataReader.GetString(7));
+                    dn.BrojKvadrata = dataReader.GetInt32(4);
+                    dn.IznosNajma = dataReader.GetDouble(5);
+
+                    dijeloviNekretnine.Add(dn);
                 }
 
-                return nekretnine;
+                return dijeloviNekretnine;
             }
             catch (MySqlException izuzetak)
             {
@@ -451,7 +475,7 @@ namespace DBConnection
 
         }
 
-
+        /*
         public Bitmap VratiSlikuDijelaNekretnine(int id)
         {
             try
