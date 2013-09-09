@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnosZakupca));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -39,13 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.adresa = new System.Windows.Forms.TextBox();
-            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -64,7 +56,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dijeloviZaIznajmljivanjeComboBox = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
@@ -100,17 +92,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.errorProvider8 = new System.Windows.Forms.ErrorProvider(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -127,17 +111,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.White;
+            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 521);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(566, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(625, 22);
             this.statusStrip1.TabIndex = 27;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -149,17 +132,17 @@
             // 
             // telefon
             // 
-            this.telefon.Location = new System.Drawing.Point(92, 20);
-            this.telefon.Mask = "(999) 000-000";
+            this.telefon.Location = new System.Drawing.Point(112, 19);
+            this.telefon.Mask = "(999) 000-0000";
             this.telefon.Name = "telefon";
-            this.telefon.Size = new System.Drawing.Size(73, 20);
+            this.telefon.Size = new System.Drawing.Size(78, 20);
             this.telefon.TabIndex = 2;
             this.telefon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 53);
+            this.label6.Location = new System.Drawing.Point(71, 52);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 4;
@@ -167,7 +150,7 @@
             // 
             // ponisti
             // 
-            this.ponisti.Location = new System.Drawing.Point(472, 488);
+            this.ponisti.Location = new System.Drawing.Point(534, 570);
             this.ponisti.Name = "ponisti";
             this.ponisti.Size = new System.Drawing.Size(79, 23);
             this.ponisti.TabIndex = 26;
@@ -177,7 +160,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 26);
+            this.label5.Location = new System.Drawing.Point(37, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 2;
@@ -186,7 +169,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 81);
+            this.label4.Location = new System.Drawing.Point(66, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 0;
@@ -194,45 +177,17 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(92, 46);
+            this.email.Location = new System.Drawing.Point(112, 45);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(133, 20);
+            this.email.Size = new System.Drawing.Size(160, 20);
             this.email.TabIndex = 1;
             // 
             // adresa
             // 
-            this.adresa.Location = new System.Drawing.Point(92, 74);
+            this.adresa.Location = new System.Drawing.Point(112, 73);
             this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(133, 20);
+            this.adresa.Size = new System.Drawing.Size(160, 20);
             this.adresa.TabIndex = 0;
-            // 
-            // errorProvider4
-            // 
-            this.errorProvider4.ContainerControl = this;
-            // 
-            // errorProvider5
-            // 
-            this.errorProvider5.ContainerControl = this;
-            // 
-            // errorProvider6
-            // 
-            this.errorProvider6.ContainerControl = this;
-            // 
-            // errorProvider7
-            // 
-            this.errorProvider7.ContainerControl = this;
-            // 
-            // errorProvider3
-            // 
-            this.errorProvider3.ContainerControl = this;
-            // 
-            // errorProvider2
-            // 
-            this.errorProvider2.ContainerControl = this;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // groupBox4
             // 
@@ -244,9 +199,9 @@
             this.groupBox4.Controls.Add(this.adresa);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(306, 34);
+            this.groupBox4.Location = new System.Drawing.Point(12, 433);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(245, 131);
+            this.groupBox4.Size = new System.Drawing.Size(311, 131);
             this.groupBox4.TabIndex = 23;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Kontaktni podaci";
@@ -254,7 +209,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(11, 107);
+            this.label12.Location = new System.Drawing.Point(73, 106);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(33, 13);
             this.label12.TabIndex = 0;
@@ -262,15 +217,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 100);
+            this.textBox1.Location = new System.Drawing.Point(112, 99);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 20);
+            this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 1;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 55);
+            this.label13.Location = new System.Drawing.Point(34, 59);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(62, 13);
             this.label13.TabIndex = 0;
@@ -280,7 +235,7 @@
             // 
             this.licna.Location = new System.Drawing.Point(102, 71);
             this.licna.Name = "licna";
-            this.licna.Size = new System.Drawing.Size(133, 20);
+            this.licna.Size = new System.Drawing.Size(160, 20);
             this.licna.TabIndex = 2;
             // 
             // label3
@@ -303,9 +258,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.prezime);
             this.groupBox1.Controls.Add(this.ime);
-            this.groupBox1.Location = new System.Drawing.Point(6, 23);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(254, 132);
+            this.groupBox1.Size = new System.Drawing.Size(291, 132);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lični podaci";
@@ -314,7 +269,7 @@
             // 
             this.jmbg.Location = new System.Drawing.Point(102, 97);
             this.jmbg.Name = "jmbg";
-            this.jmbg.Size = new System.Drawing.Size(133, 20);
+            this.jmbg.Size = new System.Drawing.Size(160, 20);
             this.jmbg.TabIndex = 0;
             // 
             // label11
@@ -348,14 +303,14 @@
             // 
             this.prezime.Location = new System.Drawing.Point(102, 45);
             this.prezime.Name = "prezime";
-            this.prezime.Size = new System.Drawing.Size(133, 20);
+            this.prezime.Size = new System.Drawing.Size(160, 20);
             this.prezime.TabIndex = 1;
             // 
             // ime
             // 
             this.ime.Location = new System.Drawing.Point(102, 19);
             this.ime.Name = "ime";
-            this.ime.Size = new System.Drawing.Size(133, 20);
+            this.ime.Size = new System.Drawing.Size(160, 20);
             this.ime.TabIndex = 0;
             // 
             // groupBox2
@@ -364,22 +319,21 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.dijeloviZaIznajmljivanjeComboBox);
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.numericUpDown1);
-            this.groupBox2.Location = new System.Drawing.Point(306, 171);
+            this.groupBox2.Location = new System.Drawing.Point(333, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(245, 164);
+            this.groupBox2.Size = new System.Drawing.Size(280, 164);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Podaci o zakupu";
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.DecimalPlaces = 2;
             this.numericUpDown3.Location = new System.Drawing.Point(92, 136);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             12,
@@ -392,7 +346,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(82, 20);
+            this.numericUpDown3.Size = new System.Drawing.Size(78, 20);
             this.numericUpDown3.TabIndex = 41;
             this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown3.Value = new decimal(new int[] {
@@ -404,7 +358,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 138);
+            this.label7.Location = new System.Drawing.Point(46, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 40;
@@ -414,31 +368,31 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(92, 77);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(133, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(160, 20);
             this.dateTimePicker2.TabIndex = 39;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 83);
+            this.label23.Location = new System.Drawing.Point(16, 84);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(70, 13);
             this.label23.TabIndex = 38;
             this.label23.Text = "Završava do:";
             // 
-            // comboBox2
+            // dijeloviZaIznajmljivanjeComboBox
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(92, 24);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(133, 21);
-            this.comboBox2.TabIndex = 35;
+            this.dijeloviZaIznajmljivanjeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dijeloviZaIznajmljivanjeComboBox.FormattingEnabled = true;
+            this.dijeloviZaIznajmljivanjeComboBox.Location = new System.Drawing.Point(92, 24);
+            this.dijeloviZaIznajmljivanjeComboBox.Name = "dijeloviZaIznajmljivanjeComboBox";
+            this.dijeloviZaIznajmljivanjeComboBox.Size = new System.Drawing.Size(160, 21);
+            this.dijeloviZaIznajmljivanjeComboBox.TabIndex = 35;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(10, 32);
+            this.label25.Location = new System.Drawing.Point(24, 32);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(62, 13);
             this.label25.TabIndex = 34;
@@ -448,13 +402,13 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(92, 51);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(133, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(160, 20);
             this.dateTimePicker1.TabIndex = 33;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(11, 58);
+            this.label24.Location = new System.Drawing.Point(26, 58);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(60, 13);
             this.label24.TabIndex = 32;
@@ -463,7 +417,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 110);
+            this.label20.Location = new System.Drawing.Point(46, 114);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(40, 13);
             this.label20.TabIndex = 29;
@@ -479,7 +433,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(82, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(78, 20);
             this.numericUpDown1.TabIndex = 28;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -490,7 +444,7 @@
             // 
             // unesi
             // 
-            this.unesi.Location = new System.Drawing.Point(391, 488);
+            this.unesi.Location = new System.Drawing.Point(453, 570);
             this.unesi.Name = "unesi";
             this.unesi.Size = new System.Drawing.Size(79, 23);
             this.unesi.TabIndex = 25;
@@ -505,7 +459,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(276, 443);
+            this.tabPage2.Size = new System.Drawing.Size(303, 389);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pravno lice";
             // 
@@ -515,22 +469,22 @@
             this.groupBox7.Controls.Add(this.label21);
             this.groupBox7.Location = new System.Drawing.Point(7, 114);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(263, 68);
+            this.groupBox7.Size = new System.Drawing.Size(290, 68);
             this.groupBox7.TabIndex = 7;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ostali podaci";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(114, 26);
+            this.textBox8.Location = new System.Drawing.Point(101, 23);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(133, 20);
+            this.textBox8.Size = new System.Drawing.Size(160, 20);
             this.textBox8.TabIndex = 5;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 33);
+            this.label21.Location = new System.Drawing.Point(5, 30);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(90, 13);
             this.label21.TabIndex = 4;
@@ -544,22 +498,22 @@
             this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Location = new System.Drawing.Point(6, 20);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(264, 88);
+            this.groupBox6.Size = new System.Drawing.Size(291, 88);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Osnovni podaci";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(115, 26);
+            this.textBox7.Location = new System.Drawing.Point(102, 19);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 20);
+            this.textBox7.Size = new System.Drawing.Size(160, 20);
             this.textBox7.TabIndex = 2;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(10, 33);
+            this.label22.Location = new System.Drawing.Point(68, 26);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(28, 13);
             this.label22.TabIndex = 1;
@@ -567,9 +521,9 @@
             // 
             // index
             // 
-            this.index.Location = new System.Drawing.Point(115, 52);
+            this.index.Location = new System.Drawing.Point(102, 52);
             this.index.Name = "index";
-            this.index.Size = new System.Drawing.Size(133, 20);
+            this.index.Size = new System.Drawing.Size(160, 20);
             this.index.TabIndex = 1;
             // 
             // tabPage1
@@ -580,7 +534,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(276, 443);
+            this.tabPage1.Size = new System.Drawing.Size(303, 389);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Fizičko lice";
             // 
@@ -588,10 +542,10 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(4, 162);
+            this.tabControl2.Location = new System.Drawing.Point(6, 144);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(266, 275);
+            this.tabControl2.Size = new System.Drawing.Size(291, 240);
             this.tabControl2.TabIndex = 22;
             // 
             // tabPage3
@@ -602,7 +556,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(258, 249);
+            this.tabPage3.Size = new System.Drawing.Size(283, 214);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Student";
             // 
@@ -612,9 +566,9 @@
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.maskedTextBox1);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Location = new System.Drawing.Point(7, 123);
+            this.groupBox5.Location = new System.Drawing.Point(6, 103);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(245, 104);
+            this.groupBox5.Size = new System.Drawing.Size(271, 104);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Podaci o prebivalištu";
@@ -623,31 +577,31 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(93, 57);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 20);
+            this.textBox2.Size = new System.Drawing.Size(159, 20);
             this.textBox2.TabIndex = 6;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(21, 64);
+            this.label16.Location = new System.Drawing.Point(42, 64);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 13);
+            this.label16.Size = new System.Drawing.Size(45, 13);
             this.label16.TabIndex = 5;
-            this.label16.Text = "Ime roditelja:";
+            this.label16.Text = "Roditelj:";
             // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(93, 28);
-            this.maskedTextBox1.Mask = "(999) 000-000";
+            this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(73, 20);
+            this.maskedTextBox1.Size = new System.Drawing.Size(78, 20);
             this.maskedTextBox1.TabIndex = 4;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(15, 34);
+            this.label15.Location = new System.Drawing.Point(15, 35);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(72, 13);
             this.label15.TabIndex = 3;
@@ -659,9 +613,9 @@
             this.groupBox3.Controls.Add(this.numericUpDown2);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Location = new System.Drawing.Point(7, 26);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(245, 91);
+            this.groupBox3.Size = new System.Drawing.Size(271, 91);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Podaci o školovanju";
@@ -679,7 +633,7 @@
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(93, 58);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            8,
+            10,
             0,
             0,
             0});
@@ -689,7 +643,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(64, 20);
+            this.numericUpDown2.Size = new System.Drawing.Size(78, 20);
             this.numericUpDown2.TabIndex = 27;
             this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown2.Value = new decimal(new int[] {
@@ -711,25 +665,32 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Poljoprivredni",
-            "Kriminalistički",
-            "Elektrotehnički",
-            "Prirodno-matematički",
-            "Saobraćajni",
-            "Farmacutski",
-            "Medicinski",
-            "Filozofski",
-            "Građevinski",
-            "Arhitektonski",
-            "DIF",
-            "Političke nauke",
-            "Javna uprava",
-            "Pedagoška akademija",
-            "FIN",
-            "Privatni fakultet"});
+            "Akademija likovnih umjetnosti",
+            "Akademija scenskih umjetnosti",
+            "Arhitektonski fakultet",
+            "Ekonomski fakultet",
+            "Elektrotehnički fakultet",
+            "Fakultet islamskih nauka",
+            "Fakultet političkih nauka",
+            "Fakultet sporta i tjelesnog odgoja",
+            "Fakultet za kriminalistiku, kriminologiju i sigurnosne studije",
+            "Fakultet za saobraćaj i komunikacije",
+            "Fakultet zdravstvenih studija",
+            "Farmaceutski fakultet",
+            "Filozofski fakultet",
+            "Građevinski fakultet",
+            "Mašinski fakultet",
+            "Medicinski fakultet",
+            "Pedagoški fakultet",
+            "Poljoprivredno-prehrambeni fakultet",
+            "Pravni fakultet",
+            "Prirodno-matematički fakultet",
+            "Stomatološki fakultet sa klinikama",
+            "Šumarski fakultet",
+            "Veterinarski fakultet"});
             this.comboBox1.Location = new System.Drawing.Point(93, 28);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 21);
+            this.comboBox1.Size = new System.Drawing.Size(159, 21);
             this.comboBox1.TabIndex = 25;
             // 
             // tabPage4
@@ -744,7 +705,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(258, 249);
+            this.tabPage4.Size = new System.Drawing.Size(283, 214);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Ostali";
             // 
@@ -752,13 +713,13 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(100, 50);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 20);
+            this.textBox5.Size = new System.Drawing.Size(158, 20);
             this.textBox5.TabIndex = 8;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(8, 53);
+            this.label19.Location = new System.Drawing.Point(26, 57);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(68, 13);
             this.label19.TabIndex = 7;
@@ -767,7 +728,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(8, 82);
+            this.label17.Location = new System.Drawing.Point(19, 86);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(75, 13);
             this.label17.TabIndex = 6;
@@ -776,7 +737,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(8, 26);
+            this.label18.Location = new System.Drawing.Point(32, 26);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 13);
             this.label18.TabIndex = 4;
@@ -786,14 +747,14 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(100, 79);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 20);
+            this.textBox3.Size = new System.Drawing.Size(158, 20);
             this.textBox3.TabIndex = 5;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(100, 19);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 20);
+            this.textBox4.Size = new System.Drawing.Size(158, 20);
             this.textBox4.TabIndex = 3;
             // 
             // tabControl1
@@ -803,25 +764,21 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(284, 469);
+            this.tabControl1.Size = new System.Drawing.Size(311, 415);
             this.tabControl1.TabIndex = 22;
-            // 
-            // errorProvider8
-            // 
-            this.errorProvider8.ContainerControl = this;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(305, 372);
+            this.richTextBox1.Location = new System.Drawing.Point(333, 234);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(245, 109);
+            this.richTextBox1.Size = new System.Drawing.Size(280, 330);
             this.richTextBox1.TabIndex = 28;
             this.richTextBox1.Text = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(305, 341);
+            this.label8.Location = new System.Drawing.Point(330, 218);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 29;
@@ -831,7 +788,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 543);
+            this.ClientSize = new System.Drawing.Size(625, 629);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.statusStrip1);
@@ -844,15 +801,9 @@
             this.Name = "UnosZakupca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evidencija zakupca";
+            this.Load += new System.EventHandler(this.UnosZakupca_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -877,7 +828,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -894,7 +844,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.TextBox adresa;
-        private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox licna;
@@ -912,13 +861,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox index;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ErrorProvider errorProvider5;
-        private System.Windows.Forms.ErrorProvider errorProvider6;
-        private System.Windows.Forms.ErrorProvider errorProvider7;
-        private System.Windows.Forms.ErrorProvider errorProvider3;
-        private System.Windows.Forms.ErrorProvider errorProvider2;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ErrorProvider errorProvider8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -953,7 +895,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox dijeloviZaIznajmljivanjeComboBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.NumericUpDown numericUpDown3;

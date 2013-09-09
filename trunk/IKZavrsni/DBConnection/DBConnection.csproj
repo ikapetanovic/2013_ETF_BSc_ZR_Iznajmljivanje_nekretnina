@@ -53,11 +53,13 @@
     <Compile Include="KorisnikTest.cs" />
     <Compile Include="Nekretnina.cs" />
     <Compile Include="NekretninaTest.cs" />
+    <Compile Include="Ostali.cs" />
     <Compile Include="PravnoLice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="VrstaRashoda.cs" />
     <Compile Include="VrstaRashodaTest.cs" />
+    <Compile Include="Zakupac.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

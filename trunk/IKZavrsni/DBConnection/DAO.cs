@@ -467,7 +467,6 @@ namespace DBConnection
             {
                 throw new Exception(izuzetak.Message);
             }
-
         }
         
         public Bitmap VratiSlikuDijelaNekretnine(string sifra)
@@ -502,7 +501,6 @@ namespace DBConnection
                 dataCommand.CommandText = "SELECT sifra FROM dijelovinekretnina WHERE Nekretnine_nekretninaID = '" + FkIdNekretnine + "';";
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
                 List<string> sifre = new List<string>();
-
                 
                 while (dataReader.Read())
                 {
@@ -515,6 +513,37 @@ namespace DBConnection
             {
                 throw new Exception(izuzetak.Message);
             }
+        }
+
+        public List<DioNekretnine> DijeloviZaIznajmljivanje()
+        {
+
+            try
+            {
+                List<DioNekretnine> dijeloviNekretnine = new List<DioNekretnine>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM dijelovinekretnina WHERE status = 'Slobodno';";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    DioNekretnine dn = new DioNekretnine(dataReader.GetString(0), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(6), dataReader.GetString(7));
+                    dn.BrojKvadrata = dataReader.GetInt32(4);
+                    dn.IznosNajma = dataReader.GetDouble(5);
+
+                    dijeloviNekretnine.Add(dn);
+                }
+
+                return dijeloviNekretnine;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+
         }
 
 // VRSTA RASHODA
@@ -641,6 +670,44 @@ namespace DBConnection
             }
 
         }
+
+// ZAKUPCI
+        /*
+        public bool UnesiZakupca()
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                MemoryStream m = new MemoryStream();
+                dn.Slika.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] bajtovi = m.ToArray();
+
+                MySqlCommand dijeloviNekretnina =
+                new MySqlCommand("INSERT INTO dijelovinekretnina(sifra, Nekretnine_nekretninaID, naziv, vrstaNekretnine, brojKvadrata, iznosNajma, status, biljeske, slika) "
+                   + "VALUES(@sifra, @Nekretnine_nekretninaID, @naziv, @vrstaNekretnine, @brojKvadrata, @iznosNajma, @status, @biljeske, @slika);", dataConnection);
+
+                dijeloviNekretnina.Parameters.AddWithValue("@sifra", (Object)dn.Sifra);
+                dijeloviNekretnina.Parameters.AddWithValue("@Nekretnine_nekretninaID", (Object)nekretninaID);
+                dijeloviNekretnina.Parameters.AddWithValue("@naziv", (Object)dn.Naziv);
+                dijeloviNekretnina.Parameters.AddWithValue("@vrstaNekretnine", (Object)dn.VrstaNekretnine);
+                dijeloviNekretnina.Parameters.AddWithValue("@brojKvadrata", (Object)dn.BrojKvadrata);
+                dijeloviNekretnina.Parameters.AddWithValue("@iznosNajma", (Object)dn.IznosNajma);
+                dijeloviNekretnina.Parameters.AddWithValue("@status", (Object)dn.Status);
+                dijeloviNekretnina.Parameters.AddWithValue("@biljeske", (Object)dn.Biljeske);
+                MySqlParameter p = dijeloviNekretnina.Parameters.Add("@slika", MySqlDbType.Blob);
+                p.Value = bajtovi;
+
+                dijeloviNekretnina.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }*/
 
 
     }
