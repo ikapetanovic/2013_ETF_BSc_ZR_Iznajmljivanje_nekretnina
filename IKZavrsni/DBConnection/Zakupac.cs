@@ -7,16 +7,17 @@ namespace DBConnection
 {
     public class Zakupac
     {
-        private string brojTelefona, email, adresa, grad;
+        private string brojTelefona, email, adresa, grad, biljeske;
 
         public Zakupac() { }
 
-        public Zakupac(string brojTelefona, string email, string adresa, string grad)
+        public Zakupac(string brojTelefona, string email, string adresa, string grad, string biljeske)
         {
             this.brojTelefona = brojTelefona;
             this.email = email;
             this.adresa = adresa;
             this.grad = grad;
+            this.biljeske = biljeske;
         }
 
         public string BrojTelefona
@@ -41,6 +42,12 @@ namespace DBConnection
         {
             get { return grad; }
             set { grad = value; }
+        }
+
+        public string Biljeske
+        {
+            get { return biljeske; }
+            set { biljeske = value; }
         }
 
     }

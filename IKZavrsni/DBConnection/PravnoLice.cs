@@ -7,14 +7,15 @@ namespace DBConnection
 {
     public class PravnoLice : Zakupac
     {
-        private string pid, nazivFirme, ovlastenaOsoba;
+        private string pid, nazivPravnogLica, ovlastenaOsoba;
 
         public PravnoLice() { }
 
-        public PravnoLice(string brojTelefona, string email, string adresa, string grad, string pid, string nazivFirme, string ovlastenaOsoba) : base (brojTelefona, email, adresa, grad)
+        public PravnoLice(string brojTelefona, string email, string adresa, string grad, string biljeske, string pid, string nazivPravnogLica, string ovlastenaOsoba)
+            : base(brojTelefona, email, adresa, grad, biljeske)
         {
             this.pid = pid;
-            this.nazivFirme = nazivFirme;
+            this.nazivPravnogLica = nazivPravnogLica;
             this.ovlastenaOsoba = ovlastenaOsoba;
         }
 
@@ -24,10 +25,10 @@ namespace DBConnection
             set { pid = value; }
         }
 
-        public string NazivFirme
+        public string NazivPravnogLica
         {
-            get { return nazivFirme; }
-            set { nazivFirme = value; }
+            get { return nazivPravnogLica; }
+            set { nazivPravnogLica = value; }
         }
 
         public string OvlastenaOsoba
