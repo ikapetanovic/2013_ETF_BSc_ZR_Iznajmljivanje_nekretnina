@@ -8,6 +8,7 @@ namespace DBConnection
     public class Zakupac
     {
         private string brojTelefona, email, adresa, grad, biljeske;
+        private int id;
 
         public Zakupac() { }
 
@@ -18,6 +19,12 @@ namespace DBConnection
             this.adresa = adresa;
             this.grad = grad;
             this.biljeske = biljeske;
+        }
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
         }
 
         public string BrojTelefona

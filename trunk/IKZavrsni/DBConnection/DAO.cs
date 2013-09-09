@@ -290,7 +290,7 @@ namespace DBConnection
 
                     nekretnine.Add(n);
                 }
-
+                dataReader.Close();
                 return nekretnine;
             }
             catch (MySqlException izuzetak)
@@ -342,6 +342,37 @@ namespace DBConnection
                 }
                 return id;
 
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public List<Nekretnina> DajSveNekretnine()
+        {
+            try
+            {
+                List<Nekretnina> nekretnine = new List<Nekretnina>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM nekretnine;";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    Nekretnina n = new Nekretnina(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(8));
+                    n.Id = dataReader.GetInt16(0);
+                    n.BrojKvadrata = dataReader.GetInt32(5);
+                    n.GodinaIzgradnje = dataReader.GetInt32(6);
+                    n.NabavnaCijena = dataReader.GetDouble(7);
+
+                    nekretnine.Add(n);
+                }
+                dataReader.Close();
+                return nekretnine;
             }
             catch (MySqlException izuzetak)
             {
@@ -460,7 +491,7 @@ namespace DBConnection
 
                     dijeloviNekretnine.Add(dn);
                 }
-
+                dataReader.Close();
                 return dijeloviNekretnine;
             }
             catch (MySqlException izuzetak)
@@ -507,6 +538,7 @@ namespace DBConnection
                     string sifra = dataReader.GetString(0);
                     sifre.Add(sifra);
                 }
+                dataReader.Close();
                 return sifre;
             }
             catch (MySqlException izuzetak)
@@ -771,6 +803,88 @@ namespace DBConnection
                 pravnoLice.ExecuteNonQuery();
 
                 return true;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public List<PravnoLice> DajSvaPravnaLica()
+        {
+            try
+            {
+                List<PravnoLice> pravnaLica = new List<PravnoLice>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM zakupci WHERE tipZakupca = 'Pravno lice';";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {                    
+                    PravnoLice pl = new PravnoLice(dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetString(6), dataReader.GetString(18), dataReader.GetString(19), dataReader.GetString(20));
+                    pl.Id = dataReader.GetInt32(0);
+                    
+                    pravnaLica.Add(pl);
+                }
+                dataReader.Close();
+                return pravnaLica;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public List<Student> DajSveStudente()
+        {
+            try
+            {
+                List<Student> studenti = new List<Student>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM zakupci WHERE tipZakupca = 'Student';";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    Student s = new Student(dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetString(6), dataReader.GetString(7), dataReader.GetString(8), dataReader.GetString(9), dataReader.GetString(10), dataReader.GetString(11), dataReader.GetInt32(12), dataReader.GetString(13), dataReader.GetString(14));
+                    s.Id = dataReader.GetInt32(0);
+                    studenti.Add(s);
+                }
+                dataReader.Close();
+                return studenti;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public List<Ostali> DajSveOstale()
+        {
+            try
+            {
+                List<Ostali> ostali = new List<Ostali>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT * FROM zakupci WHERE tipZakupca = 'Ostali';";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    Ostali o = new Ostali(dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetString(5), dataReader.GetString(6), dataReader.GetString(7), dataReader.GetString(8), dataReader.GetString(9), dataReader.GetString(10), dataReader.GetString(15), dataReader.GetString(16), dataReader.GetString(17));
+                    o.Id = dataReader.GetInt32(0);
+                    ostali.Add(o);
+                }
+                dataReader.Close();
+                return ostali;
             }
             catch (MySqlException izuzetak)
             {
