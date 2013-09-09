@@ -31,86 +31,86 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnosZakupca));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.telefon = new System.Windows.Forms.MaskedTextBox();
+            this.brojTelefonaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.ponisti = new System.Windows.Forms.Button();
+            this.izadji = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.TextBox();
-            this.adresa = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.adresaTextBox = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.gradTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.licna = new System.Windows.Forms.TextBox();
+            this.licnaKartaTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.jmbg = new System.Windows.Forms.TextBox();
+            this.jmbgTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.prezime = new System.Windows.Forms.TextBox();
-            this.ime = new System.Windows.Forms.TextBox();
+            this.prezimeTextBox = new System.Windows.Forms.TextBox();
+            this.imeTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.periodNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.doDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
             this.dijeloviZaIznajmljivanjeComboBox = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.odDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.unesi = new System.Windows.Forms.Button();
+            this.avansNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.spasi = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.ovlastenaOsobaTextBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pidTextBox = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.index = new System.Windows.Forms.TextBox();
+            this.nazivPravnogLicaTextBox = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.studentOstaliTabControl = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.roditeljTextBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.kucniTelefonMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.godinaStudijaNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.fakultetComboBox = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.adresaFirmeTextBox = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.radnoMjestoTextBox = new System.Windows.Forms.TextBox();
+            this.nazivFirmeTextBox = new System.Windows.Forms.TextBox();
+            this.fizickoPravnoTabControl = new System.Windows.Forms.TabControl();
+            this.biljeskeRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.periodNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avansNumericUpDown)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.studentOstaliTabControl.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.godinaStudijaNumericUpDown)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.fizickoPravnoTabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -130,14 +130,14 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
-            // telefon
+            // brojTelefonaMaskedTextBox
             // 
-            this.telefon.Location = new System.Drawing.Point(112, 19);
-            this.telefon.Mask = "(999) 000-0000";
-            this.telefon.Name = "telefon";
-            this.telefon.Size = new System.Drawing.Size(78, 20);
-            this.telefon.TabIndex = 2;
-            this.telefon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.brojTelefonaMaskedTextBox.Location = new System.Drawing.Point(112, 19);
+            this.brojTelefonaMaskedTextBox.Mask = "(999) 000-0000";
+            this.brojTelefonaMaskedTextBox.Name = "brojTelefonaMaskedTextBox";
+            this.brojTelefonaMaskedTextBox.Size = new System.Drawing.Size(78, 20);
+            this.brojTelefonaMaskedTextBox.TabIndex = 2;
+            this.brojTelefonaMaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -148,14 +148,15 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Email:";
             // 
-            // ponisti
+            // izadji
             // 
-            this.ponisti.Location = new System.Drawing.Point(534, 570);
-            this.ponisti.Name = "ponisti";
-            this.ponisti.Size = new System.Drawing.Size(79, 23);
-            this.ponisti.TabIndex = 26;
-            this.ponisti.Text = "Izađi";
-            this.ponisti.UseVisualStyleBackColor = true;
+            this.izadji.Location = new System.Drawing.Point(534, 570);
+            this.izadji.Name = "izadji";
+            this.izadji.Size = new System.Drawing.Size(79, 23);
+            this.izadji.TabIndex = 26;
+            this.izadji.Text = "Izađi";
+            this.izadji.UseVisualStyleBackColor = true;
+            this.izadji.Click += new System.EventHandler(this.izadji_Click);
             // 
             // label5
             // 
@@ -175,28 +176,28 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Adresa";
             // 
-            // email
+            // emailTextBox
             // 
-            this.email.Location = new System.Drawing.Point(112, 45);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(160, 20);
-            this.email.TabIndex = 1;
+            this.emailTextBox.Location = new System.Drawing.Point(112, 45);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(160, 20);
+            this.emailTextBox.TabIndex = 1;
             // 
-            // adresa
+            // adresaTextBox
             // 
-            this.adresa.Location = new System.Drawing.Point(112, 73);
-            this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(160, 20);
-            this.adresa.TabIndex = 0;
+            this.adresaTextBox.Location = new System.Drawing.Point(112, 73);
+            this.adresaTextBox.Name = "adresaTextBox";
+            this.adresaTextBox.Size = new System.Drawing.Size(160, 20);
+            this.adresaTextBox.TabIndex = 0;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.telefon);
+            this.groupBox4.Controls.Add(this.brojTelefonaMaskedTextBox);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.email);
+            this.groupBox4.Controls.Add(this.emailTextBox);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.adresa);
+            this.groupBox4.Controls.Add(this.gradTextBox);
+            this.groupBox4.Controls.Add(this.adresaTextBox);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Location = new System.Drawing.Point(12, 433);
@@ -215,28 +216,28 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Grad:";
             // 
-            // textBox1
+            // gradTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 1;
+            this.gradTextBox.Location = new System.Drawing.Point(112, 99);
+            this.gradTextBox.Name = "gradTextBox";
+            this.gradTextBox.Size = new System.Drawing.Size(160, 20);
+            this.gradTextBox.TabIndex = 1;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(34, 59);
+            this.label13.Location = new System.Drawing.Point(59, 59);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 13);
+            this.label13.Size = new System.Drawing.Size(37, 13);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Naziv firme:";
+            this.label13.Text = "Naziv:";
             // 
-            // licna
+            // licnaKartaTextBox
             // 
-            this.licna.Location = new System.Drawing.Point(102, 71);
-            this.licna.Name = "licna";
-            this.licna.Size = new System.Drawing.Size(160, 20);
-            this.licna.TabIndex = 2;
+            this.licnaKartaTextBox.Location = new System.Drawing.Point(102, 71);
+            this.licnaKartaTextBox.Name = "licnaKartaTextBox";
+            this.licnaKartaTextBox.Size = new System.Drawing.Size(160, 20);
+            this.licnaKartaTextBox.TabIndex = 2;
             // 
             // label3
             // 
@@ -250,14 +251,14 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.jmbg);
-            this.groupBox1.Controls.Add(this.licna);
+            this.groupBox1.Controls.Add(this.jmbgTextBox);
+            this.groupBox1.Controls.Add(this.licnaKartaTextBox);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.prezime);
-            this.groupBox1.Controls.Add(this.ime);
+            this.groupBox1.Controls.Add(this.prezimeTextBox);
+            this.groupBox1.Controls.Add(this.imeTextBox);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(291, 132);
@@ -265,12 +266,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lični podaci";
             // 
-            // jmbg
+            // jmbgTextBox
             // 
-            this.jmbg.Location = new System.Drawing.Point(102, 97);
-            this.jmbg.Name = "jmbg";
-            this.jmbg.Size = new System.Drawing.Size(160, 20);
-            this.jmbg.TabIndex = 0;
+            this.jmbgTextBox.Location = new System.Drawing.Point(102, 97);
+            this.jmbgTextBox.Name = "jmbgTextBox";
+            this.jmbgTextBox.Size = new System.Drawing.Size(160, 20);
+            this.jmbgTextBox.TabIndex = 0;
             // 
             // label11
             // 
@@ -299,32 +300,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ime:";
             // 
-            // prezime
+            // prezimeTextBox
             // 
-            this.prezime.Location = new System.Drawing.Point(102, 45);
-            this.prezime.Name = "prezime";
-            this.prezime.Size = new System.Drawing.Size(160, 20);
-            this.prezime.TabIndex = 1;
+            this.prezimeTextBox.Location = new System.Drawing.Point(102, 45);
+            this.prezimeTextBox.Name = "prezimeTextBox";
+            this.prezimeTextBox.Size = new System.Drawing.Size(160, 20);
+            this.prezimeTextBox.TabIndex = 1;
             // 
-            // ime
+            // imeTextBox
             // 
-            this.ime.Location = new System.Drawing.Point(102, 19);
-            this.ime.Name = "ime";
-            this.ime.Size = new System.Drawing.Size(160, 20);
-            this.ime.TabIndex = 0;
+            this.imeTextBox.Location = new System.Drawing.Point(102, 19);
+            this.imeTextBox.Name = "imeTextBox";
+            this.imeTextBox.Size = new System.Drawing.Size(160, 20);
+            this.imeTextBox.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.numericUpDown3);
+            this.groupBox2.Controls.Add(this.periodNumericUpDown);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.doDateTimePicker);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.dijeloviZaIznajmljivanjeComboBox);
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.odDateTimePicker);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.avansNumericUpDown);
             this.groupBox2.Location = new System.Drawing.Point(333, 34);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(280, 164);
@@ -332,24 +333,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Podaci o zakupu";
             // 
-            // numericUpDown3
+            // periodNumericUpDown
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(92, 136);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.periodNumericUpDown.Location = new System.Drawing.Point(92, 136);
+            this.periodNumericUpDown.Maximum = new decimal(new int[] {
             12,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.periodNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(78, 20);
-            this.numericUpDown3.TabIndex = 41;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.periodNumericUpDown.Name = "periodNumericUpDown";
+            this.periodNumericUpDown.Size = new System.Drawing.Size(78, 20);
+            this.periodNumericUpDown.TabIndex = 41;
+            this.periodNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.periodNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -364,12 +365,12 @@
             this.label7.TabIndex = 40;
             this.label7.Text = "Period:";
             // 
-            // dateTimePicker2
+            // doDateTimePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(92, 77);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(160, 20);
-            this.dateTimePicker2.TabIndex = 39;
+            this.doDateTimePicker.Location = new System.Drawing.Point(92, 77);
+            this.doDateTimePicker.Name = "doDateTimePicker";
+            this.doDateTimePicker.Size = new System.Drawing.Size(160, 20);
+            this.doDateTimePicker.TabIndex = 39;
             // 
             // label23
             // 
@@ -398,12 +399,12 @@
             this.label25.TabIndex = 34;
             this.label25.Text = "Nekretnina:";
             // 
-            // dateTimePicker1
+            // odDateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 51);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(160, 20);
-            this.dateTimePicker1.TabIndex = 33;
+            this.odDateTimePicker.Location = new System.Drawing.Point(92, 51);
+            this.odDateTimePicker.Name = "odDateTimePicker";
+            this.odDateTimePicker.Size = new System.Drawing.Size(160, 20);
+            this.odDateTimePicker.TabIndex = 33;
             // 
             // label24
             // 
@@ -423,33 +424,34 @@
             this.label20.TabIndex = 29;
             this.label20.Text = "Avans:";
             // 
-            // numericUpDown1
+            // avansNumericUpDown
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Location = new System.Drawing.Point(92, 107);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.avansNumericUpDown.DecimalPlaces = 2;
+            this.avansNumericUpDown.Location = new System.Drawing.Point(92, 107);
+            this.avansNumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(78, 20);
-            this.numericUpDown1.TabIndex = 28;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.avansNumericUpDown.Name = "avansNumericUpDown";
+            this.avansNumericUpDown.Size = new System.Drawing.Size(78, 20);
+            this.avansNumericUpDown.TabIndex = 28;
+            this.avansNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.avansNumericUpDown.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // unesi
+            // spasi
             // 
-            this.unesi.Location = new System.Drawing.Point(453, 570);
-            this.unesi.Name = "unesi";
-            this.unesi.Size = new System.Drawing.Size(79, 23);
-            this.unesi.TabIndex = 25;
-            this.unesi.Text = "Spasi";
-            this.unesi.UseVisualStyleBackColor = true;
+            this.spasi.Location = new System.Drawing.Point(453, 570);
+            this.spasi.Name = "spasi";
+            this.spasi.Size = new System.Drawing.Size(79, 23);
+            this.spasi.TabIndex = 25;
+            this.spasi.Text = "Spasi";
+            this.spasi.UseVisualStyleBackColor = true;
+            this.spasi.Click += new System.EventHandler(this.spasi_Click);
             // 
             // tabPage2
             // 
@@ -465,7 +467,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox8);
+            this.groupBox7.Controls.Add(this.ovlastenaOsobaTextBox);
             this.groupBox7.Controls.Add(this.label21);
             this.groupBox7.Location = new System.Drawing.Point(7, 114);
             this.groupBox7.Name = "groupBox7";
@@ -474,12 +476,12 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ostali podaci";
             // 
-            // textBox8
+            // ovlastenaOsobaTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(101, 23);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(160, 20);
-            this.textBox8.TabIndex = 5;
+            this.ovlastenaOsobaTextBox.Location = new System.Drawing.Point(101, 23);
+            this.ovlastenaOsobaTextBox.Name = "ovlastenaOsobaTextBox";
+            this.ovlastenaOsobaTextBox.Size = new System.Drawing.Size(160, 20);
+            this.ovlastenaOsobaTextBox.TabIndex = 5;
             // 
             // label21
             // 
@@ -492,9 +494,9 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox7);
+            this.groupBox6.Controls.Add(this.pidTextBox);
             this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Controls.Add(this.index);
+            this.groupBox6.Controls.Add(this.nazivPravnogLicaTextBox);
             this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Location = new System.Drawing.Point(6, 20);
             this.groupBox6.Name = "groupBox6";
@@ -503,12 +505,12 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Osnovni podaci";
             // 
-            // textBox7
+            // pidTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(102, 19);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(160, 20);
-            this.textBox7.TabIndex = 2;
+            this.pidTextBox.Location = new System.Drawing.Point(102, 19);
+            this.pidTextBox.Name = "pidTextBox";
+            this.pidTextBox.Size = new System.Drawing.Size(160, 20);
+            this.pidTextBox.TabIndex = 2;
             // 
             // label22
             // 
@@ -519,17 +521,17 @@
             this.label22.TabIndex = 1;
             this.label22.Text = "PID:";
             // 
-            // index
+            // nazivPravnogLicaTextBox
             // 
-            this.index.Location = new System.Drawing.Point(102, 52);
-            this.index.Name = "index";
-            this.index.Size = new System.Drawing.Size(160, 20);
-            this.index.TabIndex = 1;
+            this.nazivPravnogLicaTextBox.Location = new System.Drawing.Point(102, 52);
+            this.nazivPravnogLicaTextBox.Name = "nazivPravnogLicaTextBox";
+            this.nazivPravnogLicaTextBox.Size = new System.Drawing.Size(160, 20);
+            this.nazivPravnogLicaTextBox.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.tabControl2);
+            this.tabPage1.Controls.Add(this.studentOstaliTabControl);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -538,15 +540,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Fizičko lice";
             // 
-            // tabControl2
+            // studentOstaliTabControl
             // 
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(6, 144);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(291, 240);
-            this.tabControl2.TabIndex = 22;
+            this.studentOstaliTabControl.Controls.Add(this.tabPage3);
+            this.studentOstaliTabControl.Controls.Add(this.tabPage4);
+            this.studentOstaliTabControl.Location = new System.Drawing.Point(6, 144);
+            this.studentOstaliTabControl.Name = "studentOstaliTabControl";
+            this.studentOstaliTabControl.SelectedIndex = 0;
+            this.studentOstaliTabControl.Size = new System.Drawing.Size(291, 240);
+            this.studentOstaliTabControl.TabIndex = 22;
             // 
             // tabPage3
             // 
@@ -562,9 +564,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.roditeljTextBox);
             this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Controls.Add(this.maskedTextBox1);
+            this.groupBox5.Controls.Add(this.kucniTelefonMaskedTextBox);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Location = new System.Drawing.Point(6, 103);
             this.groupBox5.Name = "groupBox5";
@@ -573,12 +575,12 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Podaci o prebivalištu";
             // 
-            // textBox2
+            // roditeljTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 6;
+            this.roditeljTextBox.Location = new System.Drawing.Point(93, 57);
+            this.roditeljTextBox.Name = "roditeljTextBox";
+            this.roditeljTextBox.Size = new System.Drawing.Size(159, 20);
+            this.roditeljTextBox.TabIndex = 6;
             // 
             // label16
             // 
@@ -589,14 +591,14 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Roditelj:";
             // 
-            // maskedTextBox1
+            // kucniTelefonMaskedTextBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(93, 28);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(78, 20);
-            this.maskedTextBox1.TabIndex = 4;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.kucniTelefonMaskedTextBox.Location = new System.Drawing.Point(93, 28);
+            this.kucniTelefonMaskedTextBox.Mask = "(999) 000-0000";
+            this.kucniTelefonMaskedTextBox.Name = "kucniTelefonMaskedTextBox";
+            this.kucniTelefonMaskedTextBox.Size = new System.Drawing.Size(78, 20);
+            this.kucniTelefonMaskedTextBox.TabIndex = 4;
+            this.kucniTelefonMaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -610,9 +612,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.numericUpDown2);
+            this.groupBox3.Controls.Add(this.godinaStudijaNumericUpDown);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.fakultetComboBox);
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(271, 91);
@@ -629,24 +631,24 @@
             this.label9.TabIndex = 24;
             this.label9.Text = "Fakultet:";
             // 
-            // numericUpDown2
+            // godinaStudijaNumericUpDown
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(93, 58);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.godinaStudijaNumericUpDown.Location = new System.Drawing.Point(93, 58);
+            this.godinaStudijaNumericUpDown.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.godinaStudijaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(78, 20);
-            this.numericUpDown2.TabIndex = 27;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.godinaStudijaNumericUpDown.Name = "godinaStudijaNumericUpDown";
+            this.godinaStudijaNumericUpDown.Size = new System.Drawing.Size(78, 20);
+            this.godinaStudijaNumericUpDown.TabIndex = 27;
+            this.godinaStudijaNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.godinaStudijaNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -661,10 +663,10 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "Godina studija:";
             // 
-            // comboBox1
+            // fakultetComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.fakultetComboBox.FormattingEnabled = true;
+            this.fakultetComboBox.Items.AddRange(new object[] {
             "Akademija likovnih umjetnosti",
             "Akademija scenskih umjetnosti",
             "Arhitektonski fakultet",
@@ -688,20 +690,20 @@
             "Stomatološki fakultet sa klinikama",
             "Šumarski fakultet",
             "Veterinarski fakultet"});
-            this.comboBox1.Location = new System.Drawing.Point(93, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 25;
+            this.fakultetComboBox.Location = new System.Drawing.Point(93, 28);
+            this.fakultetComboBox.Name = "fakultetComboBox";
+            this.fakultetComboBox.Size = new System.Drawing.Size(159, 21);
+            this.fakultetComboBox.TabIndex = 25;
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.adresaFirmeTextBox);
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.radnoMjestoTextBox);
+            this.tabPage4.Controls.Add(this.nazivFirmeTextBox);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -709,12 +711,12 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Ostali";
             // 
-            // textBox5
+            // adresaFirmeTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(100, 50);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(158, 20);
-            this.textBox5.TabIndex = 8;
+            this.adresaFirmeTextBox.Location = new System.Drawing.Point(100, 50);
+            this.adresaFirmeTextBox.Name = "adresaFirmeTextBox";
+            this.adresaFirmeTextBox.Size = new System.Drawing.Size(158, 20);
+            this.adresaFirmeTextBox.TabIndex = 8;
             // 
             // label19
             // 
@@ -743,37 +745,37 @@
             this.label18.TabIndex = 4;
             this.label18.Text = "Naziv firme:";
             // 
-            // textBox3
+            // radnoMjestoTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 20);
-            this.textBox3.TabIndex = 5;
+            this.radnoMjestoTextBox.Location = new System.Drawing.Point(100, 79);
+            this.radnoMjestoTextBox.Name = "radnoMjestoTextBox";
+            this.radnoMjestoTextBox.Size = new System.Drawing.Size(158, 20);
+            this.radnoMjestoTextBox.TabIndex = 5;
             // 
-            // textBox4
+            // nazivFirmeTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(100, 19);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 20);
-            this.textBox4.TabIndex = 3;
+            this.nazivFirmeTextBox.Location = new System.Drawing.Point(100, 19);
+            this.nazivFirmeTextBox.Name = "nazivFirmeTextBox";
+            this.nazivFirmeTextBox.Size = new System.Drawing.Size(158, 20);
+            this.nazivFirmeTextBox.TabIndex = 3;
             // 
-            // tabControl1
+            // fizickoPravnoTabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(311, 415);
-            this.tabControl1.TabIndex = 22;
+            this.fizickoPravnoTabControl.Controls.Add(this.tabPage1);
+            this.fizickoPravnoTabControl.Controls.Add(this.tabPage2);
+            this.fizickoPravnoTabControl.Location = new System.Drawing.Point(12, 12);
+            this.fizickoPravnoTabControl.Name = "fizickoPravnoTabControl";
+            this.fizickoPravnoTabControl.SelectedIndex = 0;
+            this.fizickoPravnoTabControl.Size = new System.Drawing.Size(311, 415);
+            this.fizickoPravnoTabControl.TabIndex = 22;
             // 
-            // richTextBox1
+            // biljeskeRichTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(333, 234);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(280, 330);
-            this.richTextBox1.TabIndex = 28;
-            this.richTextBox1.Text = "";
+            this.biljeskeRichTextBox.Location = new System.Drawing.Point(333, 234);
+            this.biljeskeRichTextBox.Name = "biljeskeRichTextBox";
+            this.biljeskeRichTextBox.Size = new System.Drawing.Size(280, 330);
+            this.biljeskeRichTextBox.TabIndex = 28;
+            this.biljeskeRichTextBox.Text = "";
             // 
             // label8
             // 
@@ -790,13 +792,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 629);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.biljeskeRichTextBox);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.ponisti);
+            this.Controls.Add(this.izadji);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.unesi);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.spasi);
+            this.Controls.Add(this.fizickoPravnoTabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UnosZakupca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -810,24 +812,24 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.periodNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avansNumericUpDown)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
+            this.studentOstaliTabControl.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.godinaStudijaNumericUpDown)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.fizickoPravnoTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -837,68 +839,68 @@
 
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.MaskedTextBox telefon;
+        private System.Windows.Forms.MaskedTextBox brojTelefonaMaskedTextBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button ponisti;
+        private System.Windows.Forms.Button izadji;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox adresa;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox adresaTextBox;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox licna;
+        private System.Windows.Forms.TextBox licnaKartaTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox prezime;
-        private System.Windows.Forms.TextBox ime;
+        private System.Windows.Forms.TextBox prezimeTextBox;
+        private System.Windows.Forms.TextBox imeTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button unesi;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Button spasi;
+        private System.Windows.Forms.TabControl fizickoPravnoTabControl;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox jmbg;
+        private System.Windows.Forms.TextBox jmbgTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox index;
+        private System.Windows.Forms.TextBox nazivPravnogLicaTextBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RichTextBox biljeskeRichTextBox;
+        private System.Windows.Forms.ComboBox fakultetComboBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox gradTextBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.NumericUpDown godinaStudijaNumericUpDown;
+        private System.Windows.Forms.MaskedTextBox kucniTelefonMaskedTextBox;
+        private System.Windows.Forms.TabControl studentOstaliTabControl;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox roditeljTextBox;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.NumericUpDown avansNumericUpDown;
+        private System.Windows.Forms.TextBox adresaFirmeTextBox;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox radnoMjestoTextBox;
+        private System.Windows.Forms.TextBox nazivFirmeTextBox;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox ovlastenaOsobaTextBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox pidTextBox;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker odDateTimePicker;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.ComboBox dijeloviZaIznajmljivanjeComboBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker doDateTimePicker;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown periodNumericUpDown;
         private System.Windows.Forms.Label label7;
     }
 }

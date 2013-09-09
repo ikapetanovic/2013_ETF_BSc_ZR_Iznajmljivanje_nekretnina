@@ -80,8 +80,7 @@ namespace IKZavrsni
                     n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaMaskedTextBox.Text);
 
                 dao.UnesiNekretninu(n);
-                dao.ZatvoriKonekciju();
-                
+                dao.ZatvoriKonekciju();                
 
                 statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.ForeColor = Color.Green;
@@ -92,7 +91,7 @@ namespace IKZavrsni
             {                
                 statusStrip1.BackColor = Color.White;
                 toolStripStatusLabel1.ForeColor = Color.Red;
-                toolStripStatusLabel1.Text = "Podaci nisu spašeniQ";
+                toolStripStatusLabel1.Text = "Podaci nisu spašeni!";
             }
         }
 

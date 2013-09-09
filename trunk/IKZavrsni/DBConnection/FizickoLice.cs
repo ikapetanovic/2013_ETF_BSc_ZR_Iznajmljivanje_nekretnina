@@ -11,7 +11,7 @@ namespace DBConnection
 
         public FizickoLice() { }
 
-        public FizickoLice(string brojTelefona, string email, string adresa, string grad, string ime, string prezime, string licnaKarta, string jmbg) : base (brojTelefona, email, adresa, grad)
+        public FizickoLice(string brojTelefona, string email, string adresa, string grad, string biljeske, string ime, string prezime, string licnaKarta, string jmbg) : base (brojTelefona, email, adresa, grad, biljeske)
         {
             this.ime = ime;
             this.prezime = prezime;

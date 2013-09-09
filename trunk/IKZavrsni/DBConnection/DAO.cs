@@ -672,34 +672,35 @@ namespace DBConnection
         }
 
 // ZAKUPCI
-        /*
-        public bool UnesiZakupca()
+        
+        public bool UnesiStudenta(Student s)
         {
             try
             {
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
 
-                MemoryStream m = new MemoryStream();
-                dn.Slika.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
-                byte[] bajtovi = m.ToArray();
+                MySqlCommand student =
+                new MySqlCommand("INSERT INTO zakupci(tipZakupca, brojTelefona, email, adresa, grad, biljeske, ime, prezime, licnaKarta, jmbg, fakultet, godinaStudija, kucniTelefon, roditelj) "
+                   + "VALUES(@tipZakupca, @brojTelefona, @email, @adresa, @grad, @biljeske, @ime, @prezime, @licnaKarta, @jmbg, @fakultet, @godinaStudija, @kucniTelefon, @roditelj);", dataConnection);
 
-                MySqlCommand dijeloviNekretnina =
-                new MySqlCommand("INSERT INTO dijelovinekretnina(sifra, Nekretnine_nekretninaID, naziv, vrstaNekretnine, brojKvadrata, iznosNajma, status, biljeske, slika) "
-                   + "VALUES(@sifra, @Nekretnine_nekretninaID, @naziv, @vrstaNekretnine, @brojKvadrata, @iznosNajma, @status, @biljeske, @slika);", dataConnection);
+                student.Parameters.AddWithValue("@tipZakupca", (Object)"Student");
+                student.Parameters.AddWithValue("@brojTelefona", (Object)s.BrojTelefona);
+                student.Parameters.AddWithValue("@email", (Object)s.Email);
+                student.Parameters.AddWithValue("@adresa", (Object)s.Adresa);
+                student.Parameters.AddWithValue("@grad", (Object)s.Grad);
+                student.Parameters.AddWithValue("@biljeske", (Object)s.Biljeske);
 
-                dijeloviNekretnina.Parameters.AddWithValue("@sifra", (Object)dn.Sifra);
-                dijeloviNekretnina.Parameters.AddWithValue("@Nekretnine_nekretninaID", (Object)nekretninaID);
-                dijeloviNekretnina.Parameters.AddWithValue("@naziv", (Object)dn.Naziv);
-                dijeloviNekretnina.Parameters.AddWithValue("@vrstaNekretnine", (Object)dn.VrstaNekretnine);
-                dijeloviNekretnina.Parameters.AddWithValue("@brojKvadrata", (Object)dn.BrojKvadrata);
-                dijeloviNekretnina.Parameters.AddWithValue("@iznosNajma", (Object)dn.IznosNajma);
-                dijeloviNekretnina.Parameters.AddWithValue("@status", (Object)dn.Status);
-                dijeloviNekretnina.Parameters.AddWithValue("@biljeske", (Object)dn.Biljeske);
-                MySqlParameter p = dijeloviNekretnina.Parameters.Add("@slika", MySqlDbType.Blob);
-                p.Value = bajtovi;
+                student.Parameters.AddWithValue("@ime", (Object)s.Ime);
+                student.Parameters.AddWithValue("@prezime", (Object)s.Prezime);
+                student.Parameters.AddWithValue("@licnaKarta", (Object)s.LicnaKarta);
+                student.Parameters.AddWithValue("@jmbg", (Object)s.Jmbg);
+                student.Parameters.AddWithValue("@fakultet", (Object)s.Fakultet);
+                student.Parameters.AddWithValue("@godinaStudija", (Object)s.GodinaStudija);
+                student.Parameters.AddWithValue("@kucniTelefon", (Object)s.KucniTelefon);
+                student.Parameters.AddWithValue("@roditelj", (Object)s.Roditelj);
 
-                dijeloviNekretnina.ExecuteNonQuery();
+                student.ExecuteNonQuery();
 
                 return true;
             }
@@ -707,7 +708,75 @@ namespace DBConnection
             {
                 throw new Exception(izuzetak.Message);
             }
-        }*/
+        }
+
+        public bool UnesiOstalog(Ostali o)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                MySqlCommand ostali =
+                new MySqlCommand("INSERT INTO zakupci(tipZakupca, brojTelefona, email, adresa, grad, biljeske, ime, prezime, licnaKarta, jmbg, nazivFirme, adresaFirme, radnoMjesto) "
+                   + "VALUES(@tipZakupca, @brojTelefona, @email, @adresa, @grad, @biljeske, @ime, @prezime, @licnaKarta, @jmbg, @nazivFirme, @adresaFirme, @radnoMjesto);", dataConnection);
+
+                ostali.Parameters.AddWithValue("@tipZakupca", (Object)"Ostali");
+                ostali.Parameters.AddWithValue("@brojTelefona", (Object)o.BrojTelefona);
+                ostali.Parameters.AddWithValue("@email", (Object)o.Email);
+                ostali.Parameters.AddWithValue("@adresa", (Object)o.Adresa);
+                ostali.Parameters.AddWithValue("@grad", (Object)o.Grad);
+                ostali.Parameters.AddWithValue("@biljeske", (Object)o.Biljeske);
+
+                ostali.Parameters.AddWithValue("@ime", (Object)o.Ime);
+                ostali.Parameters.AddWithValue("@prezime", (Object)o.Prezime);
+                ostali.Parameters.AddWithValue("@licnaKarta", (Object)o.LicnaKarta);
+                ostali.Parameters.AddWithValue("@jmbg", (Object)o.Jmbg);
+                ostali.Parameters.AddWithValue("@nazivFirme", (Object)o.NazivFirme);
+                ostali.Parameters.AddWithValue("@adresaFirme", (Object)o.AdresaFirme);
+                ostali.Parameters.AddWithValue("@radnoMjesto", (Object)o.RadnoMjesto);
+
+                ostali.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public bool UnesiPravnoLice(PravnoLice pl)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                MySqlCommand pravnoLice =
+                new MySqlCommand("INSERT INTO zakupci(tipZakupca, brojTelefona, email, adresa, grad, biljeske, pid, nazivPravnogLica, ovlastenaOsoba) "
+                   + "VALUES(@tipZakupca, @brojTelefona, @email, @adresa, @grad, @biljeske, @pid, @nazivPravnogLica, @ovlastenaOsoba);", dataConnection);
+
+                pravnoLice.Parameters.AddWithValue("@tipZakupca", (Object)"Pravno lice");
+                pravnoLice.Parameters.AddWithValue("@brojTelefona", (Object)pl.BrojTelefona);
+                pravnoLice.Parameters.AddWithValue("@email", (Object)pl.Email);
+                pravnoLice.Parameters.AddWithValue("@adresa", (Object)pl.Adresa);
+                pravnoLice.Parameters.AddWithValue("@grad", (Object)pl.Grad);
+                pravnoLice.Parameters.AddWithValue("@biljeske", (Object)pl.Biljeske);
+
+                pravnoLice.Parameters.AddWithValue("@pid", (Object)pl.Pid);
+                pravnoLice.Parameters.AddWithValue("@nazivPravnogLica", (Object)pl.NazivPravnogLica);
+                pravnoLice.Parameters.AddWithValue("@ovlastenaOsoba", (Object)pl.OvlastenaOsoba);
+
+                pravnoLice.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
 
 
     }
