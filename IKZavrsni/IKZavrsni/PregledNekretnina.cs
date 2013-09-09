@@ -91,6 +91,28 @@ namespace IKZavrsni
         private void PregledNekretnina_Load(object sender, EventArgs e)
         {
             atributPretrazivanjaComboBox.SelectedIndex = 0;
+
+            try
+            {
+                toolStripStatusLabel1.Text = "";
+
+                ListViewItem temp = new ListViewItem();
+
+                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+
+                nekretnine = dao.DajSveNekretnine();
+
+                foreach (Nekretnina n in nekretnine)
+                {
+                    temp = nekretnineListView.Items.Add(n.Naziv);
+                    temp.SubItems.Add(n.Adresa);
+                    temp.SubItems.Add(n.Lokacija);
+                }
+            }
+            catch (Exception izuzetak)
+            {
+                toolStripStatusLabel1.Text = izuzetak.Message;
+            }
         }
 
         private void izmijeniButton1_Click_1(object sender, EventArgs e)
@@ -105,7 +127,7 @@ namespace IKZavrsni
                             izmjenaNek.ShowDialog();
                             return;
                         }
-                }
+                }            
         }
 
         private void brisiNekretninuButton_Click_1(object sender, EventArgs e)

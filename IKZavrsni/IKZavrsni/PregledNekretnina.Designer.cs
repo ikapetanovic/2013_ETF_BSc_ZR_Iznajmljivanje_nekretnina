@@ -84,16 +84,16 @@
             this.groupBox1.Controls.Add(this.brisiNekretninuButton);
             this.groupBox1.Controls.Add(this.izmijeniButton1);
             this.groupBox1.Controls.Add(this.nekretnineListView);
-            this.groupBox1.Location = new System.Drawing.Point(15, 87);
+            this.groupBox1.Location = new System.Drawing.Point(12, 84);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(598, 256);
+            this.groupBox1.Size = new System.Drawing.Size(598, 191);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nekretnine";
             // 
             // dodajDioButton
             // 
-            this.dodajDioButton.Location = new System.Drawing.Point(9, 227);
+            this.dodajDioButton.Location = new System.Drawing.Point(9, 159);
             this.dodajDioButton.Name = "dodajDioButton";
             this.dodajDioButton.Size = new System.Drawing.Size(174, 23);
             this.dodajDioButton.TabIndex = 35;
@@ -103,7 +103,7 @@
             // 
             // brisiNekretninuButton
             // 
-            this.brisiNekretninuButton.Location = new System.Drawing.Point(507, 227);
+            this.brisiNekretninuButton.Location = new System.Drawing.Point(510, 157);
             this.brisiNekretninuButton.Name = "brisiNekretninuButton";
             this.brisiNekretninuButton.Size = new System.Drawing.Size(75, 23);
             this.brisiNekretninuButton.TabIndex = 33;
@@ -113,7 +113,7 @@
             // 
             // izmijeniButton1
             // 
-            this.izmijeniButton1.Location = new System.Drawing.Point(428, 227);
+            this.izmijeniButton1.Location = new System.Drawing.Point(431, 157);
             this.izmijeniButton1.Name = "izmijeniButton1";
             this.izmijeniButton1.Size = new System.Drawing.Size(75, 23);
             this.izmijeniButton1.TabIndex = 32;
@@ -134,7 +134,7 @@
             this.nekretnineListView.Location = new System.Drawing.Point(9, 19);
             this.nekretnineListView.MultiSelect = false;
             this.nekretnineListView.Name = "nekretnineListView";
-            this.nekretnineListView.Size = new System.Drawing.Size(573, 200);
+            this.nekretnineListView.Size = new System.Drawing.Size(576, 132);
             this.nekretnineListView.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.nekretnineListView.TabIndex = 31;
             this.nekretnineListView.UseCompatibleStateImageBehavior = false;
@@ -149,7 +149,7 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Adresa";
-            this.columnHeader2.Width = 242;
+            this.columnHeader2.Width = 247;
             // 
             // columnHeader3
             // 
@@ -158,7 +158,7 @@
             // 
             // pretraziButton
             // 
-            this.pretraziButton.Location = new System.Drawing.Point(507, 29);
+            this.pretraziButton.Location = new System.Drawing.Point(510, 32);
             this.pretraziButton.Name = "pretraziButton";
             this.pretraziButton.Size = new System.Drawing.Size(75, 23);
             this.pretraziButton.TabIndex = 10;
@@ -188,16 +188,16 @@
             this.groupBox2.Controls.Add(this.brisiDioNekretnineButton);
             this.groupBox2.Controls.Add(this.izmijeniButton2);
             this.groupBox2.Controls.Add(this.dijeloviNekretnineListView);
-            this.groupBox2.Location = new System.Drawing.Point(15, 349);
+            this.groupBox2.Location = new System.Drawing.Point(12, 281);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(598, 287);
+            this.groupBox2.Size = new System.Drawing.Size(598, 346);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dijelovi odabrane nekretnine";
             // 
             // brisiDioNekretnineButton
             // 
-            this.brisiDioNekretnineButton.Location = new System.Drawing.Point(507, 253);
+            this.brisiDioNekretnineButton.Location = new System.Drawing.Point(507, 316);
             this.brisiDioNekretnineButton.Name = "brisiDioNekretnineButton";
             this.brisiDioNekretnineButton.Size = new System.Drawing.Size(75, 23);
             this.brisiDioNekretnineButton.TabIndex = 42;
@@ -207,7 +207,7 @@
             // 
             // izmijeniButton2
             // 
-            this.izmijeniButton2.Location = new System.Drawing.Point(428, 253);
+            this.izmijeniButton2.Location = new System.Drawing.Point(428, 316);
             this.izmijeniButton2.Name = "izmijeniButton2";
             this.izmijeniButton2.Size = new System.Drawing.Size(75, 23);
             this.izmijeniButton2.TabIndex = 41;
@@ -225,10 +225,10 @@
             this.columnHeader7});
             this.dijeloviNekretnineListView.FullRowSelect = true;
             this.dijeloviNekretnineListView.GridLines = true;
-            this.dijeloviNekretnineListView.Location = new System.Drawing.Point(12, 19);
+            this.dijeloviNekretnineListView.Location = new System.Drawing.Point(9, 19);
             this.dijeloviNekretnineListView.MultiSelect = false;
             this.dijeloviNekretnineListView.Name = "dijeloviNekretnineListView";
-            this.dijeloviNekretnineListView.Size = new System.Drawing.Size(573, 228);
+            this.dijeloviNekretnineListView.Size = new System.Drawing.Size(576, 291);
             this.dijeloviNekretnineListView.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.dijeloviNekretnineListView.TabIndex = 40;
             this.dijeloviNekretnineListView.UseCompatibleStateImageBehavior = false;
@@ -272,7 +272,7 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.unesenoTextBox);
             this.groupBox3.Controls.Add(this.pretraziButton);
-            this.groupBox3.Location = new System.Drawing.Point(15, 15);
+            this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(598, 66);
             this.groupBox3.TabIndex = 36;
