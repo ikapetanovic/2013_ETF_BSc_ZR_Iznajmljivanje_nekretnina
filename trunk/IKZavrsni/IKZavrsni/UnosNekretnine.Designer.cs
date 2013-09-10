@@ -48,9 +48,6 @@
             this.biljeskeRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.nabavnaCijenaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.godinaIzgradnjeMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.brojKvadrataMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.slikaNekretninePictureBox = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -70,7 +67,6 @@
             this.biljeskeDijelaRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.brojKvadrataDijelaTextBox = new System.Windows.Forms.TextBox();
             this.vrstaNekretnineComboBox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -80,6 +76,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.izadjiButton1 = new System.Windows.Forms.Button();
             this.spasiDioNekretnineButton = new System.Windows.Forms.Button();
+            this.brojKvadrataNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.godinaIzgradnjeNumericUpdown = new System.Windows.Forms.NumericUpDown();
+            this.nabavnaCijenaNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.brojKvadrataDijelaNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -94,6 +94,10 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iznosNajmaNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.godinaIzgradnjeNumericUpdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nabavnaCijenaNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataDijelaNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -245,9 +249,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.nabavnaCijenaMaskedTextBox);
-            this.groupBox1.Controls.Add(this.godinaIzgradnjeMaskedTextBox);
-            this.groupBox1.Controls.Add(this.brojKvadrataMaskedTextBox);
+            this.groupBox1.Controls.Add(this.nabavnaCijenaNumericUpDown);
+            this.groupBox1.Controls.Add(this.godinaIzgradnjeNumericUpdown);
+            this.groupBox1.Controls.Add(this.brojKvadrataNumericUpDown);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -257,28 +261,6 @@
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detaljniji podaci";
-            // 
-            // nabavnaCijenaMaskedTextBox
-            // 
-            this.nabavnaCijenaMaskedTextBox.Location = new System.Drawing.Point(107, 71);
-            this.nabavnaCijenaMaskedTextBox.Name = "nabavnaCijenaMaskedTextBox";
-            this.nabavnaCijenaMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.nabavnaCijenaMaskedTextBox.TabIndex = 20;
-            // 
-            // godinaIzgradnjeMaskedTextBox
-            // 
-            this.godinaIzgradnjeMaskedTextBox.Location = new System.Drawing.Point(107, 45);
-            this.godinaIzgradnjeMaskedTextBox.Name = "godinaIzgradnjeMaskedTextBox";
-            this.godinaIzgradnjeMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.godinaIzgradnjeMaskedTextBox.TabIndex = 19;
-            // 
-            // brojKvadrataMaskedTextBox
-            // 
-            this.brojKvadrataMaskedTextBox.Location = new System.Drawing.Point(108, 19);
-            this.brojKvadrataMaskedTextBox.Name = "brojKvadrataMaskedTextBox";
-            this.brojKvadrataMaskedTextBox.Size = new System.Drawing.Size(127, 20);
-            this.brojKvadrataMaskedTextBox.TabIndex = 18;
-            this.brojKvadrataMaskedTextBox.ValidatingType = typeof(int);
             // 
             // groupBox3
             // 
@@ -497,7 +479,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.brojKvadrataDijelaTextBox);
+            this.groupBox5.Controls.Add(this.brojKvadrataDijelaNumericUpDown);
             this.groupBox5.Controls.Add(this.vrstaNekretnineComboBox);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.label18);
@@ -511,13 +493,6 @@
             this.groupBox5.TabIndex = 49;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Osnovni podaci";
-            // 
-            // brojKvadrataDijelaTextBox
-            // 
-            this.brojKvadrataDijelaTextBox.Location = new System.Drawing.Point(91, 75);
-            this.brojKvadrataDijelaTextBox.Name = "brojKvadrataDijelaTextBox";
-            this.brojKvadrataDijelaTextBox.Size = new System.Drawing.Size(147, 20);
-            this.brojKvadrataDijelaTextBox.TabIndex = 61;
             // 
             // vrstaNekretnineComboBox
             // 
@@ -567,6 +542,7 @@
             // 
             // iznosNajmaNumericUpDown
             // 
+            this.iznosNajmaNumericUpDown.DecimalPlaces = 2;
             this.iznosNajmaNumericUpDown.Location = new System.Drawing.Point(91, 101);
             this.iznosNajmaNumericUpDown.Maximum = new decimal(new int[] {
             1000,
@@ -574,7 +550,7 @@
             0,
             0});
             this.iznosNajmaNumericUpDown.Name = "iznosNajmaNumericUpDown";
-            this.iznosNajmaNumericUpDown.Size = new System.Drawing.Size(90, 20);
+            this.iznosNajmaNumericUpDown.Size = new System.Drawing.Size(147, 20);
             this.iznosNajmaNumericUpDown.TabIndex = 16;
             this.iznosNajmaNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.iznosNajmaNumericUpDown.Value = new decimal(new int[] {
@@ -612,6 +588,89 @@
             this.spasiDioNekretnineButton.UseVisualStyleBackColor = true;
             this.spasiDioNekretnineButton.Click += new System.EventHandler(this.spasiDioNekretnineButton_Click);
             // 
+            // brojKvadrataNumericUpDown
+            // 
+            this.brojKvadrataNumericUpDown.Location = new System.Drawing.Point(107, 19);
+            this.brojKvadrataNumericUpDown.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.brojKvadrataNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.brojKvadrataNumericUpDown.Name = "brojKvadrataNumericUpDown";
+            this.brojKvadrataNumericUpDown.Size = new System.Drawing.Size(127, 20);
+            this.brojKvadrataNumericUpDown.TabIndex = 18;
+            this.brojKvadrataNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.brojKvadrataNumericUpDown.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // godinaIzgradnjeNumericUpdown
+            // 
+            this.godinaIzgradnjeNumericUpdown.Location = new System.Drawing.Point(107, 45);
+            this.godinaIzgradnjeNumericUpdown.Maximum = new decimal(new int[] {
+            2200,
+            0,
+            0,
+            0});
+            this.godinaIzgradnjeNumericUpdown.Minimum = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            this.godinaIzgradnjeNumericUpdown.Name = "godinaIzgradnjeNumericUpdown";
+            this.godinaIzgradnjeNumericUpdown.Size = new System.Drawing.Size(127, 20);
+            this.godinaIzgradnjeNumericUpdown.TabIndex = 19;
+            this.godinaIzgradnjeNumericUpdown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.godinaIzgradnjeNumericUpdown.Value = new decimal(new int[] {
+            1990,
+            0,
+            0,
+            0});
+            // 
+            // nabavnaCijenaNumericUpDown
+            // 
+            this.nabavnaCijenaNumericUpDown.DecimalPlaces = 2;
+            this.nabavnaCijenaNumericUpDown.Location = new System.Drawing.Point(107, 71);
+            this.nabavnaCijenaNumericUpDown.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.nabavnaCijenaNumericUpDown.Name = "nabavnaCijenaNumericUpDown";
+            this.nabavnaCijenaNumericUpDown.Size = new System.Drawing.Size(127, 20);
+            this.nabavnaCijenaNumericUpDown.TabIndex = 20;
+            this.nabavnaCijenaNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nabavnaCijenaNumericUpDown.Value = new decimal(new int[] {
+            50000,
+            0,
+            0,
+            0});
+            // 
+            // brojKvadrataDijelaNumericUpDown
+            // 
+            this.brojKvadrataDijelaNumericUpDown.Location = new System.Drawing.Point(91, 75);
+            this.brojKvadrataDijelaNumericUpDown.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.brojKvadrataDijelaNumericUpDown.Name = "brojKvadrataDijelaNumericUpDown";
+            this.brojKvadrataDijelaNumericUpDown.Size = new System.Drawing.Size(147, 20);
+            this.brojKvadrataDijelaNumericUpDown.TabIndex = 18;
+            this.brojKvadrataDijelaNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.brojKvadrataDijelaNumericUpDown.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
             // UnosNekretnine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -646,6 +705,10 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iznosNajmaNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.godinaIzgradnjeNumericUpdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nabavnaCijenaNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brojKvadrataDijelaNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,9 +762,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox vrstaNekretnineComboBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.MaskedTextBox brojKvadrataMaskedTextBox;
-        private System.Windows.Forms.MaskedTextBox godinaIzgradnjeMaskedTextBox;
-        private System.Windows.Forms.MaskedTextBox nabavnaCijenaMaskedTextBox;
-        private System.Windows.Forms.TextBox brojKvadrataDijelaTextBox;
+        private System.Windows.Forms.NumericUpDown nabavnaCijenaNumericUpDown;
+        private System.Windows.Forms.NumericUpDown godinaIzgradnjeNumericUpdown;
+        private System.Windows.Forms.NumericUpDown brojKvadrataNumericUpDown;
+        private System.Windows.Forms.NumericUpDown brojKvadrataDijelaNumericUpDown;
     }
 }

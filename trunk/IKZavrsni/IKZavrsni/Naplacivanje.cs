@@ -15,5 +15,15 @@ namespace IKZavrsni
         {
             InitializeComponent();
         }
+
+        private void racunButton_Click(object sender, EventArgs e)
+        {
+            // prvo da odabereš datum kada je plaćeno, pa onda generisati račun
+        }
+
+        private void Naplacivanje_Load(object sender, EventArgs e)
+        {
+            doDatumaDateTimePicker.Value = DateTime.Today.AddMonths(1);
+        }
     }
 }

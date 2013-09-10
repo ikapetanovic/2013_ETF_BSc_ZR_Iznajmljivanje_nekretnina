@@ -24,25 +24,21 @@ namespace IKZavrsni
             vrsteRashoda = new List<VrstaRashoda>();
         }
 
+        
         private void dodaj_Click(object sender, EventArgs e)
-        {
+        {            
             try
             {
-
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
-                VrstaRashoda vr = new VrstaRashoda(nazivDodaj.Text, Convert.ToDouble(cijenaDodaj.Value));
+                VrstaRashoda vr = new VrstaRashoda(nazivDodaj.Text);
                 dao.DodajVrstuRashoda(vr);
 
                 toolStripStatusLabel1.ForeColor = Color.Green;
                 toolStripStatusLabel1.Text = "Podaci su spašeni u bazu.";
 
                 lvi = listViewVrsteRashoda.Items.Add(nazivDodaj.Text);
-                lvi.SubItems.Add(cijenaDodaj.Value.ToString());
-                nazivDodaj.Text = "";
-                cijenaDodaj.Value = 0.00M;      
-
-
+                nazivDodaj.Text = ""; 
             }
             catch (Exception)
             {
@@ -64,7 +60,7 @@ namespace IKZavrsni
 
                     DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
-                    VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text, Convert.ToDouble(cijenaPromjena.Value));
+                    VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text);
 
                     vr.Id = dao.VratiIdVrsteRashoda(vrstaRashodaTmp.Naziv);
 
@@ -75,22 +71,18 @@ namespace IKZavrsni
 
                     vrsteRashoda = dao.VratiVrsteRashoda();
 
-                    foreach (VrstaRashoda vr1 in vrsteRashoda)
-                    {
+                    foreach (VrstaRashoda vr1 in vrsteRashoda)                    
                         lvi = listViewVrsteRashoda.Items.Add(vr1.Naziv);
-                        lvi.SubItems.Add(vr1.Cijena.ToString());
-                    }
 
                     nazivPromjena.Text = "";
-                    cijenaPromjena.Value = 0.00M;
 
                     toolStripStatusLabel1.ForeColor = Color.Green;
                     toolStripStatusLabel1.Text = "Podaci su ažurirani.";
                 }
                 catch (Exception izuzetak)
                 {
-                    //toolStripStatusLabel1.ForeColor = Color.Red;
-                    //toolStripStatusLabel1.Text = "Podaci nisu ažurirani!";
+                    toolStripStatusLabel1.ForeColor = Color.Red;
+                    toolStripStatusLabel1.Text = "Podaci nisu ažurirani!";
                     toolStripStatusLabel1.Text = izuzetak.Message;
                 }
             }
@@ -102,9 +94,10 @@ namespace IKZavrsni
         {
             try
             {
+                
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
 
-                VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text, Convert.ToDouble(cijenaPromjena.Value));
+                VrstaRashoda vr = new VrstaRashoda(nazivPromjena.Text);
                 
                 vr.Id = dao.VratiIdVrsteRashoda(vrstaRashodaTmp.Naziv);
 
@@ -116,26 +109,19 @@ namespace IKZavrsni
                 vrsteRashoda = dao.VratiVrsteRashoda();
 
                 foreach (VrstaRashoda vr1 in vrsteRashoda)
-                {
                     lvi = listViewVrsteRashoda.Items.Add(vr1.Naziv);
-                    lvi.SubItems.Add(vr1.Cijena.ToString());
-                }
 
                 nazivPromjena.Text = "";
-                cijenaPromjena.Value = 0.00M;
 
                 toolStripStatusLabel1.ForeColor = Color.Green;
-                toolStripStatusLabel1.Text = "Podaci su ažurirani.";                
-                
-
+                toolStripStatusLabel1.Text = "Podaci su ažurirani.";
             }
             catch (Exception izuzetak)
             {
-                //toolStripStatusLabel1.ForeColor = Color.Red;
-                //toolStripStatusLabel1.Text = "Podaci nisu ažurirani!";
+                toolStripStatusLabel1.ForeColor = Color.Red;
+                toolStripStatusLabel1.Text = "Podaci nisu ažurirani!";
                 toolStripStatusLabel1.Text = izuzetak.Message;
             }
-
         }
 
         private void VrsteRashoda_Load(object sender, EventArgs e)
@@ -148,12 +134,7 @@ namespace IKZavrsni
             vrsteRashoda = dao.VratiVrsteRashoda();
             
             foreach (VrstaRashoda vr in vrsteRashoda)
-            {
-                lvi = listViewVrsteRashoda.Items.Add(vr.Naziv);
-                lvi.SubItems.Add(vr.Cijena.ToString());
-            }
-             
-            
+                lvi = listViewVrsteRashoda.Items.Add(vr.Naziv);             
         }
 
         private void listViewVrsteRashoda_ItemActivate(object sender, EventArgs e)
@@ -168,8 +149,7 @@ namespace IKZavrsni
                         if (vr.Naziv == listViewVrsteRashoda.Items[i].Text)
                         {
                             vrstaRashodaTmp = vr;                           
-                            nazivPromjena.Text = vr.Naziv;                            
-                            cijenaPromjena.Value = Convert.ToDecimal(vr.Cijena); 
+                            nazivPromjena.Text = vr.Naziv;
                             return;
 
                         }

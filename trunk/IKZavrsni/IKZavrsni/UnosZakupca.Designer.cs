@@ -52,16 +52,12 @@
             this.prezimeTextBox = new System.Windows.Forms.TextBox();
             this.imeTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.periodNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.doDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.zavrsavaDoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
-            this.dijeloviZaIznajmljivanjeComboBox = new System.Windows.Forms.ComboBox();
+            this.nazivDijelaZaIznajmljivanjeComboBox = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.odDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.pocinjeOdDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label24 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.avansNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.spasi = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -98,8 +94,6 @@
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.periodNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avansNumericUpDown)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -118,7 +112,7 @@
             this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 599);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(625, 22);
             this.statusStrip1.TabIndex = 27;
@@ -316,132 +310,68 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.periodNumericUpDown);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.doDateTimePicker);
+            this.groupBox2.Controls.Add(this.zavrsavaDoDateTimePicker);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.dijeloviZaIznajmljivanjeComboBox);
+            this.groupBox2.Controls.Add(this.nazivDijelaZaIznajmljivanjeComboBox);
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.odDateTimePicker);
+            this.groupBox2.Controls.Add(this.pocinjeOdDateTimePicker);
             this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.avansNumericUpDown);
             this.groupBox2.Location = new System.Drawing.Point(333, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 164);
+            this.groupBox2.Size = new System.Drawing.Size(280, 138);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Podaci o zakupu";
             // 
-            // periodNumericUpDown
+            // zavrsavaDoDateTimePicker
             // 
-            this.periodNumericUpDown.Location = new System.Drawing.Point(92, 136);
-            this.periodNumericUpDown.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.periodNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.periodNumericUpDown.Name = "periodNumericUpDown";
-            this.periodNumericUpDown.Size = new System.Drawing.Size(78, 20);
-            this.periodNumericUpDown.TabIndex = 41;
-            this.periodNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.periodNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(46, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "Period:";
-            // 
-            // doDateTimePicker
-            // 
-            this.doDateTimePicker.Location = new System.Drawing.Point(92, 77);
-            this.doDateTimePicker.Name = "doDateTimePicker";
-            this.doDateTimePicker.Size = new System.Drawing.Size(160, 20);
-            this.doDateTimePicker.TabIndex = 39;
+            this.zavrsavaDoDateTimePicker.Location = new System.Drawing.Point(82, 103);
+            this.zavrsavaDoDateTimePicker.Name = "zavrsavaDoDateTimePicker";
+            this.zavrsavaDoDateTimePicker.Size = new System.Drawing.Size(181, 20);
+            this.zavrsavaDoDateTimePicker.TabIndex = 39;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(16, 84);
+            this.label23.Location = new System.Drawing.Point(6, 110);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(70, 13);
             this.label23.TabIndex = 38;
             this.label23.Text = "Završava do:";
             // 
-            // dijeloviZaIznajmljivanjeComboBox
+            // nazivDijelaZaIznajmljivanjeComboBox
             // 
-            this.dijeloviZaIznajmljivanjeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dijeloviZaIznajmljivanjeComboBox.FormattingEnabled = true;
-            this.dijeloviZaIznajmljivanjeComboBox.Location = new System.Drawing.Point(92, 24);
-            this.dijeloviZaIznajmljivanjeComboBox.Name = "dijeloviZaIznajmljivanjeComboBox";
-            this.dijeloviZaIznajmljivanjeComboBox.Size = new System.Drawing.Size(160, 21);
-            this.dijeloviZaIznajmljivanjeComboBox.TabIndex = 35;
+            this.nazivDijelaZaIznajmljivanjeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nazivDijelaZaIznajmljivanjeComboBox.FormattingEnabled = true;
+            this.nazivDijelaZaIznajmljivanjeComboBox.Location = new System.Drawing.Point(82, 24);
+            this.nazivDijelaZaIznajmljivanjeComboBox.Name = "nazivDijelaZaIznajmljivanjeComboBox";
+            this.nazivDijelaZaIznajmljivanjeComboBox.Size = new System.Drawing.Size(181, 21);
+            this.nazivDijelaZaIznajmljivanjeComboBox.TabIndex = 35;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(24, 32);
+            this.label25.Location = new System.Drawing.Point(14, 32);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(62, 13);
             this.label25.TabIndex = 34;
             this.label25.Text = "Nekretnina:";
             // 
-            // odDateTimePicker
+            // pocinjeOdDateTimePicker
             // 
-            this.odDateTimePicker.Location = new System.Drawing.Point(92, 51);
-            this.odDateTimePicker.Name = "odDateTimePicker";
-            this.odDateTimePicker.Size = new System.Drawing.Size(160, 20);
-            this.odDateTimePicker.TabIndex = 33;
+            this.pocinjeOdDateTimePicker.Location = new System.Drawing.Point(82, 77);
+            this.pocinjeOdDateTimePicker.Name = "pocinjeOdDateTimePicker";
+            this.pocinjeOdDateTimePicker.Size = new System.Drawing.Size(181, 20);
+            this.pocinjeOdDateTimePicker.TabIndex = 33;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(26, 58);
+            this.label24.Location = new System.Drawing.Point(16, 84);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(60, 13);
             this.label24.TabIndex = 32;
             this.label24.Text = "Počinje od:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(46, 114);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(40, 13);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Avans:";
-            // 
-            // avansNumericUpDown
-            // 
-            this.avansNumericUpDown.DecimalPlaces = 2;
-            this.avansNumericUpDown.Location = new System.Drawing.Point(92, 107);
-            this.avansNumericUpDown.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.avansNumericUpDown.Name = "avansNumericUpDown";
-            this.avansNumericUpDown.Size = new System.Drawing.Size(78, 20);
-            this.avansNumericUpDown.TabIndex = 28;
-            this.avansNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.avansNumericUpDown.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
             // 
             // spasi
             // 
@@ -771,16 +701,16 @@
             // 
             // biljeskeRichTextBox
             // 
-            this.biljeskeRichTextBox.Location = new System.Drawing.Point(333, 234);
+            this.biljeskeRichTextBox.Location = new System.Drawing.Point(333, 200);
             this.biljeskeRichTextBox.Name = "biljeskeRichTextBox";
-            this.biljeskeRichTextBox.Size = new System.Drawing.Size(280, 330);
+            this.biljeskeRichTextBox.Size = new System.Drawing.Size(280, 364);
             this.biljeskeRichTextBox.TabIndex = 28;
             this.biljeskeRichTextBox.Text = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(330, 218);
+            this.label8.Location = new System.Drawing.Point(330, 184);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 29;
@@ -790,7 +720,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 629);
+            this.ClientSize = new System.Drawing.Size(625, 621);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.biljeskeRichTextBox);
             this.Controls.Add(this.statusStrip1);
@@ -800,6 +730,7 @@
             this.Controls.Add(this.spasi);
             this.Controls.Add(this.fizickoPravnoTabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "UnosZakupca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evidencija zakupca";
@@ -812,8 +743,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.periodNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avansNumericUpDown)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -880,8 +809,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TextBox roditeljTextBox;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown avansNumericUpDown;
         private System.Windows.Forms.TextBox adresaFirmeTextBox;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
@@ -894,13 +821,11 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox pidTextBox;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker odDateTimePicker;
+        private System.Windows.Forms.DateTimePicker pocinjeOdDateTimePicker;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox dijeloviZaIznajmljivanjeComboBox;
-        private System.Windows.Forms.DateTimePicker doDateTimePicker;
+        private System.Windows.Forms.ComboBox nazivDijelaZaIznajmljivanjeComboBox;
+        private System.Windows.Forms.DateTimePicker zavrsavaDoDateTimePicker;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.NumericUpDown periodNumericUpDown;
-        private System.Windows.Forms.Label label7;
     }
 }

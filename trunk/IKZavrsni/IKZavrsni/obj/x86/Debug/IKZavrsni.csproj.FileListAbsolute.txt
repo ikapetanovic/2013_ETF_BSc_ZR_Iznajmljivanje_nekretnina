@@ -31,7 +31,6 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Pri
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Properties.Resources.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.VrsteRashoda.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.csproj.GenerateResource.Cache
-C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Iznajmljivanje.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\DBConnection.dll
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\DBConnection.pdb
 C:\Users\batoshi\Desktop\TMP sve\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.exe
