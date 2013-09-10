@@ -70,14 +70,14 @@ namespace IKZavrsni
                 Bitmap slika = (Bitmap)slikaNekretninePictureBox.Image;
                 n.Slika = slika;
 
-                if(brojKvadrataMaskedTextBox.Text != "")
-                    n.BrojKvadrata = Convert.ToInt32(brojKvadrataMaskedTextBox.Text);
+                if(brojKvadrataNumericUpDown.Text != "")
+                    n.BrojKvadrata = Convert.ToInt32(brojKvadrataNumericUpDown.Text);
 
-                if (godinaIzgradnjeMaskedTextBox.Text != "")
-                    n.GodinaIzgradnje = Convert.ToInt32(godinaIzgradnjeMaskedTextBox.Text);
+                if (godinaIzgradnjeNumericUpdown.Text != "")
+                    n.GodinaIzgradnje = Convert.ToInt32(godinaIzgradnjeNumericUpdown.Text);
 
-                if (nabavnaCijenaMaskedTextBox.Text != "")
-                    n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaMaskedTextBox.Text);
+                if (nabavnaCijenaNumericUpDown.Text != "")
+                    n.NabavnaCijena = Convert.ToDouble(nabavnaCijenaNumericUpDown.Text);
 
                 dao.UnesiNekretninu(n);
                 dao.ZatvoriKonekciju();                
@@ -155,8 +155,8 @@ namespace IKZavrsni
                     Bitmap slika = (Bitmap)slikaNekretninePictureBox.Image;
                     dn.Slika = slika;                    
 
-                    if (brojKvadrataDijelaTextBox.Text != "")
-                        dn.BrojKvadrata = Convert.ToInt32(brojKvadrataDijelaTextBox.Text);
+                    if (brojKvadrataDijelaNumericUpDown.Text != "")
+                        dn.BrojKvadrata = Convert.ToInt32(brojKvadrataDijelaNumericUpDown.Text);
 
                     dn.IznosNajma = Convert.ToDouble(iznosNajmaNumericUpDown.Value);
 

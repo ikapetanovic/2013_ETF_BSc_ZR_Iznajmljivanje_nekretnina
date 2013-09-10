@@ -17,6 +17,7 @@ namespace IKZavrsni
         private Student s;
         private Ostali o;
         private PravnoLice pl;
+        private Iznajmljivanje i;
 
         public UnosZakupca()
         {
@@ -31,7 +32,7 @@ namespace IKZavrsni
                 DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
                 dijeloviNekretnina = dao.DijeloviZaIznajmljivanje();
                 for (int i = 0; i < dijeloviNekretnina.Count(); i++)
-                    dijeloviZaIznajmljivanjeComboBox.Items.Add(dijeloviNekretnina[i].Naziv);
+                    nazivDijelaZaIznajmljivanjeComboBox.Items.Add(dijeloviNekretnina[i].Naziv);
             }
             catch (Exception)
             {
@@ -48,15 +49,36 @@ namespace IKZavrsni
         private void spasi_Click(object sender, EventArgs e)
         {
             try
-            {
-                DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+            {    
+                int zakupacId;
+                string dioNekretnineSifra;
 
                 if (fizickoPravnoTabControl.SelectedIndex == 0) // Fizičko lice
                 {
+                    DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
+
                     if (studentOstaliTabControl.SelectedIndex == 0) // Student
                     {
                         s = new Student(brojTelefonaMaskedTextBox.Text, emailTextBox.Text, adresaTextBox.Text, gradTextBox.Text, biljeskeRichTextBox.Text, imeTextBox.Text, prezimeTextBox.Text, licnaKartaTextBox.Text, jmbgTextBox.Text, fakultetComboBox.SelectedItem.ToString(), Convert.ToInt32(godinaStudijaNumericUpDown.Value), kucniTelefonMaskedTextBox.Text, roditeljTextBox.Text);
                         dao.UnesiStudenta(s);
+
+                        zakupacId = dao.VratiIdZakupca(brojTelefonaMaskedTextBox.Text);
+
+                        if (zakupacId != -1)
+                        {
+                            dioNekretnineSifra = dao.VratiSifruDijelaNekretnine(nazivDijelaZaIznajmljivanjeComboBox.SelectedItem.ToString());
+                            i = new Iznajmljivanje(zakupacId, dioNekretnineSifra, Convert.ToDateTime(pocinjeOdDateTimePicker.Text), Convert.ToDateTime(zavrsavaDoDateTimePicker.Text));
+                            dao.Iznajmi(i);
+
+                            // postavi status na Zauzeto
+                            // ukloni iz comboboxa
+
+                            //statusStrip1.BackColor = Color.White;
+                            //toolStripStatusLabel1.ForeColor = Color.Green;
+                            toolStripStatusLabel1.Text = "Podaci su spašeni.";
+                        }
+                        else
+                            throw new Exception("Podaci nisu spašeni!");
                     }
                     else // Ostali
                     {
@@ -67,18 +89,17 @@ namespace IKZavrsni
                 }
                 else // Pravno lice
                 {
+                    DAO dao = new DAO("localhost", "ikzavrsni", "root", "root");
                     pl = new PravnoLice(brojTelefonaMaskedTextBox.Text, emailTextBox.Text, adresaTextBox.Text, gradTextBox.Text, biljeskeRichTextBox.Text, pidTextBox.Text, nazivPravnogLicaTextBox.Text, ovlastenaOsobaTextBox.Text);
                     dao.UnesiPravnoLice(pl);
-                }
-
-                statusStrip1.BackColor = Color.White;
-                toolStripStatusLabel1.ForeColor = Color.Green;
-                toolStripStatusLabel1.Text = "Podaci su spašeni.";
+                }                
+                
+                
             }
             catch (Exception izuzetak)
             {
-                statusStrip1.BackColor = Color.White;
-                toolStripStatusLabel1.ForeColor = Color.Red;
+                //statusStrip1.BackColor = Color.White;
+                //toolStripStatusLabel1.ForeColor = Color.Red;
                 toolStripStatusLabel1.Text = izuzetak.Message;
             }
         }

@@ -10,14 +10,12 @@ namespace DBConnection
 
         private int id;
         private string naziv;
-        private double cijena;
         
         public VrstaRashoda() { }
 
-        public VrstaRashoda(string naziv, double cijena)
+        public VrstaRashoda(string naziv)
         {
             this.naziv = naziv;
-            this.cijena = cijena;
         }
 
         public int Id
@@ -31,12 +29,5 @@ namespace DBConnection
             get { return naziv; }
             set { naziv = value; }
         }
-
-        public double Cijena
-        {
-            get { return cijena; }
-            set { cijena = value; }
-        }
-
     }
 }

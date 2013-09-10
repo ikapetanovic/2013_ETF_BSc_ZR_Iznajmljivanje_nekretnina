@@ -38,8 +38,6 @@ namespace DBConnection
         }
 
 // KORISNIK
-        
-        /* IZBRISATI? */
 
         public int VratiKorisnikID(string korisnicko_ime, string sifra)
         {
@@ -547,9 +545,30 @@ namespace DBConnection
             }
         }
 
+        public string VratiSifruDijelaNekretnine(string naziv)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT sifra FROM dijelovinekretnina WHERE naziv = '" + naziv + "';";
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+                string sifra = "";
+
+                while (dataReader.Read())                
+                    sifra = dataReader.GetString(0);
+
+                dataReader.Close();
+                return sifra;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
         public List<DioNekretnine> DijeloviZaIznajmljivanje()
         {
-
             try
             {
                 List<DioNekretnine> dijeloviNekretnine = new List<DioNekretnine>();
@@ -588,10 +607,9 @@ namespace DBConnection
                 dataCommand.Connection = dataConnection;                
 
                 MySqlCommand vrsteRashoda =
-                new MySqlCommand("INSERT INTO vrsterashoda(naziv, cijena) " + "VALUES(@naziv, @cijena);", dataConnection);
+                new MySqlCommand("INSERT INTO vrsterashoda(naziv) " + "VALUES(@naziv);", dataConnection);
 
                 vrsteRashoda.Parameters.AddWithValue("@naziv", (Object)vr.Naziv);
-                vrsteRashoda.Parameters.AddWithValue("@cijena", (Object)vr.Cijena);
 
                 vrsteRashoda.ExecuteNonQuery();
 
@@ -618,7 +636,7 @@ namespace DBConnection
 
                 while (dataReader.Read())
                 {
-                    VrstaRashoda vr = new VrstaRashoda(dataReader.GetString(1), dataReader.GetDouble(2));
+                    VrstaRashoda vr = new VrstaRashoda(dataReader.GetString(1));
                     vr.Id = dataReader.GetInt16(0);
                     vrsteRashoda.Add(vr);
                 }
@@ -661,21 +679,15 @@ namespace DBConnection
         {
             try
             {
-
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
                 
                 MySqlCommand vrsteRashoda =
-                new MySqlCommand("UPDATE vrsterashoda SET naziv = @naziv, cijena = @cijena WHERE vrstaRashodaID= '" + vr.Id + "';", dataConnection);
-
-
+                new MySqlCommand("UPDATE vrsterashoda SET naziv = @naziv WHERE vrstaRashodaID= '" + vr.Id + "';", dataConnection);
                 vrsteRashoda.Parameters.AddWithValue("@naziv", vr.Naziv);
-                vrsteRashoda.Parameters.AddWithValue("@cijena", vr.Cijena);
-
                 vrsteRashoda.ExecuteNonQuery();
 
                 return true;
-
             }
             catch (MySqlException izuzetak)
             {
@@ -885,6 +897,58 @@ namespace DBConnection
                 }
                 dataReader.Close();
                 return ostali;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+        public int VratiIdZakupca(String brojTelefona)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT zakupacID FROM zakupci WHERE brojTelefona = '" + brojTelefona + ";";
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                int id = -1;
+                if (dataReader.Read())
+                {
+                    id = dataReader.GetInt16(0);
+                    dataReader.Close();
+                }
+                return id;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+
+// Iznajmljivanje
+
+        public bool Iznajmi(Iznajmljivanje i)
+        {
+            try
+            {
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+
+                MySqlCommand iznajmljivanje =
+                new MySqlCommand("INSERT INTO iznajmljivanja(Zakupci_zakupacID, DijeloviNekretnina_sifra, pocinjeOd, zavrsavaDo) "
+                   + "VALUES(@Zakupci_zakupacID, @DijeloviNekretnina_sifra, @pocinjeOd, @zavrsavaDo);", dataConnection);
+
+                iznajmljivanje.Parameters.AddWithValue("@Zakupci_zakupacID", (Object)i.ZakupacId);
+                iznajmljivanje.Parameters.AddWithValue("@DijeloviNekretnina_sifra", (Object)i.DioNekretnineId);
+                iznajmljivanje.Parameters.AddWithValue("@pocinjeOd", (Object)i.PocinjeOd);
+                iznajmljivanje.Parameters.AddWithValue("@zavrsavaDo", (Object)i.ZavrsavaDo);
+
+                iznajmljivanje.ExecuteNonQuery();
+
+                return true;
             }
             catch (MySqlException izuzetak)
             {

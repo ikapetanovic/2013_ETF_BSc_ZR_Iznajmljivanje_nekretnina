@@ -65,9 +65,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(141, 265);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 13);
+            this.label2.Size = new System.Drawing.Size(135, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Završni rad 1. ciklusa studija";
+            this.label2.Text = "Završni rad I ciklusa studija";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1

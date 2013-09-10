@@ -15,7 +15,7 @@ namespace DBConnection
         [SetUp]
         public void Postavi()
         {
-            vr = new VrstaRashoda("Voda", 0.25);
+            vr = new VrstaRashoda("Voda");
         }
 
         [TearDown]
@@ -29,13 +29,5 @@ namespace DBConnection
         {
             Assert.AreEqual("Voda", vr.Naziv);
         }
-
-        [Test]
-        public void CijenaTest()
-        {
-            Assert.AreEqual(0.25, vr.Cijena);
-        }
-
-
     }
 }

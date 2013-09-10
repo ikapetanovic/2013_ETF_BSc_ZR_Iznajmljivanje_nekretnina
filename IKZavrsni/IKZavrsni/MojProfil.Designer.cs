@@ -32,6 +32,10 @@
             this.izadji = new System.Windows.Forms.Button();
             this.spasi = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.grad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.adresa = new System.Windows.Forms.TextBox();
             this.mobilniTelefon = new System.Windows.Forms.MaskedTextBox();
             this.fiksniTelefon = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -50,10 +54,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.korisnickoIme = new System.Windows.Forms.TextBox();
-            this.grad = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.adresa = new System.Windows.Forms.TextBox();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -62,7 +62,7 @@
             // 
             // izadji
             // 
-            this.izadji.Location = new System.Drawing.Point(244, 345);
+            this.izadji.Location = new System.Drawing.Point(221, 345);
             this.izadji.Name = "izadji";
             this.izadji.Size = new System.Drawing.Size(75, 23);
             this.izadji.TabIndex = 22;
@@ -72,7 +72,7 @@
             // 
             // spasi
             // 
-            this.spasi.Location = new System.Drawing.Point(163, 345);
+            this.spasi.Location = new System.Drawing.Point(140, 345);
             this.spasi.Name = "spasi";
             this.spasi.Size = new System.Drawing.Size(75, 23);
             this.spasi.TabIndex = 21;
@@ -94,14 +94,46 @@
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Location = new System.Drawing.Point(12, 96);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(307, 159);
+            this.groupBox5.Size = new System.Drawing.Size(284, 159);
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Kontaktni podaci";
             // 
+            // grad
+            // 
+            this.grad.Location = new System.Drawing.Point(97, 127);
+            this.grad.Name = "grad";
+            this.grad.Size = new System.Drawing.Size(165, 20);
+            this.grad.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(48, 104);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(43, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Adresa:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(58, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 13);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Grad:";
+            // 
+            // adresa
+            // 
+            this.adresa.Location = new System.Drawing.Point(97, 97);
+            this.adresa.Name = "adresa";
+            this.adresa.Size = new System.Drawing.Size(165, 20);
+            this.adresa.TabIndex = 18;
+            // 
             // mobilniTelefon
             // 
-            this.mobilniTelefon.Location = new System.Drawing.Point(113, 71);
+            this.mobilniTelefon.Location = new System.Drawing.Point(97, 71);
             this.mobilniTelefon.Mask = "(999) 000-0000";
             this.mobilniTelefon.Name = "mobilniTelefon";
             this.mobilniTelefon.Size = new System.Drawing.Size(78, 20);
@@ -110,7 +142,7 @@
             // 
             // fiksniTelefon
             // 
-            this.fiksniTelefon.Location = new System.Drawing.Point(113, 45);
+            this.fiksniTelefon.Location = new System.Drawing.Point(97, 45);
             this.fiksniTelefon.Mask = "(999) 000-0000";
             this.fiksniTelefon.Name = "fiksniTelefon";
             this.fiksniTelefon.Size = new System.Drawing.Size(78, 20);
@@ -120,7 +152,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(35, 48);
+            this.label12.Location = new System.Drawing.Point(19, 48);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 13);
             this.label12.TabIndex = 5;
@@ -128,7 +160,7 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(113, 19);
+            this.email.Location = new System.Drawing.Point(97, 19);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(165, 20);
             this.email.TabIndex = 13;
@@ -136,7 +168,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(29, 74);
+            this.label13.Location = new System.Drawing.Point(13, 74);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(78, 13);
             this.label13.TabIndex = 6;
@@ -145,7 +177,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(72, 22);
+            this.label14.Location = new System.Drawing.Point(56, 22);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(35, 13);
             this.label14.TabIndex = 7;
@@ -159,14 +191,14 @@
             this.groupBox6.Controls.Add(this.ime);
             this.groupBox6.Location = new System.Drawing.Point(12, 12);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(307, 78);
+            this.groupBox6.Size = new System.Drawing.Size(284, 78);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Lični podaci";
             // 
             // prezime
             // 
-            this.prezime.Location = new System.Drawing.Point(113, 45);
+            this.prezime.Location = new System.Drawing.Point(97, 45);
             this.prezime.Name = "prezime";
             this.prezime.Size = new System.Drawing.Size(165, 20);
             this.prezime.TabIndex = 3;
@@ -174,7 +206,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(60, 48);
+            this.label15.Location = new System.Drawing.Point(44, 48);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(47, 13);
             this.label15.TabIndex = 2;
@@ -183,7 +215,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(80, 22);
+            this.label16.Location = new System.Drawing.Point(64, 22);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(27, 13);
             this.label16.TabIndex = 1;
@@ -191,7 +223,7 @@
             // 
             // ime
             // 
-            this.ime.Location = new System.Drawing.Point(113, 19);
+            this.ime.Location = new System.Drawing.Point(97, 19);
             this.ime.Name = "ime";
             this.ime.Size = new System.Drawing.Size(165, 20);
             this.ime.TabIndex = 0;
@@ -203,7 +235,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 377);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(331, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(307, 22);
             this.statusStrip1.TabIndex = 23;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -220,14 +252,14 @@
             this.groupBox1.Controls.Add(this.korisnickoIme);
             this.groupBox1.Location = new System.Drawing.Point(12, 261);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(307, 78);
+            this.groupBox1.Size = new System.Drawing.Size(284, 78);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pristupni podaci";
             // 
             // lozinka
             // 
-            this.lozinka.Location = new System.Drawing.Point(113, 45);
+            this.lozinka.Location = new System.Drawing.Point(97, 45);
             this.lozinka.Name = "lozinka";
             this.lozinka.PasswordChar = '*';
             this.lozinka.Size = new System.Drawing.Size(165, 20);
@@ -236,7 +268,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 48);
+            this.label1.Location = new System.Drawing.Point(44, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 2;
@@ -245,7 +277,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 22);
+            this.label2.Location = new System.Drawing.Point(13, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 1;
@@ -253,48 +285,16 @@
             // 
             // korisnickoIme
             // 
-            this.korisnickoIme.Location = new System.Drawing.Point(113, 19);
+            this.korisnickoIme.Location = new System.Drawing.Point(97, 19);
             this.korisnickoIme.Name = "korisnickoIme";
             this.korisnickoIme.Size = new System.Drawing.Size(165, 20);
             this.korisnickoIme.TabIndex = 0;
-            // 
-            // grad
-            // 
-            this.grad.Location = new System.Drawing.Point(113, 127);
-            this.grad.Name = "grad";
-            this.grad.Size = new System.Drawing.Size(165, 20);
-            this.grad.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(64, 104);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Adresa:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(74, 130);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(33, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Grad:";
-            // 
-            // adresa
-            // 
-            this.adresa.Location = new System.Drawing.Point(113, 97);
-            this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(165, 20);
-            this.adresa.TabIndex = 18;
             // 
             // MojProfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 399);
+            this.ClientSize = new System.Drawing.Size(307, 399);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.izadji);

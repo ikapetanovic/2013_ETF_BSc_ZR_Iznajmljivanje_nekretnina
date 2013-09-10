@@ -49,6 +49,7 @@
     <Compile Include="DAO.cs" />
     <Compile Include="DioNekretnine.cs" />
     <Compile Include="FizickoLice.cs" />
+    <Compile Include="Iznajmljivanje.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="KorisnikTest.cs" />
     <Compile Include="Nekretnina.cs" />
