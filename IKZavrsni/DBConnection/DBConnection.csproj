@@ -52,6 +52,7 @@
     <Compile Include="Iznajmljivanje.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="KorisnikTest.cs" />
+    <Compile Include="Naplacivanje.cs" />
     <Compile Include="Nekretnina.cs" />
     <Compile Include="NekretninaTest.cs" />
     <Compile Include="Ostali.cs" />

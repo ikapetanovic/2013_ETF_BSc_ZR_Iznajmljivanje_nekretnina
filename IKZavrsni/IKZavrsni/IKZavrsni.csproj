@@ -124,11 +124,11 @@
     <Compile Include="PregledNekretnina.Designer.cs">
       <DependentUpon>PregledNekretnina.cs</DependentUpon>
     </Compile>
-    <Compile Include="Naplacivanje.cs">
+    <Compile Include="NaplacivanjeForma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Naplacivanje.Designer.cs">
-      <DependentUpon>Naplacivanje.cs</DependentUpon>
+    <Compile Include="NaplacivanjeForma.Designer.cs">
+      <DependentUpon>NaplacivanjeForma.cs</DependentUpon>
     </Compile>
     <Compile Include="PregledZakupaca.cs">
       <SubType>Form</SubType>
@@ -183,8 +183,8 @@
     <EmbeddedResource Include="PregledNekretnina.resx">
       <DependentUpon>PregledNekretnina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Naplacivanje.resx">
-      <DependentUpon>Naplacivanje.cs</DependentUpon>
+    <EmbeddedResource Include="NaplacivanjeForma.resx">
+      <DependentUpon>NaplacivanjeForma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PregledZakupaca.resx">
       <DependentUpon>PregledZakupaca.cs</DependentUpon>

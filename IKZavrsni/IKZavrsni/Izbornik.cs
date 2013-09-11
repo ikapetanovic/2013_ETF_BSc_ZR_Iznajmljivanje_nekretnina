@@ -74,7 +74,7 @@ namespace IKZavrsni
 
         private void naplacivanjeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Naplacivanje n = new Naplacivanje();
+            NaplacivanjeForma n = new NaplacivanjeForma();
             n.Show();
         }
 

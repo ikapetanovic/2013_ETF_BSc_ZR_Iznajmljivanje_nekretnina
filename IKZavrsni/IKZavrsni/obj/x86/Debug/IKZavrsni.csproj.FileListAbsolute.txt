@@ -25,7 +25,6 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\IKZavrsni.pdb
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.csprojResolveAssemblyReference.cache
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.OcitanjeRashoda.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.PregledNekretnina.resources
-C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Naplacivanje.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.PregledZakupaca.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Prijava.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Properties.Resources.resources
@@ -71,3 +70,4 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Baz
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Izbornik.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.UnosDijelaNekretnine.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.IzmjenaDijelaNekretnine.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.NaplacivanjeForma.resources
