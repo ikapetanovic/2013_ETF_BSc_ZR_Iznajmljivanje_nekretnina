@@ -65,6 +65,7 @@
             this.backupTextBox.Name = "backupTextBox";
             this.backupTextBox.Size = new System.Drawing.Size(351, 20);
             this.backupTextBox.TabIndex = 1;
+            this.backupTextBox.TextChanged += new System.EventHandler(this.backupTextBox_TextChanged);
             // 
             // browse1
             // 

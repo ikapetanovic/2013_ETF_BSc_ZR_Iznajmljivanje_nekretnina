@@ -71,3 +71,7 @@ C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.Izb
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.UnosDijelaNekretnine.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.IzmjenaDijelaNekretnine.resources
 C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\obj\x86\Debug\IKZavrsni.NaplacivanjeForma.resources
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\itextsharp.dll
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\itextsharp.pdfa.dll
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\itextsharp.xtra.dll
+C:\Users\batoshi\Desktop\IKZ2013\IKZavrsni\IKZavrsni\bin\Debug\itextsharp.xml
