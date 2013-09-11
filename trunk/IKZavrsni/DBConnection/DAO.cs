@@ -957,5 +957,34 @@ namespace DBConnection
         }
 
 
+// Naplaćivanje
+
+        public List<Naplacivanje> DajSvaNaplacivanja(DateTime datumOd, DateTime datumDo)
+        {
+            try
+            {
+                List<Naplacivanje> naplacivanja = new List<Naplacivanje>();
+
+                MySqlCommand dataCommand = new MySqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT n.naplacivanjeID, dn.sifra, dn.naziv, z.zakupacID, n.iznosZaNaplatu FROM naplacivanja n, iznajmljivanja i, zakupci z, dijelovinekretnina dn WHERE n.Iznajmljivanja_iznajmljivanjeID = i.iznajmljivanjeID AND i.Zakupci_zakupacID = z.zakupacID AND i.DijeloviNekretnina_sifra = dn.sifra AND datumOd >= " + datumOd + " AND datumDo <= " + datumDo + ";";
+
+                MySqlDataReader dataReader = dataCommand.ExecuteReader();
+
+                while (dataReader.Read())
+                {         
+                    Naplacivanje n = new Naplacivanje (dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2), dataReader.GetInt32(3), dataReader.GetDouble(4));
+                    naplacivanja.Add(n);
+                }
+                dataReader.Close();
+                return naplacivanja;
+            }
+            catch (MySqlException izuzetak)
+            {
+                throw new Exception(izuzetak.Message);
+            }
+        }
+
+
     }
 }
