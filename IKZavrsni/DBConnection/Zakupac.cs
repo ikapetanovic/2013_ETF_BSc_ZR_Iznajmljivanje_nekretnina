@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DBConnection
 {
-    public class Zakupac
+    abstract public class Zakupac
     {
         private string brojTelefona, email, adresa, grad, biljeske;
         private int id;

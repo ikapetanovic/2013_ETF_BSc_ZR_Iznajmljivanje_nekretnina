@@ -938,11 +938,11 @@ namespace DBConnection
                 dataCommand.Connection = dataConnection;
 
                 MySqlCommand iznajmljivanje =
-                new MySqlCommand("INSERT INTO iznajmljivanja(Zakupci_zakupacID, DijeloviNekretnina_sifra, pocinjeOd, zavrsavaDo) "
-                   + "VALUES(@Zakupci_zakupacID, @DijeloviNekretnina_sifra, @pocinjeOd, @zavrsavaDo);", dataConnection);
+                new MySqlCommand("INSERT INTO iznajmljivanja(Zakupci_zakupacID, dijelovinekretnina_sifra, pocinjeOd, zavrsavaDo) "
+                   + "VALUES(@Zakupci_zakupacID, @dijelovinekretnina_sifra, @pocinjeOd, @zavrsavaDo);", dataConnection);
 
                 iznajmljivanje.Parameters.AddWithValue("@Zakupci_zakupacID", (Object)i.ZakupacId);
-                iznajmljivanje.Parameters.AddWithValue("@DijeloviNekretnina_sifra", (Object)i.DioNekretnineId);
+                iznajmljivanje.Parameters.AddWithValue("@dijelovinekretnina_sifra", (Object)i.DioNekretnineId);
                 iznajmljivanje.Parameters.AddWithValue("@pocinjeOd", (Object)i.PocinjeOd);
                 iznajmljivanje.Parameters.AddWithValue("@zavrsavaDo", (Object)i.ZavrsavaDo);
 
@@ -967,7 +967,7 @@ namespace DBConnection
 
                 MySqlCommand dataCommand = new MySqlCommand();
                 dataCommand.Connection = dataConnection;
-                dataCommand.CommandText = "SELECT n.naplacivanjeID, dn.sifra, dn.naziv, z.zakupacID, n.iznosZaNaplatu FROM naplacivanja n, iznajmljivanja i, zakupci z, dijelovinekretnina dn WHERE n.Iznajmljivanja_iznajmljivanjeID = i.iznajmljivanjeID AND i.Zakupci_zakupacID = z.zakupacID AND i.DijeloviNekretnina_sifra = dn.sifra AND datumOd >= " + datumOd + " AND datumDo <= " + datumDo + ";";
+                dataCommand.CommandText = "SELECT n.naplacivanjeID, dn.sifra, dn.naziv, z.zakupacID, n.iznosZaNaplatu FROM naplacivanja n, iznajmljivanja i, zakupci z, dijelovinekretnina dn WHERE n.Iznajmljivanja_iznajmljivanjeID = i.iznajmljivanjeID AND i.Zakupci_zakupacID = z.zakupacID AND i.dijelovinekretnina_sifra = dn.sifra AND datumOd >= " + datumOd + " AND datumDo <= " + datumDo + ";";
 
                 MySqlDataReader dataReader = dataCommand.ExecuteReader();
 
