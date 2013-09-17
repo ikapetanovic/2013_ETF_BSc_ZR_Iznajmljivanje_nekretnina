@@ -40,10 +40,10 @@
             this.nazivDodaj = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.obrisi = new System.Windows.Forms.Button();
+            this.izmijeni = new System.Windows.Forms.Button();
             this.nazivPromjena = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.izmijeni = new System.Windows.Forms.Button();
-            this.obrisi = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -54,7 +54,7 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.White;
+            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 329);
@@ -147,6 +147,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Izmijeni postojeću vrstu rashoda";
             // 
+            // obrisi
+            // 
+            this.obrisi.Location = new System.Drawing.Point(65, 60);
+            this.obrisi.Name = "obrisi";
+            this.obrisi.Size = new System.Drawing.Size(75, 23);
+            this.obrisi.TabIndex = 19;
+            this.obrisi.Text = "Izbriši";
+            this.obrisi.UseVisualStyleBackColor = true;
+            this.obrisi.Click += new System.EventHandler(this.obrisi_Click);
+            // 
+            // izmijeni
+            // 
+            this.izmijeni.Location = new System.Drawing.Point(146, 60);
+            this.izmijeni.Name = "izmijeni";
+            this.izmijeni.Size = new System.Drawing.Size(75, 23);
+            this.izmijeni.TabIndex = 18;
+            this.izmijeni.Text = "Izmijeni";
+            this.izmijeni.UseVisualStyleBackColor = true;
+            this.izmijeni.Click += new System.EventHandler(this.izmijeni_Click);
+            // 
             // nazivPromjena
             // 
             this.nazivPromjena.Location = new System.Drawing.Point(59, 34);
@@ -162,26 +182,6 @@
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Naziv:";
-            // 
-            // izmijeni
-            // 
-            this.izmijeni.Location = new System.Drawing.Point(146, 60);
-            this.izmijeni.Name = "izmijeni";
-            this.izmijeni.Size = new System.Drawing.Size(75, 23);
-            this.izmijeni.TabIndex = 18;
-            this.izmijeni.Text = "Izmijeni";
-            this.izmijeni.UseVisualStyleBackColor = true;
-            this.izmijeni.Click += new System.EventHandler(this.izmijeni_Click);
-            // 
-            // obrisi
-            // 
-            this.obrisi.Location = new System.Drawing.Point(65, 60);
-            this.obrisi.Name = "obrisi";
-            this.obrisi.Size = new System.Drawing.Size(75, 23);
-            this.obrisi.TabIndex = 19;
-            this.obrisi.Text = "Izbriši";
-            this.obrisi.UseVisualStyleBackColor = true;
-            this.obrisi.Click += new System.EventHandler(this.obrisi_Click);
             // 
             // groupBox3
             // 
