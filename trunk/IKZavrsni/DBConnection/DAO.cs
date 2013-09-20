@@ -27,10 +27,6 @@ namespace DBConnection
             dataConnection.Open();
         }
 
-        public void ZatvoriKonekciju()
-        {
-            dataConnection.Close();
-        }
 
         ~DAO()
         {
